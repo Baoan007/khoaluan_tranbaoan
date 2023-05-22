@@ -1,0 +1,7 @@
+env/
+static_files/logs/
+node_modules/
+package-lock.json/
+# .env
+# config.py
+cron_logger.log
