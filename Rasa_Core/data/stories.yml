@@ -1,0 +1,12 @@
+version: "3.1"
+
+stories:
+  - story: chào-chào-ask_chatbot - tôi là bot - tạm biệt - tạm biệt
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_chatbot
+      - action: utter_iamabot
+      - action: utter_did_that_help
+      - intent: goodbye
+      - action: utter_goodbye
