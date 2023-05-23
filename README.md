@@ -16,3 +16,10 @@ pip install -r requirements.txt
 - Các file config -> Thêm các biến config nhớ thay đổi thành prod nếu up lên server
 
 - File env -> Lưu trữ các thông tin mật về môi trường phát triển
+
+# SSH
+
+ssh root@45.32.29.231
+Rj7@{=TNK4DN)j@T
+
+cd .. &&cd home/khtntuyensinh.info/rasa_bot
