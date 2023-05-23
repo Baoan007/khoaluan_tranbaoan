@@ -1,6 +1,6 @@
 
 from flask import Flask
-from flask_cors import CORS
+# from flask_cors import CORS
 from flask import Flask, render_template, jsonify, request, abort
 import os
 # from rasa_api import model_path, register_bot_dev, call_rasa_model
