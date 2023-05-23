@@ -4,6 +4,8 @@ Khóa luận tuyển sinh đại học.
 
 # Các cứu pháp chạy project
 
+# Chạy trên nền python 3.8
+
 python3 -m venv env
 source env/bin/activate
 pip install --upgrade pip
