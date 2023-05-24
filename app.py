@@ -3,10 +3,10 @@ from flask import Flask
 # from flask_cors import CORS
 from flask import Flask, render_template, jsonify, request, abort
 import os
-# from rasa_api import model_path, register_bot_dev, call_rasa_model
+from rasa_api import model_path, register_bot_dev, call_rasa_model
 from config import app_config
 import threading
-# from rasa.core.agent import Agent
+from rasa.core.agent import Agent
 import asyncio
 app = Flask(__name__, static_folder="templates")
 app.config.from_object(app_config)
