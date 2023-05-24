@@ -11,6 +11,8 @@ source env/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 
+nohup python app.py
+
 # Cấu trúc thư mục
 
 - Chạy từ hàm app.py -> khi chạy server thì chạy file này
@@ -25,3 +27,5 @@ ssh root@45.32.29.231
 Rj7@{=TNK4DN)j@T
 
 cd .. &&cd home/khtntuyensinh.info/rasa_bot
+
+cd .. &&cd etc/nginx/
