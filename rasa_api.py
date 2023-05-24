@@ -12,21 +12,27 @@ global agent
 async def call_rasa_model(data):
     global agent
     # Trích xuất thông tin từ yêu cầu
-    message = data
-    json_response = None
-    if agent:
-        # Gửi tin nhắn tới mô hình Rasa để nhận phản hồi
-        # Do đây là coroutine (Bất đồng bộ) nên phải dùng await để xử lí và dùng asyncio để chạy bất đồng bộ python
-        response = await agent.handle_text(message)
 
-        # Trích xuất phản hồi từ kết quả trả về của mô hình
-        text_response = response[0]['text']
-        print("Kết quả trích xuất thông tin từ mô hình")
-        print(text_response)
-        # Tạo đối tượng JSON response
-        json_response = {
-            'response': text_response
-        }
+    message = data
+    json_response = {
+        'message': 'Mô hình chưa được tải lên'
+    }
+    if 'agent' in globals():
+        if agent:
+            # Gửi tin nhắn tới mô hình Rasa để nhận phản hồi
+            # Do đây là coroutine (Bất đồng bộ) nên phải dùng await để xử lí và dùng asyncio để chạy bất đồng bộ python
+            response = await agent.handle_text(message)
+            print(response)
+            if len(response) > 0:
+                # Trích xuất phản hồi từ kết quả trả về của mô hình
+                text_response = response[0]['text']
+                print("Kết quả trích xuất thông tin từ mô hình")
+                print(text_response)
+                # Tạo đối tượng JSON response
+                json_response = {
+                    'response': text_response,
+                    'message': 'Đã trích xuất dữ liệu từ mô hình thành công'
+                }
 
     return json_response
 
