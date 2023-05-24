@@ -26,6 +26,14 @@ nohup python app.py
 ssh root@45.32.29.231
 Rj7@{=TNK4DN)j@T
 
-cd .. &&cd home/khtntuyensinh.info/rasa_bot
+cd .. &&cd home/khtntuyensinh.autos&&source env/bin/activate&&nohup python app.py
 
 cd .. &&cd etc/nginx/
+
+sudo systemctl nginx start
+sudo systemctl nginx stop
+sudo systemctl nginx restart
+systemctl status nginx.service
+
+sudo systemctl start nginx
+sudo systemctl restart nginx
