@@ -1,0 +1,30 @@
+version: "3.1"
+stories:
+
+- story: consultancy
+  steps:
+  - intent: consultancy
+  - action: utter_consultancy
+  
+- story: deny consultancy
+  steps:
+  - intent: consultancy
+  - action: utter_consultancy
+  - intent: deny
+  - action: utter_no_help
+
+- story: more consultancy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: consultancy
+  - action: utter_consultancy
+  - intent: consultancy
+  - action: utter_consultancy
+
+- story: greet consultancy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: consultancy
+  - action: utter_consultancy

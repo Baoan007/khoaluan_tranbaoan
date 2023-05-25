@@ -12,7 +12,9 @@ class Config(object):
     CSRF_ENABLED = True
     SECRET_KEY = os.urandom(32)
     DOMAIN = os.getenv('DOMAIN')
-    RASA_ENABLE = True
+    RASA_ENABLE = False
+    SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI')
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
 # Configuration for Firebase Cloud Messaging

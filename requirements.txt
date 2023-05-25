@@ -5,3 +5,9 @@ flask_wtf
 flask-cors
 urllib3==1.26.6
 rasa
+pandas
+openpyxl
+flask_sqlalchemy
+rasa-sdk
+flask-socketio
+eventlet

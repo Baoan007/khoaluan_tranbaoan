@@ -1,0 +1,323 @@
+version: "3.1"
+
+## Common university KHTN information
+nlu:
+- intent: consultancy/hoi_thong_tin_truong
+  examples: |
+    - trường đại học khoa học tự nhiên là gì
+    - trường dh khtn là gì
+    - trường dhkhtn là gì
+    - trường dh khtn như thế nào
+    - trường dhkhtn như thế nào
+    - trường dh khoa học tự nhiên ra sao
+    - cho mình hỏi thông tin trường mình
+    - cho mình xin thông tin chung về trường
+    - trường là gì
+    - trường mình là gì
+    - trường mình như thế nào
+    - thông tin trường
+    - cho em xin info trường ạ
+    - bạn cho mình mình hỏi về trường ạ
+    - bạn biết gì về trường
+
+- intent: consultancy/hoi_khoa_truong
+  examples: |
+    - trường đại học khoa học tự nhiên gồm những khoa nào
+    - trường dh khtn gồm những khoa nào
+    - trường dh khtn có khoa nào
+    - trường đại học khoa học tự nhiên có khoa nào
+    - trường đại học khoa học tự nhiên bao gồm những khoa
+    - trường đại học khoa học tự nhiên có các khoa gì
+    - trường dhkhtn có các khoa gì
+    - khoa của trường đại học khtn
+    - trường mình có khoa nào
+    - các khoa của trường mình
+    - khoa của trường mình
+    - thông tin các khoa của trường mình
+    - thông tin chi tiết của khoa trong trường
+    - khoa trong tường
+
+- intent: consultancy/hoi_khoa_truong
+  examples: |
+    - trường đại học khoa học tự nhiên gồm những khoa nào
+    - trường dh khtn gồm những khoa nào
+    - trường dh khtn có khoa nào
+    - trường đại học khoa học tự nhiên có khoa nào
+    - trường đại học khoa học tự nhiên bao gồm những khoa
+    - trường đại học khoa học tự nhiên có các khoa gì
+    - trường dhkhtn có các khoa gì
+    - khoa của trường đại học khtn
+    - trường mình có khoa nào
+    - các khoa của trường mình
+    - khoa của trường mình
+    - thông tin các khoa của trường mình
+    - thông tin chi tiết của khoa trong trường
+    - khoa trong tường
+
+- intent: consultancy/hoi_nganh_truong
+  examples: |
+    - trường mình gồm những ngành nào
+    - trường mình gồm các ngành nào
+    - trường mình gồm ngành nào
+    - trường mình bao gồm những ngành nào
+    - trường mình bao gồm ngành nào
+    - trường mình bao các ngành nào
+    - trường mình có những ngành nào
+    - trường mình có các ngành nào
+    - trường mình có ngành nào
+    - trường dtkhtn gồm các ngành nào
+    - trường đại học khoa học tự nhiên gồm các ngành nào
+    - trường dtkhtn gồm những ngành nào
+    - trường đại học khoa học tự nhiên gồm những ngành nào
+    - trường dtkhtn gồm ngành nào
+    - trường đại học khoa học tự nhiên gồm ngành nào
+    - trường dtkhtn bao gồm những ngành nào
+    - trường đại học khoa học tự nhiên bao gồm những ngành nào
+    - trường dtkhtn bao gồm ngành nào
+    - trường đại học khoa học tự nhiên bao gồm ngành nào
+    - trường dtkhtn bao các ngành nào
+    - trường đại học khoa học tự nhiên bao các ngành nào
+    - trường dtkhtn có những ngành nào
+    - trường đại học khoa học tự nhiên có những ngành nào
+    - trường dtkhtn có các ngành nào
+    - trường đại học khoa học tự nhiên có các ngành nào
+    - trường dtkhtn có ngành nào
+    - trường đại học khoa học tự nhiên có ngành nào
+
+- intent: consultancy/hoi_chi_tieu_truong
+  examples: |
+    - trường mình có chỉ tiêu như thế nào
+    - trường dt khtn có chỉ tiêu như thế nào
+    - chỉ tiêu của trường năm nay
+    - năm nay chỉ tiêu của trường như thế nào
+    - trường đại học khoa học tự nhiên có chỉ tiêu sao ra
+    - chỉ tiêu các ngành của trường
+
+- intent: consultancy/hoi_phuong_thuc_xet_tuyen
+  examples: |
+    - cho mình hỏi phương thức xét tuyển của trường
+    - cho mình hỏi cách thức xét tuyển của trường
+    - cho hỏi cách thức xét tuyển của trường
+    - cho hỏi trường có phương thức xét tuyển nào
+    - phương thức xét tuyển vào trường
+    - phương thức xét tuyển các ngành trong trường
+    - phg thức xét tuyển
+    - cách thức vào trường
+    - vào trương như thế nào
+    - làm sao để vào được trường
+    - làm sao vô trường
+    - sao vào học tại trường được
+
+- intent: consultancy/hoi_phuong_thuc_xet_tuyen
+  examples: |
+    - cho mình hỏi phương thức xét tuyển của trường
+    - cho mình hỏi cách thức xét tuyển của trường
+    - cho hỏi cách thức xét tuyển của trường
+    - cho hỏi trường có phương thức xét tuyển nào
+    - phương thức xét tuyển vào trường
+    - phương thức xét tuyển các ngành trong trường
+    - phg thức xét tuyển
+    - cách thức vào trường
+    - vào trương như thế nào
+    - làm sao để vào được trường
+    - làm sao vô trường
+    - sao vào học tại trường được
+    - yêu cầu tuyển sinh của trường là gì
+
+- intent: consultancy/hoi_hoc_phi_truong
+  examples: |
+    - cho em hỏi học phí của các ngành trong trường
+    - cho em hỏi học phí của tất của các ngành trong trường
+    - trường có học phí như thế nào
+    - mức học phí tại trường hiện nay như thế nào
+    - học phí trường bao nhiêu
+    - trường hc phí bao nhiêu thế
+    - hiện nay hc phí của trường ra sao
+    - học phí rơi vào khoản bao nhiêu
+    - phí học tại trường nào
+    - năm nay học phí như nào
+
+- intent: consultancy/hoi_co_so_vat_chat
+  examples: |
+    - trường ở đâu
+    - trường hiện tại ở đâu
+    - trường có cơ sở nào
+    - trường nằm ở đâu
+    - trườn ở tỉnh nào
+    - trường ở quận nào
+    - những cơ sở trường nằm ở đâu
+    - địa chỉ của trường ở đâu ạ
+    - địa chỉ trường
+    - trường ở đường nào
+
+- intent: consultancy/hoi_giang_vien
+  examples: |
+    - trường có giảng viên như thế nào ạ
+    - giảng viên trường như thế nào
+    - trình độ giảng viên trường mình sao ạ
+    - cho mình hỏi về giảng viên trường
+    - thầy cô trường như thế nào ạ
+    - chất lượng dạy học ở đây thế nào ạ
+    - chất lượng thầy cô sao ạ
+
+- intent: consultancy/hoi_co_hoi_viec_lam
+  examples: |
+    - cơ hội nghệ nghiệp ở trường như thế nào ạ
+    - cơ hội việc làm khi học tập ở trường ạ?
+    - cho em hỏi học ở trường khi ra  trường có việc làm không ạ
+    - cơ hội sinh viên ra trường có việc làm nhiều không ạ
+    - sinh viên ra trường được nhận vào làm luôn không
+    - học ở trường rồi khi ra trường có việc làm không ạ
+
+- intent: consultancy/hoi_hoat_dong_ngoai_khoa
+  examples: |
+    - trường có tổ chứa các hoạt động ngoại khóa không
+    - trường có những hoạt động ngoại khóa nào
+    - có nhiều hoạt động cho sinh viên tham gia không
+    - trường có hoạt dộng gì không
+    - trường có chương trình hoạt động gì không
+    - những hoạt dộng nào trường tổ chức
+
+## Common ngành cntt information
+- intent: consultancy/hoi_thanh_lap_khoa_cong_nghe_thong_tin
+  examples: |
+    - Khoa công nghệ thông tin được thành lập như thế nào
+    - Khoa cntt được thành lập như thế nào
+    - thành lập khoa cntt
+    - khoa công nghệ thông tin thành lập
+    - thông tin khoa cntt 
+    - mình muốn hiểu khoa cntt
+    - thông tin khoa công nghệ thông tin
+    - cho xin tổng quan khoa cntt
+    - bạn có thể nói khái quát khoa công nghệ thông tin
+    - cho em hỏi về khoa cntt trường
+
+- intent: consultancy/hoi_nganh_khoa_cong_nghe_thong_tin
+  examples: |
+    - khoa công nghệ thông tin có những ngành nào
+    - cho em hỏi hiện tại ngành công nghệ thông tin dạy những ngành nào
+    - ngành cntt bao gồm những ngành nào
+    - ngành công nghệ thông tin trường có ngành gì
+    - những ngành của khoa khoa công nghệ thông tin
+    - các ngành của cntt trường
+    - xin thông tin các ngành công nghệ thông tin trường
+
+- intent: consultancy/hoi_diem_chuan_nganh_cong_nghe_thong_tin
+  examples: |
+    - điểm chuẩn các ngành cntt trường
+    - cho em hỏi điểm chuẩn của trường ngành công nghệ thông tin
+    - cho em hỏi điểm chuẩn của trường ngành cntt
+    - cho em hỏi điểm của ngành cntt
+    - điểm thi ngành công nghệ thông tin
+    - điểm ngành cntt
+    - điểm chuẩn khoa cntt
+    - điểm các ngành cntt
+    - điểm DGNL các ngành cntt
+    - điểm chuẩn đánh giá năm lực ngành cntt
+    - điểm đánh giá năm lực ngành cntt
+    - điểm chuẩn thi tn thpt ngành cntt
+
+- intent: consultancy/hoi_to_hop_mon_nganh_cong_nghe_thong_tin
+  examples: |
+    - ngành cntt thi những tổ hợp môn nào
+    - tổ hợp môn gì thi ngành công nghệ thông tin
+    - ngành cntt thi tổ hợp môn gì
+    - ngành công nghệ thông tin thi môn gì
+    - tổ hợp môn nào cần thi cho môn công nghệ thông tin
+    - cho em hỏi học môn gì thi ngành cntt
+
+## Common ngành toán tin information
+- intent: consultancy/hoi_thanh_lap_khoa_toan_tin
+  examples: |
+    - Khoa toán tin được thành lập như thế nào
+    - Khoa tt được thành lập như thế nào
+    - thành lập khoa tt
+    - khoa toán tin thành lập
+    - thông tin khoa tt 
+    - mình muốn hiểu khoa tt
+    - thông tin khoa toán tin
+    - cho xin tổng quan khoa tt
+    - bạn có thể nói khái quát khoa toán tin
+    - cho em hỏi về khoa tt trường
+
+- intent: consultancy/hoi_nganh_khoa_toan_tin
+  examples: |
+    - khoa toán tin có những ngành nào
+    - cho em hỏi hiện tại ngành toán tin dạy những ngành nào
+    - khoa tt bao gồm những ngành nào
+    - khoa toán tin trường có ngành gì
+    - những ngành của khoa toán tin
+    - các ngành của tt trường
+    - xin thông tin các ngành toán tin trường
+
+- intent: consultancy/hoi_diem_chuan_nganh_toan_tin
+  examples: |
+    - điểm chuẩn các ngành tt trường
+    - cho em hỏi điểm chuẩn của trường ngành toán tin
+    - cho em hỏi điểm chuẩn của trường ngành tt
+    - cho em hỏi điểm của ngành tt
+    - điểm thi ngành toán tin
+    - điểm ngành tt
+    - điểm chuẩn khoa tt
+    - điểm các ngành tt
+    - điểm DGNL các ngành tt
+    - điểm chuẩn đánh giá năm lực ngành tt
+    - điểm đánh giá năm lực ngành tt
+    - điểm chuẩn thi tn thpt ngành tt
+
+- intent: consultancy/hoi_to_hop_mon_nganh_toan_tin
+  examples: |
+    - ngành tt thi những tổ hợp môn nào
+    - tổ hợp môn gì thi ngành toán tin
+    - ngành tt thi tổ hợp môn gì
+    - ngành toán tin thi môn gì
+    - tổ hợp môn nào cần thi cho môn toán tin
+    - cho em hỏi học môn gì thi ngành tt
+
+## Common ngành vật ký information
+- intent: consultancy/hoi_thanh_lap_khoa_vat_ly
+  examples: |
+    - Khoa vật lý được thành lập như thế nào
+    - Khoa vl được thành lập như thế nào
+    - thành lập khoa vl
+    - khoa vật lý thành lập
+    - thông tin khoa vl 
+    - mình muốn hiểu khoa vl
+    - thông tin khoa vật lý
+    - cho xin tổng quan khoa vl
+    - bạn có thể nói khái quát khoa vật lý
+    - cho em hỏi về khoa vl trường
+
+- intent: consultancy/hoi_nganh_khoa_vat_ly
+  examples: |
+    - khoa vật lý có những ngành nào
+    - cho em hỏi hiện tại ngành vật lý dạy những ngành nào
+    - khoa vl bao gồm những ngành nào
+    - khoa vật lý trường có ngành gì
+    - những ngành của khoa vật lý
+    - các ngành của vl trường
+    - xin thông tin các ngành vật lý trường
+
+- intent: consultancy/hoi_diem_chuan_vat_ly
+  examples: |
+    - điểm chuẩn các ngành vl trường
+    - cho em hỏi điểm chuẩn của trường ngành vật lý
+    - cho em hỏi điểm chuẩn của trường ngành vl
+    - cho em hỏi điểm của ngành vl
+    - điểm thi ngành vật lý
+    - điểm ngành vl
+    - điểm chuẩn khoa vl
+    - điểm các ngành vl
+    - điểm DGNL các ngành vl
+    - điểm chuẩn đánh giá năm lực ngành vl
+    - điểm đánh giá năm lực ngành vl
+    - điểm chuẩn thi tn thpt ngành vl
+
+- intent: consultancy/hoi_to_hop_mon_nganh_vat_ly
+  examples: |
+    - ngành vl thi những tổ hợp môn nào
+    - tổ hợp môn gì thi ngành vật lý
+    - ngành vl thi tổ hợp môn gì
+    - ngành vật lý thi môn gì
+    - tổ hợp môn nào cần thi cho môn vật lý
+    - cho em hỏi học môn gì thi ngành vl

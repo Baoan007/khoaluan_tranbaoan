@@ -17,9 +17,18 @@
        rel="stylesheet"
      /> -->
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/general.css') }} " />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/queries.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/general.css') }} "
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/queries.css') }}"
+    />
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -32,7 +41,7 @@
   </head>
   <body>
     <!-- frontend -->
-    <script>
+    <!-- <script>
       !(function () {
         let e = document.createElement("script"),
           t = document.head || document.getElementsByTagName("head")[0];
@@ -53,7 +62,7 @@
           }),
           t.insertBefore(e, t.firstChild);
       })();
-    </script>
+    </script> -->
 
     <header class="header">
       <!-- <a href="#">
@@ -119,7 +128,10 @@
           </div>
           <div class="hero-img-box">
             <video width="100%" height="100%" autoplay loop muted playsinline>
-              <source src="img/video.mp4" type="video/mp4" />
+              <source
+                src="{{ url_for('static', filename='img/video.mp4') }}"
+                type="video/mp4"
+              />
               video
             </video>
           </div>
@@ -200,12 +212,20 @@
           </div>
 
           <div class="step-img-box">
-            <img src="img/1.jpg" class="step-img" alt="Tin tuc" />
+            <img
+              src="{{ url_for('static', filename='img/1.jpg') }}"
+              class="step-img"
+              alt="Tin tuc"
+            />
           </div>
 
           <!-- STEP 02 -->
           <div class="step-img-box">
-            <img src="img/2.jpg" class="step-img" alt="tintuc" />
+            <img
+              src="{{ url_for('static', filename='img/2.jpg') }}"
+              class="step-img"
+              alt="tintuc"
+            />
           </div>
           <div class="step-text-box">
             <p class="step-number margin-bottom-md" id="02">02</p>
@@ -251,7 +271,7 @@
           </div>
           <div class="step-img-box">
             <img
-              src="img/3.jpg"
+              src="{{ url_for('static', filename='img/3.jpg') }}"
               class="step-img"
               alt="iPhone app
           delivery screen"
@@ -274,7 +294,7 @@
           <h2 class="heading-secondary">Những sự kiện nổi bật từ HCMUS</h2>
           <img
             class="meal-img meal"
-            src="img/i/sukien.jpg"
+            src="{{ url_for('static', filename='img/i/sukien.jpg') }}"
             id="sukien1"
             alt="sukien"
           />
@@ -283,7 +303,11 @@
         <dir class="sukien">
           <dir class="grid grid--2-cols">
             <div class="meal">
-              <img src="img/sk.jpg" class="meal-img" alt="học thuật hóa học" />
+              <img
+                src="{{ url_for('static', filename='img/sk.jpg') }} "
+                class="meal-img"
+                alt="học thuật hóa học"
+              />
               <div class="meal-content">
                 <div class="meal-tags">
                   <span class="tag tag--vegetarian">23/4/2023</span>
@@ -300,7 +324,11 @@
             </div>
 
             <div class="meal">
-              <img src="img/sk2.jpg" class="meal-img" alt="học thuật hóa học" />
+              <img
+                src="{{ url_for('static', filename='img/sk2.jpg') }}"
+                class="meal-img"
+                alt="học thuật hóa học"
+              />
 
               <div class="meal-content">
                 <div class="meal-tags">
@@ -356,7 +384,10 @@
           <section class="section-meals">
             <div class="container grid grid--3-cols margin-bottom-md">
               <div class="meal">
-                <img src="img/hoctap3.jpg" class="meal-img" />
+                <img
+                  src="{{ url_for('static', filename='img/hoctap3.jpg') }}"
+                  class="meal-img"
+                />
                 <div class="meal-content">
                   <div class="meal-tags">
                     <span class="tag tag--vegetarian" id="daotao"
@@ -390,7 +421,10 @@
                 </div>
               </div>
               <div class="meal">
-                <img src="img/hoctap4.jpg" class="meal-img" />
+                <img
+                  src="{{ url_for('static', filename='img/hoctap4.jpg') }}"
+                  class="meal-img"
+                />
                 <div class="meal-content">
                   <div class="meal-tags">
                     <span class="tag tag--vegetarian">Hệ đại trà</span>
@@ -512,7 +546,7 @@
         <dir class="container">
           <img
             id="ts"
-            src="img/tuyensinh.png"
+            src="{{ url_for('static', filename='img/tuyensinh.png') }}"
             class="meal"
             style="width: 100%; margin-bottom: 2rem"
             alt="tuyensinh"
@@ -625,7 +659,11 @@
           </address>
         </div>
         <dir>
-          <img class="meal" src="img/tunhien1.jpg" alt="" />
+          <img
+            class="meal"
+            src="{{ url_for('static', filename='img/tunhien1.jpg') }}"
+            alt=""
+          />
         </dir>
       </div>
     </footer>
@@ -645,7 +683,16 @@
         color: aqua;
       }
     </style>
+
+    <div
+      id="rasa-chat-widget"
+      data-websocket-url="http://localhost:5005/"
+    ></div>
     <div id="webchat" />
+    <script
+      src="https://unpkg.com/@rasahq/rasa-chat"
+      type="application/javascript"
+    ></script>
 
     <script>
       !(function () {
@@ -659,19 +706,23 @@
             window.WebChat.default(
               {
                 initPayload: "/greet",
+                // selector: "#webchat",
                 customData: { language: "en" },
-                // socketUrl: "http://localhost:5005",
+
+                // socketUrl: "http://localhost:5000",
+                // socketUrl: "http://localhost:5000",
                 socketUrl: "http://localhost:5005",
+                // socketPath: "/socket.io/",
                 title: "AI Chatbot",
                 params: {
                   images: {
                     dims: {
                       width: 300,
-                      height: 200,
-                    },
-                  },
+                      height: 200
+                    }
+                  }
                 },
-                subtitle: "Tư vấn tuyển sinh Đại học - HCMUS",
+                subtitle: "Tư vấn tuyển sinh Đại học - HCMUS"
                 // add other props here
               },
               null
