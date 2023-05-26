@@ -51,6 +51,9 @@ class GetChitieuNganhAction(Action):
         return "action_get_chitieu_nganh"
 
     def run(self, dispatcher, tracker, domain):
+        print("Lấy action và message")
+        print(tracker.latest_message)
+
         nganh = tracker.get_slot('chi_tieu')
 
         # Truy vấn cơ sở dữ liệu để lấy chỉ tiêu của ngành

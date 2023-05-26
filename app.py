@@ -44,52 +44,52 @@ register_cors(app)
 
 
 # Endpoint để nhận yêu cầu từ Rasa Server
-@app.route('/webhook', methods=['POST'])
-def webhook():
-    data = request.json
-    action_name = data['next_action']
-    tracker_dict = data['tracker']
+# @app.route('/webhook', methods=['POST'])
+# def webhook():
+#     data = request.json
+#     action_name = data['next_action']
+#     tracker_dict = data['tracker']
 
-    # Tạo đối tượng Tracker từ dữ liệu nhận được
-    tracker = Tracker.from_dict(tracker_dict)
+#     # Tạo đối tượng Tracker từ dữ liệu nhận được
+#     tracker = Tracker.from_dict(tracker_dict)
 
-    # Tạo đối tượng CollectingDispatcher để gửi phản hồi cho người dùng
-    dispatcher = CollectingDispatcher()
+#     # Tạo đối tượng CollectingDispatcher để gửi phản hồi cho người dùng
+#     dispatcher = CollectingDispatcher()
 
-    # Gọi Action tương ứng
-    action = get_action(action_name)
-    action.run(dispatcher, tracker, {})
+#     # Gọi Action tương ứng
+#     action = get_action(action_name)
+#     action.run(dispatcher, tracker, {})
 
-    # Lấy các phản hồi đã thu thập được
-    responses = dispatcher.messages
+#     # Lấy các phản hồi đã thu thập được
+#     responses = dispatcher.messages
 
-    # Trả về phản hồi cho Rasa Server
-    return jsonify(responses)
+#     # Trả về phản hồi cho Rasa Server
+#     return jsonify(responses)
 
 # Hàm helper để lấy Action từ tên Action
 
 
-def get_action(action_name):
-    if action_name == 'action_get_chitieu_nganh':
-        return GetChitieuNganhAction()
+# def get_action(action_name):
+#     if action_name == 'action_get_chitieu_nganh':
+#         return GetChitieuNganhAction()
 
-# Action để lấy chỉ tiêu ngành
+# # Action để lấy chỉ tiêu ngành
 
 
-class GetChitieuNganhAction(Action):
-    def name(self):
-        return "action_get_chitieu_nganh"
+# class GetChitieuNganhAction(Action):
+#     def name(self):
+#         return "action_get_chitieu_nganh"
 
-    def run(self, dispatcher, tracker, domain):
-        nganh = tracker.get_slot('nganh')
+#     def run(self, dispatcher, tracker, domain):
+#         nganh = tracker.get_slot('nganh')
 
-        # Truy vấn cơ sở dữ liệu để lấy chỉ tiêu của ngành
-        # code truy vấn cơ sở dữ liệu ở đây
+#         # Truy vấn cơ sở dữ liệu để lấy chỉ tiêu của ngành
+#         # code truy vấn cơ sở dữ liệu ở đây
 
-        # Gửi phản hồi cho người dùng
-        dispatcher.utter_message(text=f"Chỉ tiêu ngành {nganh} là X")
+#         # Gửi phản hồi cho người dùng
+#         dispatcher.utter_message(text=f"Chỉ tiêu ngành {nganh} là X")
 
-        return []
+#         return []
 
 
 @app.route('/')

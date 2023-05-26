@@ -241,7 +241,8 @@ body {
 *:focus {
   outline: none;
 
-  box-shadow: 0 0 0 0.8rem var(--color-primary);
+  /* Không cần shadow khi focus đâu nhìn xấu lắm */
+  /* box-shadow: 0 0 0 0.8rem var(--color-primary); */
 }
 
 /* HELPER/SETTINGS CLASSES */
