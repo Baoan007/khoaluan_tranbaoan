@@ -93,6 +93,6 @@ rasa run actions
 
 # cd rasa && rasa run -m models --enable-api --cors "\*" --debug
 
-# cd rasa Run --enable-api --cors "\*"
+# cd rasa run --enable-api --cors "\*"
 
 # cd rasa && rasa run actions

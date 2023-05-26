@@ -1,7 +1,6 @@
 
 from flask import request, jsonify
 from flask import Flask
-# from flask_cors import CORS
 from flask import Flask, render_template, jsonify, request, abort, jsonify
 import os
 # from rasa_api import register_bot_dev, call_rasa_model
@@ -16,7 +15,6 @@ from rasa_sdk import Action, Tracker
 from database.migrate import register_migrate_db
 from flask_cors import CORS
 from routes.cors import register_cors
-from utils.socket import register_socket, socketio
 from flask_wtf.csrf import CSRFProtect, generate_csrf
 from routes.cors import csrf
 
@@ -33,8 +31,6 @@ register_migrate_db()
 # Register cors
 register_cors(app)
 
-# Register socket
-register_socket(app)
 
 # @app.route("/chat", methods=["GET"])
 # def chat():
@@ -106,25 +102,6 @@ def index():
 @app.errorhandler(404)
 def page_not_found(error):
     return 'This route does not exist {}'.format(request.url), 404
-
-
-# @app.route('/socket.io/')
-# def socketio_endpoint():
-#     # Forward the request to Rasa
-#     # socketio_manage(request.environ, {'/socket.io': SocketHandler}, app=app)
-#     return 'OK'
-
-
-@socketio.on('connect')
-@csrf.exempt
-def handle_connect():
-    print('Client connected')
-
-
-@socketio.on('disconnect')
-@csrf.exempt
-def handle_disconnect():
-    print('Client disconnected')
 
 
 if __name__ == '__main__':

@@ -1,9 +1,9 @@
+
 # Chạy flask
 python app.py
-# Chạy socket với và allow cors
-cd rasa&&rasa run --enable-api --cors "*"
-rasa run --cors "*"
+
 # Chạy tất rasa api
 cd rasa&&rasa run actions
 
+# Chạy cors
 cd rasa&&rasa run --cors "*"
