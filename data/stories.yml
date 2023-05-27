@@ -1,0 +1,58 @@
+version: "3.1"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+
+  # - story: path about time
+  #   steps:
+  #     - intent: greet
+  #     - action: utter_greet
+  #     - intent: give_time
+  #     - action: action_show_time
+
+  # - story: path about chi tieu
+  #   steps:
+  #     - intent: greet
+  #     - action: utter_greet
+  #     - intent: get_chi_tieu
+  #     - action: action_get_chitieu_nganh
+
+  # Flow Story ->
+  # user: Chào
+  # bot: Tôi! có thể giúp gì cho bạn
+  # user: Tôi muốn tìm thông tin về ngành {sinh học}
+  # bot: Gọi action search_nganh_sinh_học trong file actions
+
+  - story: Tìm kiếm theo tên ngành
+    steps:
+      - intent: greet_hello #-> file domain.yml -> intents -> nlu (greet_hello)
+      - action: utter_greet_hello #-> file domain.yml -> responses -> utter_greet_hello
+      - intent: search_nganh_hoc # -> file domain.yml -> intents -> nlu (search_nganh_hoc)
+        # entities:
+        # - ten_nganh:
+      - action: action_search_nganh_hoc # file domain.yml -> actions

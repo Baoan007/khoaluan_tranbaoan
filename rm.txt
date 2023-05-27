@@ -7,3 +7,13 @@ cd rasa&&rasa run actions
 
 # Chạy cors
 cd rasa&&rasa run --cors "*"
+hoặc debug
+cd rasa && rasa run -m models --enable-api --cors "*" --debug
+
+# Validate dữ liệu trước khi train
+rasa data validate
+# Update dữ liệu và tạo file model
+rasa train
+
+
+rasa shell --debug
