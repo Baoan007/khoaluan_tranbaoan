@@ -22,5 +22,3 @@ rasa shell --debug
 
 rasa train nlu
 
-
- pip uninstall uvloop
