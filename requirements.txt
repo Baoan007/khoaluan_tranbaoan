@@ -11,3 +11,4 @@ flask_sqlalchemy
 rasa-sdk
 flask-socketio
 eventlet
+flask_migrate

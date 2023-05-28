@@ -11,7 +11,7 @@ source env/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 
-# Cập nhật thêm thư viện
+# Cập nhật thêm thư viện rasa machine learning -(Không cần cập nhật vì chưa dùng đến)
 
 pip install -r requirements_u.txt
 pip install -U 'rasa[spacy]'
@@ -34,6 +34,8 @@ Rj7@{=TNK4DN)j@T
 
 cd .. &&cd home/khtntuyensinh.autos&&source env/bin/activate&&nohup python app.py
 
+# Phần config nginx - (Không cần quan tâm phần này)
+
 cd .. &&cd etc/nginx/
 
 sudo systemctl nginx start
@@ -49,11 +51,6 @@ sudo systemctl restart nginx
 - python
 
 # Kết nối rasa
-
-B1. Xây dựng route(API) -> Post(params:{message:'greet'})
-B2.
-
-- Không thể train được ra theo ý bạn tại vì đây là bên thứ 3 nó đã đã train bên web nó bạn cái đó bạn đã sử dụng api của nó.
 
 # Chạy rasa javascript
 
@@ -93,17 +90,39 @@ rasa run -m models --enable-api --cors "\*" --debug
 
 rasa run actions
 
+**\*\***\_**\*\*** Hướng dẫn cơ bản rasa \***\*\_\*\***
+
 # train rasa -> tạo ra models
 
-# cd rasa && rasa train
+# Mỗi khi thay đổi 1 gì đó trong các file của rasa phải train lại
 
-# cd rasa && rasa run -m models --enable-api --cors "\*" --debug
+Kiểm tra xem có lỗi trước khi train hay không
+rasa data validate
+Chạy generate ra models
+rasa train
 
-# cd rasa run --enable-api --cors "\*"
+# Cứu pháp chạy rasa**\_**
 
-# cd rasa && rasa run actions
+# Cứu pháp debug
+
+rasa run -m models --enable-api --cors "\*" --debug
+
+# Cứu pháp rút gọn
+
+rasa run --enable-api --cors "\*"
+
+# Chạy action custom**\_\_**
+
+rasa run actions
+
+# only Train nlu
 
 rasa train nlu
 
-ctrl+C
-hiện menu trong interactive
+# Chạy trên terminal
+
+rasa shell --debug
+
+# Chọn menu interactive khi chạy hết story
+
+ctrl+C -> chọn start session
