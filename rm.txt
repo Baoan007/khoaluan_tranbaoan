@@ -15,5 +15,12 @@ rasa data validate
 # Update dữ liệu và tạo file model
 rasa train
 
+# Visual
+rasa interactive
 
 rasa shell --debug
+
+rasa train nlu
+
+
+ pip uninstall uvloop

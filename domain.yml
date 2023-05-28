@@ -15,6 +15,14 @@ intents:
   - search_nganh_hoc:
       use_entities:
         - ten_nganh
+  # Lấy tất cả ngành học hiện có
+  - get_nganh_hoc
+  - action_get_nganh_hoc
+
+  # Test slot
+  - ask_me_anything
+  - repeat_shirt_size
+  - give_shirt_size
 
 # slots:
 #   ten_nganh: # Biến để dùng cho custom action get tracker.get_slot("ten_nganh")
@@ -24,6 +32,8 @@ actions:
   # - action_show_time
   # - action_get_chitieu_nganh
   - action_search_nganh_hoc
+  - action_say_shirt_size
+  - action_get_nganh_hoc
 
 responses:
   utter_greet:
@@ -49,6 +59,11 @@ responses:
   utter_greet_hello:
     - text: "Chào! tôi có thể giúp gì cho bạn"
 
+  utter_ask_shirt_size:
+    - text: What is your shirt size?
+  utter_remember:
+    - text: Thanks. I'll remember that.
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
@@ -59,14 +74,41 @@ session_config:
 # Dùng để Lưu session thôi chứ không có làm gì_____ Bằng [SlotSet('nganh', nganh)]
 entities:
   - ten_nganh
+  - khoa
+  - ma_chuyen_nganh
+  - chi_tieu
+  - hoc_phi_du_kien
+  - shirt_size
+  # - PERSON # entity extracted by SpacyEntityExtractor
+  # - time # entity extracted by DucklingEntityExtractor
+  # - membership_type # custom entity extracted by DIETClassifier
+  # - priority # custom entity extracted by DIETClassifier
 
 slots:
   ten_nganh:
     type: text
     mappings: # Bắt buộc phải có mapping
       - type: from_entity
-        # - type: custom
         entity: ten_nganh
         # this slot will not influence the predictions
         # of the dialogue policies
         influence_conversation: false
+        conditions:
+          - active_loop: ten_nganh_form
+  shirt_size:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: shirt_size
+        conditions:
+          - active_loop: shirt_size_form
+
+forms:
+  ten_nganh_form:
+    required_slots:
+      - ten_nganh
+
+  shirt_size_form:
+    required_slots:
+      - shirt_size

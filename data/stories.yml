@@ -35,13 +35,6 @@ stories:
   #     - intent: give_time
   #     - action: action_show_time
 
-  # - story: path about chi tieu
-  #   steps:
-  #     - intent: greet
-  #     - action: utter_greet
-  #     - intent: get_chi_tieu
-  #     - action: action_get_chitieu_nganh
-
   # Flow Story ->
   # user: Chào
   # bot: Tôi! có thể giúp gì cho bạn
@@ -53,6 +46,31 @@ stories:
       - intent: greet_hello #-> file domain.yml -> intents -> nlu (greet_hello)
       - action: utter_greet_hello #-> file domain.yml -> responses -> utter_greet_hello
       - intent: search_nganh_hoc # -> file domain.yml -> intents -> nlu (search_nganh_hoc)
-        # entities:
-        # - ten_nganh:
+        entities:
+          - ten_nganh: "sinh học"
       - action: action_search_nganh_hoc # file domain.yml -> actions
+      - intent: mood_great
+      - action: utter_goodbye
+
+  - story: interactive story 1
+    steps:
+      - intent: ask_me_anything
+      - action: shirt_size_form
+      - active_loop: shirt_size_form
+      - slot_was_set:
+          - requested_slot: shirt_size
+      - slot_was_set:
+          - requested_slot: medium
+      - slot_was_set:
+          - requested_slot: null
+      - active_loop: null
+      - action: utter_remember
+      - intent: repeat_shirt_size
+      - action: utter_happy
+
+  # - story: Hiển thị tất cả các ngành
+  #   steps:
+  #     - intent: greet_hello #-> file domain.yml -> intents -> nlu (greet_hello)
+  #     - action: utter_greet_hello #-> file domain.yml -> responses -> utter_greet_hello
+  #     - intent: get_nganh_hoc # -> file domain.yml -> intents -> nlu (search_nganh_hoc)
+  #     - action: action_get_nganh_hoc # file domain.yml -> actions

@@ -11,6 +11,12 @@ source env/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 
+# Cập nhật thêm thư viện
+
+pip install -r requirements_u.txt
+pip install -U 'rasa[spacy]'
+spacy download en_core_web_lg
+
 nohup python app.py
 
 # Cấu trúc thư mục
@@ -96,3 +102,8 @@ rasa run actions
 # cd rasa run --enable-api --cors "\*"
 
 # cd rasa && rasa run actions
+
+rasa train nlu
+
+ctrl+C
+hiện menu trong interactive
