@@ -162,3 +162,10 @@ nlu:
       - i want a [large](shirt_size) shirt please
       - i want to give you my shirt
       - [large](shirt_size)
+
+  - intent: search_nganh_hoc_chi_tieu
+    examples: |
+      - Bạn lấy cho tôi chỉ tiêu của ngành [sinh học](ten_nganh)?
+      - Bạn lấy cho tôi về ngành [khoa học máy tính](ten_nganh)
+      - Chỉ tiêu của ngành [hóa học](ten_nganh)
+      - Chỉ tiêu ngành [Công nghệ Sinh học](ten_nganh)

@@ -18,11 +18,12 @@ import requests
 import json
 
 import re
-from rasa_sdk.events import SlotSet
+from rasa_sdk.events import SlotSet, AllSlotsReset
 from utils.utils import format_amount
 from database.models.tuyen_sinh import TuyenSinh
 from config import app_config
 from actions.get_nganh import get_nganh
+from actions.get_chi_tieu_nganh import get_chi_tieu_nganh
 
 # from flask import Flask
 # from flask_sqlalchemy import SQLAlchemy
@@ -51,6 +52,29 @@ class SearchNganhHocAction(Action):
         print(tracker.__dict__)
         ten_nganh = None
         res_nganh_hoc = get_nganh(text)
+        print(res_nganh_hoc)
+        # Bot gửi cho user
+        dispatcher.utter_message(text=res_nganh_hoc['message'])
+
+        # Lưu cho slot dùng cho các action khác
+        # return [SlotSet("ten_nganh", ten_nganh)]
+        SlotSet("ten_nganh", res_nganh_hoc['ten_nganh'])
+        return []
+
+
+class SearchNganhChiTieuAction(Action):
+    def name(self) -> Text:
+        return "action_search_nganh_hoc_chi_tieu"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        print("Chạy hàm run")
+        text = tracker.latest_message['text']
+        # name_message = tracker.latest_message['intent'].get('name')
+        # Có thể xử lí dạng api
+        print(tracker.__dict__)
+        ten_nganh = None
+        res_nganh_hoc = get_chi_tieu_nganh(text)
+        print(res_nganh_hoc)
         # Bot gửi cho user
         dispatcher.utter_message(text=res_nganh_hoc['message'])
 
