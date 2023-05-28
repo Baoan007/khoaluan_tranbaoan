@@ -5,3 +5,5 @@ package-lock.json/
 # .env
 # config.py
 cron_logger.log
+models/
+.rasa/
