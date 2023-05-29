@@ -138,4 +138,4 @@ DB_Password: Mzc1Y2IyOTA2Yzc5M2IwYWUxM2ZlODM3
 
 # Chạy lên server
 
-nohup rasa run actions&nohup rasa run -m models --enable-api --cors "\*" &nohup python app.py&
+nohup rasa run actions&nohup rasa run -m models --enable-api --cors "\*" &nohup python app.py

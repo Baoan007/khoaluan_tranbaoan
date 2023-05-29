@@ -37,7 +37,10 @@ register_blueprints(app)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    payload = {
+        "domain": app_config.DOMAIN
+    }
+    return render_template('index.html', payload=payload)
 
 
 @app.errorhandler(404)

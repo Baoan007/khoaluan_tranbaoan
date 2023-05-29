@@ -710,7 +710,8 @@
                 // initPayload: "/greet",
                 selector: "#webchat",
                 customData: { language: "en" },
-                socketUrl: "http://localhost:5005",
+                // socketUrl: "http://localhost:5005",
+                socketUrl: "{{payload.domain}}",
                 title: "AI Chatbot",
                 params: {
                   images: {
