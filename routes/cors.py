@@ -10,4 +10,4 @@ def register_cors(app):
     # Cấu hình CORS
     csrf.init_app(app)
     CORS(app, origins=['http://127.0.0.1:8000', 'http://localhost:5055', 'http://localhost:5005', 'http://127.0.0.1:5000', 'http://khtntuyensinh.autos',
-         'http://khtntuyensinh.info'])
+         'http://khtntuyensinh.info', 'http://0.0.0.0:5055'])
