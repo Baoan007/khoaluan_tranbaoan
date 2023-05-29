@@ -47,6 +47,8 @@ class SearchNganhHocAction(Action):
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         print("Chạy hàm run")
         text = tracker.latest_message['text']
+        # conversation_id = tracker.sender_id
+        # print(conversation_id)
         # name_message = tracker.latest_message['intent'].get('name')
         # Có thể xử lí dạng api
         print(tracker.__dict__)

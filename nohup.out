@@ -1,0 +1,399 @@
+ * Serving Flask app 'app'
+ * Debug mode: off
+Address already in use
+Port 8000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/rasa/core/tracker_store.py:1048: MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base: DeclarativeMeta = declarative_base()
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/dns/hash.py:23: DeprecationWarning: dns.hash module will be removed in future versions. Please use hashlib instead.
+  warnings.warn(
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/dns/namedict.py:35: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+  class NameDict(collections.MutableMapping):
+2023-05-29 20:33:25 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+2023-05-29 20:33:26 INFO     rasa_sdk.executor  - Registered function for 'action_search_nganh_hoc'.
+2023-05-29 20:33:26 INFO     rasa_sdk.executor  - Registered function for 'action_search_nganh_hoc_chi_tieu'.
+2023-05-29 20:33:26 INFO     rasa_sdk.executor  - Registered function for 'action_get_nganh_hoc'.
+2023-05-29 20:33:26 INFO     rasa_sdk.executor  - Registered function for 'action_say_shirt_size'.
+2023-05-29 20:33:26 INFO     rasa_sdk.endpoint  - Action endpoint is up and running on http://0.0.0.0:5055
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/rasa/core/tracker_store.py:1048: MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base: DeclarativeMeta = declarative_base()
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/dns/hash.py:23: DeprecationWarning: dns.hash module will be removed in future versions. Please use hashlib instead.
+  warnings.warn(
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/dns/namedict.py:35: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+  class NameDict(collections.MutableMapping):
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/tensorflow/python/framework/dtypes.py:246: DeprecationWarning: `np.bool8` is a deprecated alias for `np.bool_`.  (Deprecated NumPy 1.24)
+  np.bool8: (False, True),
+2023-05-29 20:33:35 INFO     root  - Starting Rasa server on http://0.0.0.0:5005
+[93m/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/rasa/shared/utils/io.py:99: UserWarning: No valid model found at models!
+[0m2023-05-29 20:33:37 INFO     root  - Rasa server is up and running.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+[33mPress CTRL+C to quit[0m
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/rasa/core/tracker_store.py:1048: MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base: DeclarativeMeta = declarative_base()
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/dns/hash.py:23: DeprecationWarning: dns.hash module will be removed in future versions. Please use hashlib instead.
+  warnings.warn(
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/dns/namedict.py:35: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+  class NameDict(collections.MutableMapping):
+2023-05-29 20:33:38 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+2023-05-29 20:33:38 INFO     rasa_sdk.executor  - Registered function for 'action_search_nganh_hoc'.
+2023-05-29 20:33:38 INFO     rasa_sdk.executor  - Registered function for 'action_search_nganh_hoc_chi_tieu'.
+2023-05-29 20:33:38 INFO     rasa_sdk.executor  - Registered function for 'action_get_nganh_hoc'.
+2023-05-29 20:33:38 INFO     rasa_sdk.executor  - Registered function for 'action_say_shirt_size'.
+2023-05-29 20:33:39 INFO     rasa_sdk.endpoint  - Action endpoint is up and running on http://0.0.0.0:5055
+Unable to start server
+Traceback (most recent call last):
+  File "/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/sanic/server/runners.py", line 133, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/asyncio/base_events.py", line 1463, in create_server
+    raise OSError(err.errno, 'error while attempting '
+OSError: [Errno 48] error while attempting to bind on address ('0.0.0.0', 5055): address already in use
+127.0.0.1 - - [29/May/2023 20:33:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/May/2023 20:33:42] "[36mGET /templates/css/general.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:42] "[36mGET /templates/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:42] "[36mGET /templates/css/queries.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:42] "[36mGET /templates/img/2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:42] "[36mGET /templates/img/3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:42] "[36mGET /templates/img/1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:42] "[36mGET /templates/img/i/sukien.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:42] "[36mGET /templates/img/sk.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:42] "[36mGET /templates/img/sk2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:42] "[36mGET /templates/img/hoctap3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:42] "[36mGET /templates/img/hoctap4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:42] "[36mGET /templates/img/tuyensinh.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:42] "[36mGET /templates/img/tunhien1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:43] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/May/2023 20:33:43] "[36mGET /templates/css/general.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:43] "[36mGET /templates/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:43] "[36mGET /templates/css/queries.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:43] "[36mGET /templates/img/sk.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:43] "[36mGET /templates/img/3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:43] "[36mGET /templates/img/1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:43] "[36mGET /templates/img/2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:43] "[36mGET /templates/img/i/sukien.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:43] "[36mGET /templates/img/sk2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:43] "[36mGET /templates/img/hoctap3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:43] "[36mGET /templates/img/hoctap4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:43] "[36mGET /templates/img/tuyensinh.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:33:43] "[36mGET /templates/img/tunhien1.jpg HTTP/1.1[0m" 304 -
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/rasa/core/tracker_store.py:1048: MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base: DeclarativeMeta = declarative_base()
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/dns/hash.py:23: DeprecationWarning: dns.hash module will be removed in future versions. Please use hashlib instead.
+  warnings.warn(
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/dns/namedict.py:35: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+  class NameDict(collections.MutableMapping):
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/tensorflow/python/framework/dtypes.py:246: DeprecationWarning: `np.bool8` is a deprecated alias for `np.bool_`.  (Deprecated NumPy 1.24)
+  np.bool8: (False, True),
+2023-05-29 20:33:47 INFO     root  - Starting Rasa server on http://0.0.0.0:5005
+[93m/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/rasa/shared/utils/io.py:99: UserWarning: No valid model found at models!
+[0m2023-05-29 20:33:49 INFO     root  - Rasa server is up and running.
+[2023-05-29 20:33:49 +0700] [17551] [ERROR] Unable to start server
+Traceback (most recent call last):
+  File "/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/sanic/server/runners.py", line 133, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/asyncio/base_events.py", line 1463, in create_server
+    raise OSError(err.errno, 'error while attempting '
+OSError: [Errno 48] error while attempting to bind on address ('0.0.0.0', 5005): address already in use
+127.0.0.1 - - [29/May/2023 20:34:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/May/2023 20:34:18] "[36mGET /templates/css/general.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:34:18] "[36mGET /templates/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:34:18] "[36mGET /templates/css/queries.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:34:18] "[36mGET /templates/img/1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:34:18] "[36mGET /templates/img/3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:34:18] "[36mGET /templates/img/2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:34:18] "[36mGET /templates/img/i/sukien.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:34:18] "[36mGET /templates/img/sk.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:34:18] "[36mGET /templates/img/sk2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:34:18] "[36mGET /templates/img/hoctap3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:34:18] "[36mGET /templates/img/tuyensinh.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:34:18] "[36mGET /templates/img/tunhien1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:34:18] "[36mGET /templates/img/hoctap4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:38:33] "[35m[1mGET /templates/img/video.mp4 HTTP/1.1[0m" 206 -
+127.0.0.1 - - [29/May/2023 20:38:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/May/2023 20:38:34] "[36mGET /templates/css/general.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:38:34] "[36mGET /templates/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:38:34] "[36mGET /templates/css/queries.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:38:34] "[36mGET /templates/img/1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:38:34] "[36mGET /templates/img/3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:38:34] "[36mGET /templates/img/2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:38:34] "[36mGET /templates/img/i/sukien.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:38:34] "[36mGET /templates/img/sk.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:38:34] "[36mGET /templates/img/sk2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:38:34] "[36mGET /templates/img/hoctap3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:38:34] "[36mGET /templates/img/hoctap4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:38:34] "[35m[1mGET /templates/img/video.mp4 HTTP/1.1[0m" 206 -
+127.0.0.1 - - [29/May/2023 20:38:34] "[36mGET /templates/img/tuyensinh.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:38:34] "[36mGET /templates/img/lienhe.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:38:34] "[36mGET /templates/img/tunhien1.jpg HTTP/1.1[0m" 304 -
+ * Serving Flask app 'app'
+ * Debug mode: on
+Address already in use
+Port 8000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/rasa/core/tracker_store.py:1048: MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base: DeclarativeMeta = declarative_base()
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/dns/hash.py:23: DeprecationWarning: dns.hash module will be removed in future versions. Please use hashlib instead.
+  warnings.warn(
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/dns/namedict.py:35: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+  class NameDict(collections.MutableMapping):
+2023-05-29 20:38:56 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+2023-05-29 20:38:57 INFO     rasa_sdk.executor  - Registered function for 'action_search_nganh_hoc'.
+2023-05-29 20:38:57 INFO     rasa_sdk.executor  - Registered function for 'action_search_nganh_hoc_chi_tieu'.
+2023-05-29 20:38:57 INFO     rasa_sdk.executor  - Registered function for 'action_get_nganh_hoc'.
+2023-05-29 20:38:57 INFO     rasa_sdk.executor  - Registered function for 'action_say_shirt_size'.
+2023-05-29 20:38:57 INFO     rasa_sdk.endpoint  - Action endpoint is up and running on http://0.0.0.0:5055
+Unable to start server
+Traceback (most recent call last):
+  File "/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/sanic/server/runners.py", line 133, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/asyncio/base_events.py", line 1463, in create_server
+    raise OSError(err.errno, 'error while attempting '
+OSError: [Errno 48] error while attempting to bind on address ('0.0.0.0', 5055): address already in use
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/rasa/core/tracker_store.py:1048: MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base: DeclarativeMeta = declarative_base()
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/dns/hash.py:23: DeprecationWarning: dns.hash module will be removed in future versions. Please use hashlib instead.
+  warnings.warn(
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/dns/namedict.py:35: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+  class NameDict(collections.MutableMapping):
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/tensorflow/python/framework/dtypes.py:246: DeprecationWarning: `np.bool8` is a deprecated alias for `np.bool_`.  (Deprecated NumPy 1.24)
+  np.bool8: (False, True),
+2023-05-29 20:39:05 INFO     root  - Starting Rasa server on http://0.0.0.0:5005
+[93m/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/rasa/shared/utils/io.py:99: UserWarning: No valid model found at models!
+[0m2023-05-29 20:39:06 INFO     root  - Rasa server is up and running.
+[2023-05-29 20:39:06 +0700] [17970] [ERROR] Unable to start server
+Traceback (most recent call last):
+  File "/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/sanic/server/runners.py", line 133, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/asyncio/base_events.py", line 1463, in create_server
+    raise OSError(err.errno, 'error while attempting '
+OSError: [Errno 48] error while attempting to bind on address ('0.0.0.0', 5005): address already in use
+127.0.0.1 - - [29/May/2023 20:40:18] "[35m[1mGET /templates/img/video.mp4 HTTP/1.1[0m" 206 -
+127.0.0.1 - - [29/May/2023 20:40:18] "[35m[1mGET /templates/img/video.mp4 HTTP/1.1[0m" 206 -
+127.0.0.1 - - [29/May/2023 20:40:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/May/2023 20:40:18] "[36mGET /templates/css/general.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:40:18] "[36mGET /templates/css/queries.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:40:18] "[36mGET /templates/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:40:18] "[36mGET /templates/img/i/sukien.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:40:18] "[36mGET /templates/img/2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:40:18] "[36mGET /templates/img/sk.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:40:18] "[36mGET /templates/img/1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:40:18] "[36mGET /templates/img/3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:40:18] "[36mGET /templates/img/sk2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:40:18] "[36mGET /templates/img/hoctap3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:40:18] "[36mGET /templates/img/hoctap4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:40:18] "[36mGET /templates/img/tuyensinh.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:40:18] "[36mGET /templates/img/tunhien1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:40:18] "[36mGET /templates/img/lienhe.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:44:39] "[35m[1mGET /templates/img/video.mp4 HTTP/1.1[0m" 206 -
+127.0.0.1 - - [29/May/2023 20:44:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/May/2023 20:44:40] "[36mGET /templates/css/general.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:44:40] "[36mGET /templates/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:44:40] "[36mGET /templates/css/queries.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:44:40] "[36mGET /templates/img/2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:44:40] "[36mGET /templates/img/1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:44:40] "[36mGET /templates/img/3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:44:40] "[36mGET /templates/img/i/sukien.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:44:40] "[36mGET /templates/img/sk.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:44:40] "[36mGET /templates/img/sk2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:44:40] "[36mGET /templates/img/hoctap3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:44:40] "[36mGET /templates/img/hoctap4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:44:40] "[36mGET /templates/img/tunhien1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:44:40] "[35m[1mGET /templates/img/video.mp4 HTTP/1.1[0m" 206 -
+127.0.0.1 - - [29/May/2023 20:44:40] "[36mGET /templates/img/lienhe.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:44:40] "[36mGET /templates/img/tuyensinh.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:44:58] "[35m[1mGET /templates/img/video.mp4 HTTP/1.1[0m" 206 -
+127.0.0.1 - - [29/May/2023 20:44:58] "[35m[1mGET /templates/img/video.mp4 HTTP/1.1[0m" 206 -
+ * Serving Flask app 'app'
+ * Debug mode: on
+Address already in use
+Port 8000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/rasa/core/tracker_store.py:1048: MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base: DeclarativeMeta = declarative_base()
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/dns/hash.py:23: DeprecationWarning: dns.hash module will be removed in future versions. Please use hashlib instead.
+  warnings.warn(
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/dns/namedict.py:35: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+  class NameDict(collections.MutableMapping):
+2023-05-29 20:45:06 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+2023-05-29 20:45:06 INFO     rasa_sdk.executor  - Registered function for 'action_search_nganh_hoc'.
+2023-05-29 20:45:06 INFO     rasa_sdk.executor  - Registered function for 'action_search_nganh_hoc_chi_tieu'.
+2023-05-29 20:45:06 INFO     rasa_sdk.executor  - Registered function for 'action_get_nganh_hoc'.
+2023-05-29 20:45:06 INFO     rasa_sdk.executor  - Registered function for 'action_say_shirt_size'.
+2023-05-29 20:45:06 INFO     rasa_sdk.endpoint  - Action endpoint is up and running on http://0.0.0.0:5055
+Unable to start server
+Traceback (most recent call last):
+  File "/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/sanic/server/runners.py", line 133, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/asyncio/base_events.py", line 1463, in create_server
+    raise OSError(err.errno, 'error while attempting '
+OSError: [Errno 48] error while attempting to bind on address ('0.0.0.0', 5055): address already in use
+127.0.0.1 - - [29/May/2023 20:45:06] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/May/2023 20:45:06] "[36mGET /templates/css/general.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:06] "[36mGET /templates/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:06] "[36mGET /templates/css/queries.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:06] "[36mGET /templates/img/1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:06] "[36mGET /templates/img/2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:06] "[36mGET /templates/img/i/sukien.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:06] "[36mGET /templates/img/3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:06] "[36mGET /templates/img/sk.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:06] "[36mGET /templates/img/sk2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:06] "[36mGET /templates/img/hoctap3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:06] "[36mGET /templates/img/hoctap4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:06] "[36mGET /templates/img/tuyensinh.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:06] "[36mGET /templates/img/tunhien1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:06] "[36mGET /templates/img/lienhe.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:07] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/May/2023 20:45:08] "[36mGET /templates/css/general.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:08] "[36mGET /templates/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:08] "[36mGET /templates/css/queries.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:08] "[36mGET /templates/img/1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:08] "[36mGET /templates/img/2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:08] "[36mGET /templates/img/3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:08] "[36mGET /templates/img/i/sukien.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:08] "[36mGET /templates/img/sk.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:08] "[36mGET /templates/img/sk2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:08] "[36mGET /templates/img/hoctap3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:08] "[36mGET /templates/img/hoctap4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:08] "[36mGET /templates/img/tuyensinh.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:08] "[36mGET /templates/img/tunhien1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:08] "[36mGET /templates/img/lienhe.jpg HTTP/1.1[0m" 304 -
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/rasa/core/tracker_store.py:1048: MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base: DeclarativeMeta = declarative_base()
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/dns/hash.py:23: DeprecationWarning: dns.hash module will be removed in future versions. Please use hashlib instead.
+  warnings.warn(
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/dns/namedict.py:35: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+  class NameDict(collections.MutableMapping):
+/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/tensorflow/python/framework/dtypes.py:246: DeprecationWarning: `np.bool8` is a deprecated alias for `np.bool_`.  (Deprecated NumPy 1.24)
+  np.bool8: (False, True),
+2023-05-29 20:45:15 INFO     root  - Starting Rasa server on http://0.0.0.0:5005
+127.0.0.1 - - [29/May/2023 20:45:17] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/May/2023 20:45:17] "[36mGET /templates/css/general.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:17] "[36mGET /templates/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:17] "[36mGET /templates/css/queries.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:17] "[36mGET /templates/img/2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:17] "[36mGET /templates/img/1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:17] "[36mGET /templates/img/3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:17] "[36mGET /templates/img/i/sukien.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:17] "[36mGET /templates/img/sk.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:17] "[36mGET /templates/img/sk2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:18] "[36mGET /templates/img/hoctap4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:18] "[36mGET /templates/img/hoctap3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:18] "[36mGET /templates/img/tuyensinh.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:18] "[36mGET /templates/img/lienhe.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:18] "[36mGET /templates/img/tunhien1.jpg HTTP/1.1[0m" 304 -
+2023-05-29 20:45:18 INFO     rasa.core.processor  - Loading model models/20230529-204042-relative-flow.tar.gz...
+127.0.0.1 - - [29/May/2023 20:45:19] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/May/2023 20:45:19] "[36mGET /templates/css/general.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:19] "[36mGET /templates/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:19] "[36mGET /templates/css/queries.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:19] "[36mGET /templates/img/1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:19] "[36mGET /templates/img/2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:19] "[36mGET /templates/img/i/sukien.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:19] "[36mGET /templates/img/3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:19] "[36mGET /templates/img/sk.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:19] "[36mGET /templates/img/sk2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:19] "[36mGET /templates/img/hoctap3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:19] "[36mGET /templates/img/hoctap4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:19] "[36mGET /templates/img/tuyensinh.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:19] "[36mGET /templates/img/tunhien1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:19] "[36mGET /templates/img/lienhe.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/May/2023 20:45:24] "[36mGET /templates/css/general.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:24] "[36mGET /templates/css/queries.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:24] "[36mGET /templates/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:24] "[36mGET /templates/img/1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:24] "[36mGET /templates/img/2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:24] "[36mGET /templates/img/3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:24] "[36mGET /templates/img/sk2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:24] "[36mGET /templates/img/sk.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:24] "[36mGET /templates/img/i/sukien.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:24] "[36mGET /templates/img/hoctap3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:24] "[36mGET /templates/img/hoctap4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:24] "[36mGET /templates/img/tuyensinh.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:24] "[36mGET /templates/img/tunhien1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:45:24] "[36mGET /templates/img/lienhe.jpg HTTP/1.1[0m" 304 -
+[93m/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/rasa/utils/train_utils.py:528: UserWarning: constrain_similarities is set to `False`. It is recommended to set it to `True` when using cross-entropy loss.
+  rasa.shared.utils.io.raise_warning(
+[0m2023-05-29 20:46:20 INFO     root  - Rasa server is up and running.
+[2023-05-29 20:46:20 +0700] [18577] [ERROR] Unable to start server
+Traceback (most recent call last):
+  File "/Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/sanic/server/runners.py", line 133, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/asyncio/base_events.py", line 1463, in create_server
+    raise OSError(err.errno, 'error while attempting '
+OSError: [Errno 48] error while attempting to bind on address ('0.0.0.0', 5005): address already in use
+127.0.0.1 - - [29/May/2023 20:46:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/May/2023 20:46:37] "[36mGET /templates/css/general.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:46:37] "[36mGET /templates/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:46:37] "[36mGET /templates/css/queries.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:46:37] "[36mGET /templates/img/1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:46:37] "[36mGET /templates/img/2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:46:37] "[36mGET /templates/img/i/sukien.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:46:37] "[36mGET /templates/img/sk2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:46:37] "[36mGET /templates/img/sk.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:46:37] "[36mGET /templates/img/3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:46:37] "[36mGET /templates/img/hoctap3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:46:37] "[36mGET /templates/img/hoctap4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:46:37] "[36mGET /templates/img/tuyensinh.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:46:37] "[36mGET /templates/img/tunhien1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:46:37] "[36mGET /templates/img/lienhe.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:46:51] "[35m[1mGET /templates/img/video.mp4 HTTP/1.1[0m" 206 -
+127.0.0.1 - - [29/May/2023 20:47:45] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/May/2023 20:47:45] "[36mGET /templates/css/general.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:45] "[36mGET /templates/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:45] "[36mGET /templates/css/queries.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:46] "[36mGET /templates/img/1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:46] "[36mGET /templates/img/3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:46] "[36mGET /templates/img/sk2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:46] "[36mGET /templates/img/2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:46] "[36mGET /templates/img/i/sukien.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:46] "[36mGET /templates/img/sk.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:46] "[36mGET /templates/img/hoctap3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:46] "[36mGET /templates/img/hoctap4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:46] "[36mGET /templates/img/lienhe.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:46] "[36mGET /templates/img/tuyensinh.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:46] "[36mGET /templates/img/tunhien1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [29/May/2023 20:47:47] "[36mGET /templates/css/general.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:47] "[36mGET /templates/css/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:47] "[36mGET /templates/css/queries.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:47] "[36mGET /templates/img/2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:47] "[36mGET /templates/img/1.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:47] "[36mGET /templates/img/3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:47] "[36mGET /templates/img/i/sukien.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:47] "[36mGET /templates/img/sk.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:47] "[36mGET /templates/img/sk2.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:47] "[36mGET /templates/img/hoctap3.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:47] "[36mGET /templates/img/hoctap4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:47] "[36mGET /templates/img/tuyensinh.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:47] "[36mGET /templates/img/lienhe.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [29/May/2023 20:47:47] "[36mGET /templates/img/tunhien1.jpg HTTP/1.1[0m" 304 -
+2023-05-29 20:52:33 ERROR    asyncio  - Task was destroyed but it is pending!
+task: <Task pending name='Task-678' coro=<AsyncSocket.schedule_ping.<locals>.send_ping() done, defined at /Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/engineio/asyncio_socket.py:125> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x15de248b0>()]>>
+2023-05-29 20:52:33 ERROR    asyncio  - Task was destroyed but it is pending!
+task: <Task pending name='Task-680' coro=<AsyncSocket.schedule_ping.<locals>.send_ping() done, defined at /Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/engineio/asyncio_socket.py:125> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x15de40ee0>()]>>
+2023-05-29 20:52:33 ERROR    asyncio  - Task was destroyed but it is pending!
+task: <Task pending name='Task-682' coro=<AsyncSocket.schedule_ping.<locals>.send_ping() done, defined at /Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/engineio/asyncio_socket.py:125> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x15de3c760>()]>>
+2023-05-29 20:52:33 ERROR    asyncio  - Task was destroyed but it is pending!
+task: <Task pending name='Task-684' coro=<AsyncSocket.schedule_ping.<locals>.send_ping() done, defined at /Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/engineio/asyncio_socket.py:125> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x15de1f220>()]>>
+2023-05-29 20:52:33 ERROR    asyncio  - Task was destroyed but it is pending!
+task: <Task pending name='Task-686' coro=<AsyncSocket.schedule_ping.<locals>.send_ping() done, defined at /Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/engineio/asyncio_socket.py:125> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x15de40400>()]>>
+2023-05-29 20:52:33 ERROR    asyncio  - Task was destroyed but it is pending!
+task: <Task pending name='Task-690' coro=<AsyncSocket.schedule_ping.<locals>.send_ping() done, defined at /Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/engineio/asyncio_socket.py:125> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x15de45790>()]>>
+2023-05-29 20:52:33 ERROR    asyncio  - Task was destroyed but it is pending!
+task: <Task pending name='Task-692' coro=<AsyncSocket.schedule_ping.<locals>.send_ping() done, defined at /Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/engineio/asyncio_socket.py:125> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x15de3c9d0>()]>>
+2023-05-29 20:52:33 ERROR    asyncio  - Task was destroyed but it is pending!
+task: <Task pending name='Task-9' coro=<AsyncServer._service_task() running at /Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/engineio/asyncio_server.py:497> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x15de493a0>()]>>
+2023-05-29 20:52:33 ERROR    asyncio  - Task was destroyed but it is pending!
+task: <Task pending name='Task-676' coro=<AsyncSocket.schedule_ping.<locals>.send_ping() running at /Users/khuong/Desktop/rasa_project/khoaluan_tranbaoan/env/lib/python3.8/site-packages/engineio/asyncio_socket.py:127> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x15ddf3eb0>()]>>

@@ -36,6 +36,7 @@ register_blueprints(app)
 
 
 @app.route('/')
+@csrf.exempt
 def index():
     payload = {
         "domain": app_config.DOMAIN

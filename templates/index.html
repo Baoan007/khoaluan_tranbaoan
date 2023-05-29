@@ -710,17 +710,24 @@
                 // initPayload: "/greet",
                 selector: "#webchat",
                 customData: { language: "en" },
-                // socketUrl: "http://localhost:5005",
+                socketUrl: "http://localhost:5005",
+                interval: 1000, // 1000 ms between each message
+                socketPath: "/socket.io/",
                 // socketUrl: "{{payload.domain}}:5005",
-                socketUrl: "http://45.32.29.231:5005",
+                // socketUrl: "http://45.32.29.231:5005",
                 title: "AI Chatbot",
+                hideWhenNotConnected: true,
+                inputTextFieldHint: "Vui lòng nhập yêu cầu của bạn...",
+                connectingText: "Waiting for server...",
+                fullScreenMode: true,
                 params: {
                   images: {
                     dims: {
                       width: 300,
                       height: 200
                     }
-                  }
+                  },
+                  storage: "session"
                 },
                 subtitle: "Tư vấn tuyển sinh Đại học - HCMUS"
                 // add other props here

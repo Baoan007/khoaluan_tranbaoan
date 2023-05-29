@@ -22,3 +22,16 @@ rasa shell --debug
 
 rasa train nlu
 
+
+# Chạy models and api
+rasa run actions&
+rasa run -m models --enable-api --cors "*" --port 5005
+
+
+# Các cứu pháp webhook
+rasa run -m models --endpoints endpoints.yml
+# Test status
+http://localhost:5005/webhooks/rest
+http://localhost:5005/webhooks/socketio
+# Test trên postmain
+curl -s localhost:5005/webhooks/rest/webhook -d '{ "sender": "Giorgio", "message": "hi" }'

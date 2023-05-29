@@ -139,3 +139,14 @@ DB_Password: Mzc1Y2IyOTA2Yzc5M2IwYWUxM2ZlODM3
 # Chạy lên server
 
 nohup rasa run actions&nohup rasa run -m models --enable-api --cors "\*" &nohup python app.py
+
+# Tất cả port để chạy
+
+- 5005 - entrypoint
+- 5055 - socket
+- 8000 - flask
+
+# Cấu hình trên Vultr server
+
+Chạy port 5005
+rasa run -m models --enable-api --cors "\*" --port 5005 --config config.yml
