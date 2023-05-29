@@ -14,3 +14,4 @@ Mỗi câu chat lưu slot
 
 ts = Tuyen_sinh.query.filter_by(ten_nganh='sinh_hoc').first()
 print(ts.chi_tieu)
+
