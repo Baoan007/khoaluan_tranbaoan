@@ -51,3 +51,18 @@ kill [process_id]
 lsof -i :5005
 lsof -i :5055
 lsof -i :8000
+
+
+# Xem nginx chạy với cổng nào.(Nó sẽ hiển thị các cổng port mà nginx đang mở)
+netstat -tlpn| grep nginx ; ss -tlpn| grep nginx
+
+# Kiểm tra tường lửa (Không cần kiểm tra vì không cài đặt gói này)
+sudo ufw status
+
+# Xem các dịch vụ để tìm các dịch vụ tào lao mà tắt nó
+systemctl list-units
+
+# Bỏ luôn firewall cho đời bớt khổ
+sudo service csf status
+csf -x
+https://www.hostwinds.com/tutorials/checking-the-csf-status-disable-enable-restart-it
