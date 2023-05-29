@@ -38,13 +38,20 @@ cd .. &&cd home/khtntuyensinh.autos&&source env/bin/activate&&nohup python app.p
 
 cd .. &&cd etc/nginx/
 
-sudo systemctl nginx start
-sudo systemctl nginx stop
-sudo systemctl nginx restart
-systemctl status nginx.service
+# Mới dùng systemctl
 
 sudo systemctl start nginx
+sudo systemctl stop nginx
 sudo systemctl restart nginx
+sudo systemctl status nginx.service
+
+sudo nginx -s reload
+sudo pkill -HUP nginx
+
+# Hoặc service
+
+sudo service nginx restart
+sudo service nginx restart
 
 # **\*\***\_**\*\***
 

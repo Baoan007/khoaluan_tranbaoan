@@ -44,6 +44,15 @@ def index():
     return render_template('index.html', payload=payload)
 
 
+@app.route('/home')
+@csrf.exempt
+def index_home():
+    payload = {
+        "domain": app_config.DOMAIN
+    }
+    return render_template('index.html', payload=payload)
+
+
 @app.errorhandler(404)
 def page_not_found(error):
     return 'This route does not exist {}'.format(request.url), 404
