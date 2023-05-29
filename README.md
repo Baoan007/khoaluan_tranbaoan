@@ -126,3 +126,16 @@ rasa shell --debug
 # Chọn menu interactive khi chạy hết story
 
 ctrl+C -> chọn start session
+
+# Thông tin database trên server
+
+Thong tin:
+PhpMyAdmin: http://45.32.29.231:6789/phpmyadmin
+Auth_Username: admin
+Auth_Password: NDllNTQ4NGNmOWFjYWEzZmU5NWE3YTY5
+DB_User: admin_larvps
+DB_Password: Mzc1Y2IyOTA2Yzc5M2IwYWUxM2ZlODM3
+
+# Chạy lên server
+
+nohup rasa run actions&nohup rasa run -m models --enable-api --cors "\*" &nohup python app.py&

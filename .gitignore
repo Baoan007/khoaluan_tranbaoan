@@ -7,3 +7,4 @@ package-lock.json/
 cron_logger.log
 models/
 .rasa/
+endpoints.xml
