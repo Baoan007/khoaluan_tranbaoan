@@ -8,3 +8,5 @@ cron_logger.log
 models/
 .rasa/
 endpoints.xml
+nohup.out
+migrations

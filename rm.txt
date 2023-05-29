@@ -35,3 +35,19 @@ http://localhost:5005/webhooks/rest
 http://localhost:5005/webhooks/socketio
 # Test trên postmain
 curl -s localhost:5005/webhooks/rest/webhook -d '{ "sender": "Giorgio", "message": "hi" }'
+
+
+# Tất cả port để chạy
+
+- 5005 - entrypoint
+- 5055 - socket
+- 8000 - flask
+
+# Kill port
+
+lsof -i :[port_number]
+kill [process_id]
+
+lsof -i :5005
+lsof -i :5055
+lsof -i :8000
