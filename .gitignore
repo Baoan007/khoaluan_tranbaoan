@@ -16,3 +16,7 @@ migrations/__pycache__/
 database/__pycache__/
 routes/__pycache__/
 utils/__pycache__/
+# Một số file sẽ bỏ qua dưới local nếu muốn thêm thì add vào git để deloy
+credentials.yml
+endpoints.yml
+templates/index.html

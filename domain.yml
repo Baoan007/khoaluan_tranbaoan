@@ -20,12 +20,18 @@ intents:
         - ten_nganh
   # Lấy tất cả ngành học hiện có
   - get_nganh_hoc
-  - action_get_nganh_hoc
+  # - action_get_nganh_hoc
 
   # Test slot
   - ask_me_anything
   - repeat_shirt_size
   - give_shirt_size
+
+  # Test slot
+  - get_thanks
+  - set_slot_name
+  - lay_slot_name
+  # - action_set_slot
 
 # slots:
 #   ten_nganh: # Biến để dùng cho custom action get tracker.get_slot("ten_nganh")
@@ -38,6 +44,7 @@ actions:
   - action_say_shirt_size
   - action_get_nganh_hoc
   - action_search_nganh_hoc_chi_tieu
+  - action_set_slot
 
 responses:
   utter_greet:
@@ -68,6 +75,9 @@ responses:
   utter_remember:
     - text: Thanks. I'll remember that.
 
+  utter_lay_slot_name:
+    - text: Đây là {slot_name}.
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
@@ -87,6 +97,8 @@ entities:
   # - time # entity extracted by DucklingEntityExtractor
   # - membership_type # custom entity extracted by DIETClassifier
   # - priority # custom entity extracted by DIETClassifier
+  # Test slot
+  - slot_name
 
 slots:
   ten_nganh:
@@ -107,6 +119,14 @@ slots:
         entity: shirt_size
         conditions:
           - active_loop: shirt_size_form
+
+  # Test slot
+  slot_name:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: slot_name
 
 forms:
   ten_nganh_form:

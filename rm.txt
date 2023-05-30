@@ -66,3 +66,18 @@ systemctl list-units
 sudo service csf status
 csf -x
 https://www.hostwinds.com/tutorials/checking-the-csf-status-disable-enable-restart-it
+
+
+nohup rasa run actions&nohup rasa run -m models --enable-api --cors "*" &nohup python app.py
+
+
+
+# Các bước chạy được project này
+# 1. Config crednetials.yml
+# 2. Config endpoints.yml
+# 3. Config templates/index.html
+# 4. rasa data validate
+# 5. rasa train
+# 6. rasa run actions
+# 7. rasa run -m models --enable-api --cors "*" hoặc rasa interactive (Nếu chỉ run terminal)
+# 8. python app.py

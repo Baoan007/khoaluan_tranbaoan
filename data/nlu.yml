@@ -169,3 +169,21 @@ nlu:
       - Bạn lấy cho tôi về ngành [khoa học máy tính](ten_nganh)
       - Chỉ tiêu của ngành [hóa học](ten_nganh)
       - Chỉ tiêu ngành [Công nghệ Sinh học](ten_nganh)
+
+  # test slot
+  - intent: get_thanks
+    examples: |
+      - cám ơn
+      - chuẩn
+      - ok
+
+  - intent: set_slot_name
+    examples: |
+      - Tôi muốn set slot (slot_name)?
+      - Bạn có thể set slot (slot_name)?
+      - Lấy các cho tôi slot (slot_name)?
+
+  - intent: lay_slot_name
+    examples: |
+      - Tôi muốn lay slot?
+      - Bạn có thể lay slot?

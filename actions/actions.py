@@ -60,8 +60,8 @@ class SearchNganhHocAction(Action):
 
         # Lưu cho slot dùng cho các action khác
         # return [SlotSet("ten_nganh", ten_nganh)]
-        SlotSet("ten_nganh", res_nganh_hoc['ten_nganh'])
-        return []
+
+        return [SlotSet("ten_nganh", res_nganh_hoc['ten_nganh'])]
 
 
 class SearchNganhChiTieuAction(Action):
@@ -82,8 +82,8 @@ class SearchNganhChiTieuAction(Action):
 
         # Lưu cho slot dùng cho các action khác
         # return [SlotSet("ten_nganh", ten_nganh)]
-        SlotSet("ten_nganh", res_nganh_hoc['ten_nganh'])
-        return []
+
+        return [SlotSet("ten_nganh", res_nganh_hoc['ten_nganh'])]
 
 
 # Action hiển thị tất cả tên ngành trong database không dùng đến api
@@ -118,3 +118,24 @@ class ActionSayShirtSize(Action):
         else:
             dispatcher.utter_message(text=f"Your shirt size is {shirt_size}!")
         return []
+
+
+class SetSlotAction(Action):
+    def name(self) -> Text:
+        return "action_set_slot"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any]
+    ) -> List[Dict[Text, Any]]:
+        # Lấy giá trị từ người dùng
+        user_input = tracker.latest_message.get('text')
+        print(user_input)
+        # Set giá trị vào slot
+        dispatcher.utter_message(f"Setting slot value to {user_input}")
+        print("Lấy tracker")
+        print(tracker.__dict__)
+
+        return [SlotSet("slot_name", user_input)]

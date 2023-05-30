@@ -85,3 +85,15 @@ stories:
       - action: action_search_nganh_hoc_chi_tieu # file domain.yml -> actions
       - intent: mood_great
       - action: utter_goodbye
+
+  # Xây dựng story slot
+  - story: Thao tác với slots
+    steps:
+      - intent: greet_hello #-> file domain.yml -> intents -> nlu (greet_hello)
+      - action: utter_greet_hello #-> file domain.yml -> responses -> utter_greet_hello
+      - intent: set_slot_name # -> file domain.yml -> intents -> nlu (search_nganh_hoc)
+        # entities:
+        #   - ten_nganh: "sinh học"
+      - action: action_set_slot # file domain.yml -> actions
+      - intent: lay_slot_name
+      - action: utter_lay_slot_name
