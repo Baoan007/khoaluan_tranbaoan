@@ -1,6 +1,25 @@
 version: "3.1"
 
 rules:
+  # Bắt buộc đưa rule restart lên đầu code
+  # Rule này dùng để người dùng chat chào sẽ xóa tất cả và chạy lại từ đầu
+  - rule: Restart story
+    condition:
+    - rule: Check if greet_hello is repeated
+      steps:
+      - intent: greet_hello
+    steps:
+    - action: action_restart
+
+# Giải thích đoạn code trên
+# Đoạn code mô tả một rule có tên "Restart story" để kiểm tra xem nếu intent "greet_hello" được lặp lại, thì thực hiện action "action_restart" để khởi động lại story.
+# condition (điều kiện): Trong điều kiện của rule, chúng ta sử dụng một rule con có tên "Check if greet_hello is repeated" để kiểm tra xem intent "greet_hello" đã được lặp lại hay chưa.
+# steps: Trong rule con, chúng ta chỉ định một bước (step) là intent "greet_hello". Điều này đảm bảo rằng nếu intent "greet_hello" xuất hiện trong cuộc trò chuyện, rule con sẽ đánh dấu là đúng.
+# steps (bước): Trong rule chính "Restart story", khi điều kiện của rule được đáp ứng (intent "greet_hello" được lặp lại), chúng ta thực hiện action "action_restart". Action này sẽ khởi động lại story từ đầu, cho phép người dùng bắt đầu lại quá trình trò chuyện từ đầu tiên.
+
+
+
+  # Mẫu rule rasa
   - rule: Say goodbye anytime the user says goodbye
     steps:
       - intent: goodbye
@@ -10,7 +29,9 @@ rules:
     steps:
       - intent: bot_challenge
       - action: utter_iamabot
+# END Mẫu rule rasa
 
+# Test form rasa
   - rule: Activate form
     steps:
       - intent: ask_me_anything
@@ -26,3 +47,37 @@ rules:
       - slot_was_set:
           - requested_slot: null
       - action: utter_remember
+
+# End Test form rasa
+
+  # Xử lí fallback
+  - rule: Handle fallback
+    steps:
+    - intent: fallback
+    - action: action_fallback
+    - action: utter_fallback
+
+#Giải thích:
+# mô tả một rule có tên "Handle fallback" để xử lý trường hợp người dùng gửi một intent "fallback", tức là một thông điệp không rõ ràng hoặc không thể hiểu. Trong trường hợp này, chúng ta muốn thực hiện một hành động fallback để cung cấp phản hồi phù hợp với người dùng.
+# steps (bước): Trong rule, chúng ta chỉ định các bước để xác định và xử lý intent "fallback".
+# intent: Bước đầu tiên là xác định intent "fallback", đại diện cho thông điệp không rõ ràng hoặc không thể hiểu của người dùng.
+# action: Tiếp theo, chúng ta thực hiện action "action_fallback", đây là một action được định nghĩa trong code của bot để xử lý các trường hợp fallback.
+# action: Cuối cùng, chúng ta sử dụng action "utter_fallback" để cung cấp một phản hồi cho người dùng khi xảy ra trường hợp fallback. Action này có thể được định nghĩa trong file domain.yml để cung cấp các phản hồi tùy chỉnh.
+# Với rule này, khi người dùng gửi một intent "fallback", bot sẽ thực hiện action fallback và sau đó gửi một phản hồi thông qua action "utter_fallback" để thông báo rằng không hiểu được yêu cầu của người dùng và yêu cầu người dùng cung cấp thông tin rõ ràng hơn.
+
+  
+  # Xử lí nếu như story đi đến intent có chứa rule thì sẽ chạy rule này
+  # Nó sẽ đi theo flow domain -> rule -> story -> rồi thư thi các intent và action
+  # Nghĩa là nếu chát intent: mood_great_2 thì action utter_goodbye_2 sẽ được chạy trước dù dang đứng ở story nào
+  - rule: Rule chuyển sang story 2
+    steps:
+      - intent: mood_great_2
+      - action: utter_goodbye_2
+  
+# Giải thích:
+# Đoạn code trình bày một rule có tên "Rule chuyển sang story 2" để chuyển hướng người dùng từ một story khác sang story 2 trong quá trình trò chuyện.
+
+# steps (bước): Trong rule, chúng ta chỉ định các bước để xác định và thực hiện chuyển hướng sang story 2.
+# intent: Bước đầu tiên là xác định intent "mood_great_2", đại diện cho trạng thái tốt của người dùng hoặc một intent bất kỳ mà bạn muốn sử dụng để kích hoạt chuyển hướng.
+# action: Tiếp theo, chúng ta sử dụng action "utter_goodbye_2" để gửi một phản hồi tới người dùng, có thể là lời tạm biệt hoặc bất kỳ thông điệp nào khác.
+# Khi người dùng gửi một intent được xác định là "mood_great_2" (hoặc intent tương tự), bot sẽ thực hiện action "utter_goodbye_2" để gửi một phản hồi và sau đó kết thúc story hiện tại và chuyển sang story 2, nơi các bước tiếp theo sẽ được thực hiện.

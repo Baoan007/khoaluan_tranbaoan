@@ -83,7 +83,8 @@ def get_all_nganh():
     if tuyen_sinhs:
         message = f"Thông tin tất cả các ngành có sẵn của trường KHTN:"
         for tuyen_sinh in tuyen_sinhs:
-            message += f"\n- Khoa: {tuyen_sinh.ten_nganh}"
+            message += f"\n- Mã ngành: {tuyen_sinh.ma_chuyen_nganh}"
+            message += f"và Khoa: {tuyen_sinh.ten_nganh}"
             # message += f"\n- Mã chuyên ngành: {tuyen_sinh.ma_chuyen_nganh}"
             # message += f"\n- Chỉ tiêu: {tuyen_sinh.chi_tieu}"
             # message += f"\n- Học phí dự kiến: {format_amount(tuyen_sinh.hoc_phi_du_kien)} vnd"

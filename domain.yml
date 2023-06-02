@@ -33,6 +33,12 @@ intents:
   - lay_slot_name
   # - action_set_slot
 
+  # Xử lí fall back
+  - action_fallback
+  - user_input
+  - mood_great_2
+  - fallback
+
 # slots:
 #   ten_nganh: # Biến để dùng cho custom action get tracker.get_slot("ten_nganh")
 #     type: text # Kiểu dữ liệu cho biến trên
@@ -45,6 +51,10 @@ actions:
   - action_get_nganh_hoc
   - action_search_nganh_hoc_chi_tieu
   - action_set_slot
+  # Xử lí action_fallback
+  - action_fallback
+  # Xử lí restart lại từ đầu
+  - action_restart
 
 responses:
   utter_greet:
@@ -77,6 +87,13 @@ responses:
 
   utter_lay_slot_name:
     - text: Đây là {slot_name}.
+  # Xử lí fall back khi nhập sai thay vì không phản hồi thì sẽ phản hồi
+  utter_fallback:
+    - text: "Xin lỗi, tôi không hiểu ý bạn lắm. Bạn có thể nói rõ hơn được không?"
+    - text: "Tôi xin lỗi, tôi không thể xử lý yêu cầu của bạn. Bạn có thể cung cấp thông tin khác được không?"
+  
+  utter_goodbye_2:
+    - text: "Cảm ơn bạn! Hãy cho tôi biết nếu bạn có thêm câu hỏi."
 
 session_config:
   session_expiration_time: 60

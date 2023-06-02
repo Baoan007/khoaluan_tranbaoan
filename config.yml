@@ -36,6 +36,8 @@ policies:
     max_history: 5
     epochs: 100
   - name: RulePolicy
+    rules: "rules.yml"
   # - name: FormPolicy
+  
 
 

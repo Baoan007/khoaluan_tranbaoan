@@ -121,6 +121,20 @@ nlu:
       - Cho tôi biết tất cả các ngành?
       - Lấy tất cả các ngành?
 
+  - intent: user_input
+    examples: |
+      - Không hiểu
+      - Tôi không biết
+      - Bạn có thể giúp tôi không?
+      - Câu hỏi này khó quá
+      - Tôi cần trợ giúp
+      
+  - intent: fallback
+    examples: |
+      - Tôi không hiểu
+      - Tôi không biết nói gì
+      - Xin lỗi, tôi không thể giúp bạn
+
   # Test form
   - intent: ask_me_anything
     examples: |
@@ -158,6 +172,12 @@ nlu:
       - Bạn lấy cho tôi về ngành [khoa học máy tính](ten_nganh)
       - Chỉ tiêu của ngành [hóa học](ten_nganh)
       - Chỉ tiêu ngành [Công nghệ Sinh học](ten_nganh)
+  
+  - intent: mood_great_2
+    examples: |
+      - Tôi cảm thấy rất tốt
+      - Tôi rất hài lòng
+      - Tôi rất vui
 
   # test slot
   - intent: get_thanks
