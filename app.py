@@ -48,7 +48,8 @@ def index():
 @csrf.exempt
 def index_home():
     payload = {
-        "domain": app_config.DOMAIN
+        "domain": app_config.DOMAIN,
+        "domain_socket": app_config.DOMAIN_SOCKET
     }
     return render_template('index.html', payload=payload)
 

@@ -69,3 +69,27 @@ def get_chi_tieu_nganh():
     print(message)
     message = "Xin lỗi, tôi không thể tìm kiếm thông tin với các thông tin đã cho."
     return jsonify({"payload": message}), 400
+
+
+@api_bp.route('/lay-all-nganh', methods=['GET'])
+@csrf.exempt
+def get_all_nganh():
+    # Lấy dữ liệu từ yêu cầu POST
+    payload_message = request.args.get('message', '', type=str)
+
+    tuyen_sinhs = db.session.query(
+        TuyenSinh).all()
+    print(tuyen_sinhs)
+    if tuyen_sinhs:
+        message = f"Thông tin tất cả các ngành có sẵn của trường KHTN:"
+        for tuyen_sinh in tuyen_sinhs:
+            message += f"\n- Khoa: {tuyen_sinh.ten_nganh}"
+            # message += f"\n- Mã chuyên ngành: {tuyen_sinh.ma_chuyen_nganh}"
+            # message += f"\n- Chỉ tiêu: {tuyen_sinh.chi_tieu}"
+            # message += f"\n- Học phí dự kiến: {format_amount(tuyen_sinh.hoc_phi_du_kien)} vnd"
+        return jsonify({"payload": message}), 200
+    else:
+        message = f"Không tìm thấy thông tin về các ngành"
+        return jsonify({"payload": message}), 400
+    message = "Xin lỗi, tôi không thể tìm kiếm thông tin với các thông tin đã cho."
+    return jsonify({"payload": message}), 400

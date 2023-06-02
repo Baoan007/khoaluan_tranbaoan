@@ -38,7 +38,4 @@ policies:
   - name: RulePolicy
   # - name: FormPolicy
 
-socketio:
-  socket_path: /socket.io/
-  cors_allowed_origins:
-    - "http://khtntuyensinh.info"
+

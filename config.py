@@ -15,6 +15,7 @@ class Config(object):
     RASA_ENABLE = False
     SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    DOMAIN_SOCKET = os.getenv('DOMAIN_SOCKET')
 
 
 # Configuration for Firebase Cloud Messaging
@@ -29,6 +30,7 @@ class DevConfig(Config):
     DEBUG = True
     DOMAIN = "http://127.0.0.1:8000"
     SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:@localhost/my_khtn"
+    DOMAIN_SOCKET = "http://localhost:5005"
 
 
 class DevFCMConfig(FCMConfig):

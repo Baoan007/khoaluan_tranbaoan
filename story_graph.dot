@@ -3,10 +3,10 @@ digraph  {
 "-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
 1 [class=active, fontsize=12, label=action_session_start];
 2 [class=active, fontsize=12, label=utter_greet_hello];
-3 [class=active, fontsize=12, label=action_search_nganh_hoc_chi_tieu];
+3 [class=active, fontsize=12, label=action_get_nganh_hoc];
 4 [class="intent dashed active", label="  ?  ", shape=rect];
 5 [class="intent active", fillcolor=lightblue, label="/greet_hello", shape=rect, style=filled];
-6 [class="intent active", fillcolor=lightblue, label="/search_nganh_hoc_chi_tieu", shape=rect, style=filled];
+6 [class="intent active", fillcolor=lightblue, label="/get_nganh_hoc", shape=rect, style=filled];
 0 -> "-1"  [class="", key=NONE, label=""];
 0 -> 1  [class=active, key=NONE, label=""];
 1 -> 5  [class=active, key=0];

@@ -1,6 +1,7 @@
 version: "3.1"
 
 nlu:
+# __ Mẫu rasa
   - intent: greet
     examples: |
       - hey
@@ -89,20 +90,7 @@ nlu:
       - are you a human?
       - am I talking to a bot?
       - am I talking to a human?
-
-  # - intent: give_time
-  #   examples: |
-  #     - tell me the time
-  #     - got the time
-  #     - what time is it
-  #     - can you tell me what time it is
-
-  # - intent: get_chi_tieu
-  #   examples: |
-  #     - tell me chi tieu
-  #     - got chi tieu
-  #     - chi tieu
-  #     - can you tell me what chi tieu
+#__ End mẫu rasa
 
   # _____ Tạo câu chuyện
   # Khi người dùng chat Chào sẽ đi tìm cài đặt greet_hello bên file domain
@@ -129,10 +117,11 @@ nlu:
 
   - intent: get_nganh_hoc
     examples: |
-      - Các ngành học nào?
-      - Cho tôi các ngành học?
-      - Lấy các ngành học?
+      - Trường bạn có tất cả bao nhiêu ngành?
+      - Cho tôi biết tất cả các ngành?
+      - Lấy tất cả các ngành?
 
+  # Test form
   - intent: ask_me_anything
     examples: |
       - ask me anything
