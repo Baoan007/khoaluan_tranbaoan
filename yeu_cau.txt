@@ -19,8 +19,8 @@ print(ts.chi_tieu)
 
 # Yêu cầu khác 2/6/2023
 phương án xử lý cho nhập tên ngành không chính xác:
-+ giữ nguyên so sánh chính xác tên ngành.
++ giữ nguyên so sánh chính xác tên ngành. OK
 + trường hợp không tìm thấy thấy tên ngành thì xuất ra: 
-    - danh sách toàn bộ mã ngành: ma_nganh + ten_nganh
+    - danh sách toàn bộ mã ngành: ma_nganh + ten_nganh OK
     - viết thêm utter_nhap_ma_nganh: "vui lòng nhập đúng mã ngành để được hỗ trợ
-   - viết 1 action cho ma nganh.
+    - viết 1 action cho ma nganh.

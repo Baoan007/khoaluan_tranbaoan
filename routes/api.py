@@ -15,10 +15,8 @@ pattern = r"ngành\s+(.+)"
 def get_nganh():
     # Lấy dữ liệu từ yêu cầu POST
     payload_message = request.args.get('message', '', type=str)
-    print(payload_message)
     match = re.search(pattern, payload_message)
     message = ""
-    print(payload_message)
     if match:
         ten_nganh = match.group(1).strip().lower()
         print(ten_nganh)
@@ -34,9 +32,15 @@ def get_nganh():
                 message += f"\n- Học phí dự kiến: {format_amount(tuyen_sinh.hoc_phi_du_kien)} vnd"
                 return jsonify({"payload": message, "ten_nganh": tuyen_sinh.ten_nganh}), 200
             else:
-                message = f"Không tìm thấy thông tin về ngành {ten_nganh}"
-                return jsonify({"payload": message}), 400
-    print(message)
+                tuyen_sinhs = db.session.query(TuyenSinh).all()
+                if tuyen_sinhs:
+                    message = f"Thông tin tất cả các ngành có sẵn của trường KHTN:"
+                    for tuyen_sinh in tuyen_sinhs:
+                        message += f"\n- Mã ngành: {tuyen_sinh.ma_chuyen_nganh}"
+                        message += f"và Khoa: {tuyen_sinh.ten_nganh}"
+                    message += "\n Bạn vui lòng nhập đúng mã ngành để được hỗ trợ"
+                    return jsonify({"payload": message, "ten_nganh": tuyen_sinh.ten_nganh}), 200
+
     message = "Xin lỗi, tôi không thể tìm kiếm thông tin với các thông tin đã cho."
     return jsonify({"payload": message}), 400
 
@@ -46,17 +50,13 @@ def get_nganh():
 def get_chi_tieu_nganh():
     # Lấy dữ liệu từ yêu cầu POST
     payload_message = request.args.get('message', '', type=str)
-    print(payload_message)
     match = re.search(pattern, payload_message)
     message = ""
-    print(payload_message)
     if match:
         ten_nganh = match.group(1).strip().lower()
-        print(ten_nganh)
         if ten_nganh:
             tuyen_sinh = db.session.query(
                 TuyenSinh).filter_by(ten_nganh=ten_nganh).first()
-            print(tuyen_sinh)
             if tuyen_sinh:
                 message = f"Thông tin về ngành {tuyen_sinh.ten_nganh}:"
 
@@ -66,7 +66,6 @@ def get_chi_tieu_nganh():
             else:
                 message = f"Không tìm thấy thông tin về ngành {ten_nganh}"
                 return jsonify({"payload": message}), 400
-    print(message)
     message = "Xin lỗi, tôi không thể tìm kiếm thông tin với các thông tin đã cho."
     return jsonify({"payload": message}), 400
 
@@ -79,15 +78,11 @@ def get_all_nganh():
 
     tuyen_sinhs = db.session.query(
         TuyenSinh).all()
-    print(tuyen_sinhs)
     if tuyen_sinhs:
         message = f"Thông tin tất cả các ngành có sẵn của trường KHTN:"
         for tuyen_sinh in tuyen_sinhs:
             message += f"\n- Mã ngành: {tuyen_sinh.ma_chuyen_nganh}"
             message += f"và Khoa: {tuyen_sinh.ten_nganh}"
-            # message += f"\n- Mã chuyên ngành: {tuyen_sinh.ma_chuyen_nganh}"
-            # message += f"\n- Chỉ tiêu: {tuyen_sinh.chi_tieu}"
-            # message += f"\n- Học phí dự kiến: {format_amount(tuyen_sinh.hoc_phi_du_kien)} vnd"
         return jsonify({"payload": message}), 200
     else:
         message = f"Không tìm thấy thông tin về các ngành"
