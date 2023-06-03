@@ -24,7 +24,6 @@ class ShowNganhAllNganhHocAction(Action):
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         text = tracker.latest_message['text']
         res_nganh_hoc = get_all_nganh(text)
-        print(res_nganh_hoc)
         dispatcher.utter_message(text=res_nganh_hoc['message']+"\n")
 
         return []

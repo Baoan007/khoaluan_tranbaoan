@@ -11,7 +11,6 @@ def get_chi_tieu_nganh(text):
         'message': text
     }, headers={
         'content-type': 'application/json'})
-    print(res)
     message = ""
     ten_nganh = None
     if res.status_code == 200:

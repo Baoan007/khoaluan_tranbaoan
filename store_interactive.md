@@ -9,7 +9,7 @@ phương án xử lý cho nhập tên ngành không chính xác:
 
 # Story 1. Câu chuyện lấy tất cả ngành và kết hợp với tìm ngành
 # Với ---> Khác nếu câu user nhập trùng với intent của rule
-
+http://localhost:5006/visualization.html
 user: Chào
 ---> Khác: 
 Tôi cảm thấy rất tốt -> Chạy rule -> 
@@ -24,7 +24,7 @@ user: Cho tôi biết tất cả các ngành? |-> lặp lại -> Vẫn trả v�
 
 # Story 2: Câu chuyện sẽ chuyển qua tìm tên ngành
 Tiếp tục -> chạy vào giữa story 2
-user: Tôi muốn tìm hiểu về ngành [hóa học](ten_nganh) -> Vẫn trả về response đúng -> đã lưu ten_nganh vào slot: slot{"ten_nganh": "Sinh   học"} 
+user: Tôi muốn tìm hiểu về ngành [hóa học](ten_nganh) -> Vẫn trả về response đúng -> đã lưu ten_nganh vào slot: slot{"ten_nganh": "Sinh học"} 
 Sau đó tôi trở về story 1 ->
 user: Cho tôi biết tất cả các ngành? -> Vẫn trả response đúng
 Tiếp tục ->

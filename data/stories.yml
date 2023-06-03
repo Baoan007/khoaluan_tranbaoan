@@ -1,63 +1,12 @@
 version: "3.1"
 
 stories:
-  - story: happy path
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: mood_great
-      - action: utter_happy
-
-  - story: sad path 1
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: mood_unhappy
-      - action: utter_cheer_up
-      - action: utter_did_that_help
-      - intent: affirm
-      - action: utter_happy
-
-  - story: sad path 2
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: mood_unhappy
-      - action: utter_cheer_up
-      - action: utter_did_that_help
-      - intent: deny
-      - action: utter_goodbye
-
-  # - story: path about time
-  #   steps:
-  #     - intent: greet
-  #     - action: utter_greet
-  #     - intent: give_time
-  #     - action: action_show_time
-
-  # Flow Story ->
-  # user: Chào
-  # bot: Tôi! có thể giúp gì cho bạn
-  # user: Tôi muốn tìm thông tin về ngành {sinh học}
-  # bot: Gọi action search_nganh_sinh_học trong file actions
-
-
-
-  ## story: Xử lý fallback
-  - story: Xử lý fallback
-    steps:
-      - intent: user_input
-      - action: action_fallback
-
-
   - story: Hiển thị tất cả các ngành
     steps:
       - intent: greet_hello #-> file domain.yml -> intents -> nlu (greet_hello)
       - action: utter_greet_hello #-> file domain.yml -> responses -> utter_greet_hello
       - intent: get_nganh_hoc # -> file domain.yml -> intents -> nlu (search_nganh_hoc)
       - action: action_get_nganh_hoc # file domain.yml -> actions
-      - intent: mood_great_2
-      - action: utter_goodbye_2
 
   
   - story: Tìm kiếm theo tên ngành
@@ -68,8 +17,17 @@ stories:
         entities:
           - ten_nganh: "sinh học"
       - action: action_search_nganh_hoc # file domain.yml -> actions
-      - intent: mood_great_2
-      - action: utter_goodbye_2
+  
+  - story: Tìm kiếm theo mã ngành
+    steps:
+      - intent: greet_hello #-> file domain.yml -> intents -> nlu (greet_hello)
+      - action: utter_greet_hello #-> file domain.yml -> responses -> utter_greet_hello
+      - intent: search_nganh_hoc_ma_nganh # -> file domain.yml -> intents -> nlu (search_nganh_hoc)
+      - action: utter_hoi_ma_nganh # file domain.yml -> actions
+      - intent: user_input_ma_nganh # file domain.yml -> actions
+        entities:
+            - ma_nganh: "7420101"
+      - action: action_search_nganh_hoc_ma_nganh # file domain.yml -> actions
 
   - story: Tìm kiếm theo tên ngành chỉ tiêu
     steps:
@@ -79,35 +37,4 @@ stories:
         entities:
           - ten_nganh: "sinh học"
       - action: action_search_nganh_hoc_chi_tieu # file domain.yml -> actions
-      - intent: mood_great_2
-      - action: utter_goodbye_2
    
-    # Test form
-  - story: interactive story 1
-    steps:
-      - intent: ask_me_anything
-      - action: shirt_size_form
-      - active_loop: shirt_size_form
-      - slot_was_set:
-          - requested_slot: shirt_size
-      - slot_was_set:
-          - requested_slot: medium
-      - slot_was_set:
-          - requested_slot: null
-      - active_loop: null
-      - action: utter_remember
-      - intent: repeat_shirt_size
-      - action: utter_happy
-
-  # Xây dựng story slot
-  - story: Thao tác với slots
-    steps:
-      - intent: greet_hello #-> file domain.yml -> intents -> nlu (greet_hello)
-      - action: utter_greet_hello #-> file domain.yml -> responses -> utter_greet_hello
-      - intent: set_slot_name # -> file domain.yml -> intents -> nlu (search_nganh_hoc)
-        # entities:
-        #   - ten_nganh: "sinh học"
-      - action: action_set_slot # file domain.yml -> actions
-      - intent: lay_slot_name
-      - action: utter_lay_slot_name
-  # End test form

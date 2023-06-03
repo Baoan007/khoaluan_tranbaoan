@@ -1,97 +1,6 @@
 version: "3.1"
 
 nlu:
-# __ Mẫu rasa
-  - intent: greet
-    examples: |
-      - hey
-      - hello
-      - hi
-      - hello there
-      - good morning
-      - good evening
-      - moin
-      - hey there
-      - let's go
-      - hey dude
-      - goodmorning
-      - goodevening
-      - good afternoon
-
-  - intent: goodbye
-    examples: |
-      - cu
-      - good by
-      - cee you later
-      - good night
-      - bye
-      - goodbye
-      - have a nice day
-      - see you around
-      - bye bye
-      - see you later
-
-  - intent: affirm
-    examples: |
-      - yes
-      - y
-      - indeed
-      - of course
-      - that sounds good
-      - correct
-
-  - intent: deny
-    examples: |
-      - no
-      - n
-      - never
-      - I don't think so
-      - don't like that
-      - no way
-      - not really
-
-  - intent: mood_great
-    examples: |
-      - perfect
-      - great
-      - amazing
-      - feeling like a king
-      - wonderful
-      - I am feeling very good
-      - I am great
-      - I am amazing
-      - I am going to save the world
-      - super stoked
-      - extremely good
-      - so so perfect
-      - so good
-      - so perfect
-
-  - intent: mood_unhappy
-    examples: |
-      - my day was horrible
-      - I am sad
-      - I don't feel very well
-      - I am disappointed
-      - super sad
-      - I'm so sad
-      - sad
-      - very sad
-      - unhappy
-      - not good
-      - not very good
-      - extremly sad
-      - so saad
-      - so sad
-
-  - intent: bot_challenge
-    examples: |
-      - are you a bot?
-      - are you a human?
-      - am I talking to a bot?
-      - am I talking to a human?
-#__ End mẫu rasa
-
   # _____ Tạo câu chuyện
   # Khi người dùng chat Chào sẽ đi tìm cài đặt greet_hello bên file domain
   - intent: greet_hello
@@ -114,6 +23,32 @@ nlu:
       - Tôi đang quan tâm đến ngành [địa chất học](ten_nganh), bạn có thể giúp tôi không?
       - ngành [địa chất học](ten_nganh) thông tin thế nào?
       - ngành [khoa học dữ liệu](ten_nganh)
+      - Tôi muốn biết ngành [khoa học dữ liệu](ten_nganh).
+
+  - intent: search_nganh_hoc_ma_nganh
+    examples: |
+      - Tìm kiếm mã ngành
+      - Tìm mã ngành học
+      - Tìm ngành theo mã
+      - Tìm mã ngành dự án
+      - Cần tìm thông tin về mã ngành
+      - Muốn biết mã ngành
+      - Cho tôi biết mã ngành
+      - Tìm ngành học với mã là gì
+  
+  - intent: user_input_ma_nganh
+    examples: |
+      - [7420101](ma_nganh)
+      - [7420201_CLC](ma_nganh)
+      - [7520207_CLC](ma_nganh)
+      - Mã ngành [7520207_CLC](ma_nganh)
+      - Mã ngành [7480201_NN](ma_nganh)
+      - [7480109](ma_nganh), làm ơn
+      - [7520402](ma_nganh), làm ơn đi
+      - [7480109](ma_nganh), lấy cho tôi
+      - [7440201](ma_nganh), có không?
+      - Mã [7420201](ma_nganh) nha
+      - Mã [7520501](ma_nganh)
 
   - intent: get_nganh_hoc
     examples: |
@@ -121,78 +56,16 @@ nlu:
       - Cho tôi biết tất cả các ngành?
       - Lấy tất cả các ngành?
 
-  - intent: user_input
-    examples: |
-      - Không hiểu
-      - Tôi không biết
-      - Bạn có thể giúp tôi không?
-      - Câu hỏi này khó quá
-      - Tôi cần trợ giúp
-      
-  - intent: fallback
-    examples: |
-      - Tôi không hiểu
-      - Tôi không biết nói gì
-      - Xin lỗi, tôi không thể giúp bạn
-
-  # Test form
-  - intent: ask_me_anything
-    examples: |
-      - ask me anything
-      - would you like to ask me something
-      - feel free to ask me about things
-      - want to ask me something?
-  - intent: repeat_shirt_size
-    examples: |
-      - what is my shirt size
-      - tell me my shirt size
-      - do you know my shirt size
-      - repeat my shirt size
-      - repeat shirt size
-      - please repeat my shirt size
-      - repeat repeat repeat size
-  - intent: give_shirt_size
-    examples: |
-      - i want a [large](shirt_size) shirt
-      - [medium](shirt_size) size
-      - give me a [small](shirt_size) tshirt
-      - [small](shirt_size)
-      - [medium](shirt_size)
-      - [large](shirt_size)
-      - i'd prefer [medium](shirt_size) size
-      - gimme gimme gimme [small](shirt_size) tshirt
-      - give shirt size
-      - i want a [large](shirt_size) shirt please
-      - i want to give you my shirt
-      - [large](shirt_size)
-
   - intent: search_nganh_hoc_chi_tieu
     examples: |
       - Bạn lấy cho tôi chỉ tiêu của ngành [sinh học](ten_nganh)?
       - Bạn lấy cho tôi về ngành [khoa học máy tính](ten_nganh)
       - Chỉ tiêu của ngành [hóa học](ten_nganh)
       - Chỉ tiêu ngành [Công nghệ Sinh học](ten_nganh)
+      - Lấy cho tôi chỉ tiêu ngành [Sinh học](ten_nganh)
   
   - intent: mood_great_2
     examples: |
       - Tôi cảm thấy rất tốt
       - Tôi rất hài lòng
       - Tôi rất vui
-
-  # test slot
-  - intent: get_thanks
-    examples: |
-      - cám ơn
-      - chuẩn
-      - ok
-
-  - intent: set_slot_name
-    examples: |
-      - Tôi muốn set slot (slot_name)?
-      - Bạn có thể set slot (slot_name)?
-      - Lấy các cho tôi slot (slot_name)?
-
-  - intent: lay_slot_name
-    examples: |
-      - Tôi muốn lay slot?
-      - Bạn có thể lay slot?

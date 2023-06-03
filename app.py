@@ -39,15 +39,6 @@ register_blueprints(app)
 @csrf.exempt
 def index():
     payload = {
-        "domain": app_config.DOMAIN
-    }
-    return render_template('index.html', payload=payload)
-
-
-@app.route('/home')
-@csrf.exempt
-def index_home():
-    payload = {
         "domain": app_config.DOMAIN,
         "domain_socket": app_config.DOMAIN_SOCKET
     }

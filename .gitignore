@@ -20,3 +20,4 @@ utils/__pycache__/
 credentials.yml
 endpoints.yml
 templates/index.html
+.rasa

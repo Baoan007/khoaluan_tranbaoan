@@ -24,3 +24,21 @@ phương án xử lý cho nhập tên ngành không chính xác:
     - danh sách toàn bộ mã ngành: ma_nganh + ten_nganh OK
     - viết thêm utter_nhap_ma_nganh: "vui lòng nhập đúng mã ngành để được hỗ trợ
     - viết 1 action cho ma nganh.
+
+
+
+
+# Các trường hợp khác.
+- Nếu người dùng chat từ khác không đúng với story -> Hướng dẫn cho đúng Hay giới thiệu các câu nói
+- Nếu người dùng muốn đi story khác không theo story -> Xây dựng một vài rules ngoài chức năng
+- Nếu người dùng muốn bắt đầu lại -> 
+- Nếu người dùng chat tàu lao
+- Nếu người dùng muốn nhập form
+
+
+# Xử lí form và export ra file excel
+- Tạo story yêu cầu người dùng tạo form gồm tên name, address, email
+- Nếu điền đủ các thông tin bên trên tiến hành gọi api viết ra file excel từ flask và nếu có người khác nhập thì thêm vào bên dưới
+- Nếu điền thiếu thì yêu cầu nhập cho đủ.
+- Thêm 1 action cho người dùng dừng nhập form khi đang nhập và tiến hành hỏi lại bạn có tạo lại form
+Từ các yêu cầu trên bạn tạo ra các story và các rule yml phù hợp 

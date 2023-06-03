@@ -711,7 +711,7 @@
                 selector: "#webchat",
                 customData: { language: "en" },
                 // socketUrl: "http://localhost:5005",
-                socketUrl: "{{payload.domain_socket}}",
+                socketUrl: '{{ payload.domain_socket }}',
                 interval: 1000, // 1000 ms between each message
                 socketPath: "/socket.io/",
                 title: "AI Chatbot",
