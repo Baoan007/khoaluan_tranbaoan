@@ -1,0 +1,67 @@
+version: "3.1"
+
+intents:
+  # thêm intents cho user nhập
+  - greet_hello
+  - search_nganh_hoc:
+      use_entities:
+        - ten_nganh
+  - search_nganh_hoc_chi_tieu:
+      use_entities:
+        - ten_nganh
+  # Lấy tất cả ngành học hiện có
+  - get_nganh_hoc
+  - mood_great_2
+  - search_nganh_hoc_ma_nganh
+  - user_input_ma_nganh
+
+actions:
+  - action_get_nganh_hoc
+  - action_search_nganh_hoc
+  - action_search_nganh_hoc_chi_tieu
+  - action_search_nganh_hoc_ma_nganh
+
+responses:
+  utter_goodbye:
+    - text: "Tạm biệt"
+
+  # Custom mẫu trả lời của bot -> sau đó nó sẽ được gọi trong file story [action]
+  utter_greet_hello:
+    - text: "Chào! tôi có thể giúp gì cho bạn"
+  # Xử lí fall back khi nhập sai thay vì không phản hồi thì sẽ phản hồi
+  utter_fallback:
+    - text: "Xin lỗi, tôi không hiểu ý bạn lắm. Bạn có thể nói rõ hơn được không?"
+    - text: "Tôi xin lỗi, tôi không thể xử lý yêu cầu của bạn. Bạn có thể cung cấp thông tin khác được không?"
+  
+  utter_goodbye_2:
+    - text: "Cảm ơn bạn! Hãy cho tôi biết nếu bạn có thêm câu hỏi."
+  
+  utter_hoi_ma_nganh:
+    - text: "Bạn vui lòng nhập mã ngành cần tìm"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+# Dùng để Lưu session thôi chứ không có làm gì_____ Bằng [SlotSet('nganh', nganh)]
+entities:
+  - ten_nganh
+  - ma_nganh
+
+slots:
+  ten_nganh:
+    type: text
+    mappings: # Bắt buộc phải có mapping
+      - type: from_entity
+        entity: ten_nganh
+        # this slot will not influence the predictions
+        # of the dialogue policies
+        influence_conversation: false
+  ma_nganh:
+    type: text
+    mappings: # Bắt buộc phải có mapping
+      - type: from_entity
+        entity: ma_nganh
+        # this slot will not influence the predictions
+        # of the dialogue policies
+        influence_conversation: false
