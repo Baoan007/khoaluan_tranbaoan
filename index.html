@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+       rel="stylesheet"
+     /> -->
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/general.css') }} "
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/queries.css') }}"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>KHTN-Tuyển sinh Đại học</title>
+  </head>
+  <body>
+    <!-- frontend -->
+    <!-- <script>
+      !(function () {
+        let e = document.createElement("script"),
+          t = document.head || document.getElementsByTagName("head")[0];
+        (e.src =
+          "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+          // Replace 1.x.x with the version that you want
+          (e.async = !0),
+          (e.onload = () => {
+            window.WebChat.default(
+              {
+                initPayload: "/greet",
+                customData: { language: "en" },
+                socketUrl: "https://localhost:5001",
+                // add other props here
+              },
+              null
+            );
+          }),
+          t.insertBefore(e, t.firstChild);
+      })();
+    </script> -->
+
+    <header class="header">
+      <!-- <a href="#">
+      <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
+    </a> -->
+      <a class="main-nav-link nav-cta" href="#"
+        ><i class="text-large">HCMUS<br /><br />Tuyển sinh</i></a
+      >
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#gioithieu">Giới thiệu</a></li>
+          <li><a class="main-nav-link" href="#tintuc">Tin tức</a></li>
+          <li><a class="main-nav-link" href="#sukien">Sự kiện</a></li>
+          <li><a class="main-nav-link" href="#dt">Đào tạo</a></li>
+          <li><a class="main-nav-link" href="#tuyensinh">Tuyển sinh</a></li>
+          <li>
+            <a
+              class="main-nav-link"
+              href="#"
+              onclick="window.open('https://www.hcmus.edu.vn/nghien-cuu')"
+              >Nghiên cứu khoa học
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="main-nav-link"
+              href="#"
+              onclick="window.open('https://www.hcmus.edu.vn/qhqt')"
+              >Hợp tác
+            </a>
+          </li>
+          <!-- <li><a class="main-nav-link nav-cta" href="#cta">Hỗ trợ</a></li> -->
+          <li>
+            <a href="#cta" class="main-nav-link nav-cta">Hỗ trợ &rarr;</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Trường Đại học Khoa học Tự nhiên</h1>
+            <p class="hero-description">
+              Mục tiêu trở thành một đại học nghiên cứu hàng đầu của Việt Nam và
+              khu vực Đông Nam Á về đào tạo, nghiên cứu khoa học, công nghệ nền
+              tảng của nền kinh tế tri thức trong thế kỷ 21.
+            </p>
+            <a href="#tuyensinh" class="btn btn--full margin-right-sm"
+              >Tuyển sinh bậc Đại học</a
+            >
+            <a href="#cta" class="main-nav-link btn btn--outline"
+              >Đăng ký tư vấn</a
+            >
+          </div>
+          <div class="hero-img-box">
+            <video width="100%" height="100%" autoplay loop muted playsinline>
+              <source
+                src="{{ url_for('static', filename='img/video.mp4') }}"
+                type="video/mp4"
+              />
+              video
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-featured">
+        <div class="container">
+          <span class="subheading" id="gioithieu">Giới thiệu</span>
+          <p class="center-text heading-slogan margin-bottom-large">
+            Thỏa sức sáng tạo - Chủ động tương lai - Toàn diện giá trị.
+          </p>
+          <div class="grid grid--6-cols">
+            <dir class="center-text">
+              <p class="heading-tertiary margin-bottom-md">1995</p>
+              <p class="subheading subheading-small">Thành lập</p>
+            </dir>
+            <dir class="center-text">
+              <p class="heading-tertiary margin-bottom-md">2</p>
+              <p class="subheading subheading-small">Cơ sở</p>
+            </dir>
+            <dir class="center-text">
+              <p class="heading-tertiary margin-bottom-md">9</p>
+              <p class="subheading subheading-small">Khoa</p>
+            </dir>
+            <dir class="center-text">
+              <p class="heading-tertiary margin-bottom-md">12</p>
+              <p class="subheading subheading-small">Phòng thí nghiệm</p>
+            </dir>
+            <dir class="center-text">
+              <p class="heading-tertiary margin-bottom-md">15</p>
+              <p class="subheading subheading-small">Trung tâm</p>
+            </dir>
+            <dir class="center-text">
+              <p class="heading-tertiary margin-bottom-md">15.000</p>
+              <p class="subheading subheading-small">sinh viên</p>
+            </dir>
+          </div>
+          <div class="all-recipes">
+            <a
+              href="index.html#gioithieu"
+              onclick="window.open('https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Khoa_h%E1%BB%8Dc_T%E1%BB%B1_nhi%C3%AAn,_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Qu%E1%BB%91c_gia_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh')"
+            >
+              Xem thêm HCMUS &rarr;</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section-how">
+        <div class="container">
+          <span class="subheading" id="tintuc">Tin tức</span>
+          <h2 class="heading-secondary">
+            Tin tức mới nhất và kiến thức hữu ích từ HCMUS
+          </h2>
+        </div>
+        <div class="container grid grid--2-cols grid--center-v">
+          <!-- STEP 01 -->
+          <div class="step-text-box">
+            <p class="step-number margin-bottom-md" id="01">01</p>
+            <h3 class="subheading">
+              Sinh viên Trường ĐH Khoa học tự nhiên TP.HCM đoạt hạng nhất thế
+              giới cuộc thi lập trình
+            </h3>
+            <div class="meal-tags">
+              <span class="tag tag--vegetarian">23/10/2022</span>
+            </div>
+            <p class="step-description">
+              Sinh viên khoa công nghệ thông tin Trường đại học Khoa học tự
+              nhiên (Đại học Quốc gia TP.HCM) đã đoạt hạng nhất thế giới trong
+              cuộc thi lập trình sinh viên IEEExtreme lần 16 năm 2022.
+            </p>
+            <a
+              href="index.html#01"
+              onclick="window.open('https://tuoitre.vn/truong-dai-hoc-khoa-hoc-tu-nhien-tphcm-doat-hang-nhat-the-gioi-cuoc-thi-lap-trinh-sinh-vien-20221023091934482.htm#:~:text=S%C3%A1ng%20nay%2023%2D10%2C%20Tr%C6%B0%E1%BB%9Dng,trong%20cu%E1%BB%99c%20thi%20IEEExtreme%202022.')"
+              >Nguồn: Báo tuổi trẻ &rarr;</a
+            >
+          </div>
+
+          <div class="step-img-box">
+            <img
+              src="{{ url_for('static', filename='img/1.jpg') }}"
+              class="step-img"
+              alt="Tin tuc"
+            />
+          </div>
+
+          <!-- STEP 02 -->
+          <div class="step-img-box">
+            <img
+              src="{{ url_for('static', filename='img/2.jpg') }}"
+              class="step-img"
+              alt="tintuc"
+            />
+          </div>
+          <div class="step-text-box">
+            <p class="step-number margin-bottom-md" id="02">02</p>
+
+            <h3 class="subheading">
+              Trường đại học Khoa học tự nhiên TP.HCM xét tuyển bổ sung 8 ngành
+            </h3>
+            <div class="meal-tags">
+              <span class="tag tag--vegetarian">02/10/2022</span>
+            </div>
+            <p class="step-description">
+              Trường đại học Khoa học tự nhiên (Đại học Quốc gia TP.HCM) vừa
+              thông báo nhận hồ sơ xét tuyển bổ sung tám ngành đào tạo theo hai
+              phương thức tuyển sinh, dành thêm học bổng cho các ngành này.
+            </p>
+            <a
+              href="index.html#02"
+              onclick="window.open('https://tuoitre.vn/truong-dai-hoc-khoa-hoc-tu-nhien-tphcm-xet-tuyen-bo-sung-8-nganh-20221002134847167.htm')"
+              >Nguồn: Báo tuổi trẻ &rarr;</a
+            >
+          </div>
+
+          <!-- STEP 03 -->
+          <div class="step-text-box">
+            <p class="step-number margin-bottom-md" id="03">03</p>
+
+            <h3 class="subheading">
+              Điểm chuẩn Trường ĐH Khoa học tự nhiên TP.HCM: 17 - 28,20 điểm
+            </h3>
+            <div class="meal-tags">
+              <span class="tag tag--vegetarian">15/09/2022</span>
+            </div>
+            <p class="step-description">
+              Trường đại học Khoa học tự nhiên (Đại học Quốc gia TP.HCM) vừa
+              công bố điểm chuẩn trúng tuyển theo phương thức dựa trên kết quả
+              kỳ thi tốt nghiệp THPT 2022, với mức điểm cao nhất 28,20.
+            </p>
+            <a
+              href="index.html#03"
+              onclick="window.open('https://tuoitre.vn/diem-chuan-truong-dh-khoa-hoc-tu-nhien-tp-hcm-17-28-20-diem-2022091514305362.htm')"
+              >Nguồn: Báo tuổi trẻ &rarr;</a
+            >
+          </div>
+          <div class="step-img-box">
+            <img
+              src="{{ url_for('static', filename='img/3.jpg') }}"
+              class="step-img"
+              alt="iPhone app
+          delivery screen"
+            />
+          </div>
+
+          <div class="container all-recipes">
+            <a
+              href="index.html#03"
+              onclick="window.open('https://tuoitre.vn/truong-dh-khoa-hoc-tu-nhien-tphcm.html')"
+              >Xem thêm tin tức từ HCMUS &rarr;</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonials">
+        <div class="testimonials-container">
+          <span class="subheading" id="sukien">Sự kiện</span>
+          <h2 class="heading-secondary">Những sự kiện nổi bật từ HCMUS</h2>
+          <img
+            class="meal-img meal"
+            src="{{ url_for('static', filename='img/i/sukien.jpg') }}"
+            id="sukien1"
+            alt="sukien"
+          />
+        </div>
+
+        <dir class="sukien">
+          <dir class="grid grid--2-cols">
+            <div class="meal">
+              <img
+                src="{{ url_for('static', filename='img/sk.jpg') }} "
+                class="meal-img"
+                alt="học thuật hóa học"
+              />
+              <div class="meal-content">
+                <div class="meal-tags">
+                  <span class="tag tag--vegetarian">23/4/2023</span>
+                </div>
+                <p class="subheading margin-bottom-md trans-none">
+                  Olympic Hóa học sinh viên toàn quốc
+                </p>
+                <a
+                  href="index.html#sukien"
+                  onclick="window.open('https://hcmus.edu.vn/component/content/article/80-tin-hoat-dong/4972-truong-dh-khoa-hoc-tu-nhien-dang-cai-to-chuc-thanh-cong-olympic-hoa-hoc-sinh-vien-toan-quoc?Itemid=437')"
+                  >Chi tiết &rarr;</a
+                >
+              </div>
+            </div>
+
+            <div class="meal">
+              <img
+                src="{{ url_for('static', filename='img/sk2.jpg') }}"
+                class="meal-img"
+                alt="học thuật hóa học"
+              />
+
+              <div class="meal-content">
+                <div class="meal-tags">
+                  <span class="tag tag--vegetarian">18/4/2023</span>
+                </div>
+                <p class="subheading margin-bottom-md trans-none">
+                  Giáo sư Nobel thuyết giảng Hóa học
+                </p>
+                <a
+                  href="index.html#sukien"
+                  onclick="window.open('https://hcmus.edu.vn/component/content/article/80-tin-hoat-dong/4964-giao-su-nobel-hoa-hoc-thuyet-giang-tai-truong-dh-khoa-hoc-tu-nhien?Itemid=437')"
+                  >Chi tiết &rarr;</a
+                >
+              </div>
+            </div>
+          </dir>
+        </dir>
+        <div class="container all-recipes">
+          <a
+            href="index.html#sukien1"
+            onclick="window.open('https://hcmus.edu.vn/tin-tuc')"
+            >Xem thêm Sự kiện từ HCMUS &rarr;</a
+          >
+        </div>
+      </section>
+
+      <section class="section-featured" id="dt">
+        <div class="container">
+          <span class="subheading">Đào tạo</span>
+          <p class="center-text heading-slogan margin-bottom-large">
+            Đào tạo công dân toàn cầu, hành động vì sự phát triển bền vững.
+          </p>
+
+          <div class="grid grid--4-cols">
+            <dir class="center-text">
+              <p class="heading-tertiary margin-bottom-md">12</p>
+              <p class="subheading subheading-small">Giáo sư</p>
+            </dir>
+            <dir class="center-text">
+              <p class="heading-tertiary margin-bottom-md">68</p>
+              <p class="subheading subheading-small">Phó giáo sư</p>
+            </dir>
+            <dir class="center-text">
+              <p class="heading-tertiary margin-bottom-md">185</p>
+              <p class="subheading subheading-small">Tiến sĩ</p>
+            </dir>
+            <dir class="center-text">
+              <p class="heading-tertiary margin-bottom-md">9</p>
+              <p class="subheading subheading-small">Khoa</p>
+            </dir>
+          </div>
+
+          <section class="section-meals">
+            <div class="container grid grid--3-cols margin-bottom-md">
+              <div class="meal">
+                <img
+                  src="{{ url_for('static', filename='img/hoctap3.jpg') }}"
+                  class="meal-img"
+                />
+                <div class="meal-content">
+                  <div class="meal-tags">
+                    <span class="tag tag--vegetarian" id="daotao"
+                      >Hệ chất lượng cao</span
+                    >
+                  </div>
+                  <p class="meal-title">Chương trình chính quy đại trà</p>
+                  <ul class="meal-attributes">
+                    <li class="meal-attribute">
+                      <ion-icon
+                        class="meal-icon"
+                        name="checkmark-outline"
+                      ></ion-icon>
+                      <span>Chương trình tăng cường tiếng Anh</span>
+                    </li>
+                    <li class="meal-attribute">
+                      <ion-icon
+                        class="meal-icon"
+                        name="checkmark-outline"
+                      ></ion-icon>
+                      <span>Đội ngũ giảng viên trình độ ngoại ngữ</span>
+                    </li>
+                    <li class="meal-attribute">
+                      <ion-icon
+                        class="meal-icon"
+                        name="checkmark-outline"
+                      ></ion-icon>
+                      <span>Chuẩn đầu ra ngoại ngữ: Ielts 5.5, Toeic 600</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="meal">
+                <img
+                  src="{{ url_for('static', filename='img/hoctap4.jpg') }}"
+                  class="meal-img"
+                />
+                <div class="meal-content">
+                  <div class="meal-tags">
+                    <span class="tag tag--vegetarian">Hệ đại trà</span>
+                  </div>
+                  <p class="meal-title">Chương trình đào tạo chất lượng cao</p>
+                  <ul class="meal-attributes">
+                    <li class="meal-attribute">
+                      <ion-icon
+                        class="meal-icon"
+                        name="checkmark-outline"
+                      ></ion-icon>
+                      <span>Cơ sở vật chất tốt</span>
+                    </li>
+                    <li class="meal-attribute">
+                      <ion-icon
+                        class="meal-icon"
+                        name="checkmark-outline"
+                      ></ion-icon>
+                      <span>Đội ngũ giảng viên trình độ chuyên môn cao</span>
+                    </li>
+                    <li class="meal-attribute">
+                      <ion-icon
+                        class="meal-icon"
+                        name="checkmark-outline"
+                      ></ion-icon>
+                      <span>Chuẩn đầu ra ngoại ngữ: Ielts 4.5, Toeic 450</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="diets">
+                <h3 class="heading-tertiary">Danh sách Khoa</h3>
+                <ul class="list" type="1">
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                    <span>Khoa Công nghệ thông tin</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                    <span>Khoa Toán – Tin học</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                    <span>Khoa Vật lý – Vật lý Kỹ thuật</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                    <span>Khoa Hóa học</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                    <span>Khoa Sinh học & Công nghệ Sinh học</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                    <span>Khoa Môi trường</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                    <span>Khoa Khoa học và Công nghệ vật liệu</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                    <span>Khoa Địa chất</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                    <span>Khoa Điện tử Viễn thông.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="container all-recipes">
+              <a href="index.html#daotao" onclick="window.open('daotao.html')"
+                >Chi tiết Đào tạo từ HCMUS &rarr;</a
+              >
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="section-pricing">
+        <div class="container">
+          <span class="subheading" id="tuyensinh">Tuyển sinh bậc Đại học</span>
+          <p class="center-text heading-slogan">
+            Tương lai phụ thuộc vào những gì bạn làm hôm nay.
+          </p>
+        </div>
+
+        <dir class="container">
+          <img
+            id="ts"
+            src="{{ url_for('static', filename='img/tuyensinh.png') }}"
+            class="meal"
+            style="width: 100%; margin-bottom: 2rem"
+            alt="tuyensinh"
+          />
+        </dir>
+
+        <div class="container all-recipes" style="margin-top: 3rem">
+          <a href="index.html#ts" onclick="window.open('tuyensinh.html')"
+            >Xem chi tiết Tuyển sinh Đại học HCMUS &rarr;</a
+          >
+        </div>
+      </section>
+
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Đăng ký tư vấn tuyển sinh!</h2>
+              <p class="cta-text">
+                Nếu bạn chợp mắt vào lúc này, bạn sẽ mơ. Nếu bạn bắt đầu việc
+                học ngay bây giờ, bạn sẽ biến giấc mơ ấy thành sự thật.
+              </p>
+
+              <form class="cta-form" action="#">
+                <div>
+                  <label for="full-name">Họ và tên</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="Tên phụ huynh/học sinh"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Địa chỉ email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="phuhuynh.@email.com"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Số điện thoại</label>
+                  <input
+                    id="phone"
+                    type="phone"
+                    placeholder="0333 444 555"
+                    required
+                  />
+                </div>
+
+                <button class="btn btn--form">Sign up now</button>
+
+                <!-- <input type="checkbox" />
+              <input type="number" /> -->
+              </form>
+            </div>
+            <div class="cta-img-box" role="img" aria-label="hỗ trợ"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--4-cols">
+        <div class="logo-col">
+          <a class="main-nav-link nav-cta" href="#"
+            ><i class="text-large">↩ Trang chủ</i></a
+          >
+
+          <p class="copyright">
+            <span class="year"></span>. Khóa luận tốt nghiệp
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="heading-slogan">Cơ sở 1</p>
+          <address class="contacts">
+            <p class="address">
+              227 đường Nguyễn Văn Cừ, phường 4, quận 5, Tp. HCM
+            </p>
+            <br />
+            <p>
+              <a class="footer-link" href="tel:02862884499"> (028) 62884499</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@omnifood.com"
+                >info@hcmus.edu.vn</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <div class="address-col">
+          <p class="heading-slogan">Cơ sở 2</p>
+          <address class="contacts">
+            <p class="address">
+              Phường Linh Trung, Quận Thủ Đức, Tp. HCM. <br />
+              <br />
+            </p>
+            <p>
+              <a class="footer-link" href="tel: 0838962823"> (08) 38962823</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@omnifood.com"
+                >info@hcmus.edu.vn</a
+              >
+            </p>
+          </address>
+        </div>
+        <div>
+          <img
+            class="meal"
+            src="{{ url_for('static', filename='img/tunhien1.jpg') }}"
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
+
+    <!-- rasa chatbot -->
+
+    <style>
+      .rw-conversation-container .rw-header {
+        background-color: var(--color-primary);
+      }
+      .rw-conversation-container .rw-messages-container .rw-response {
+        background-color: #e16595;
+        color: var(--color-grey-light-1);
+      }
+
+      .rw-conversation-container .rw-send {
+        color: aqua;
+      }
+    </style>
+
+    <!-- Nếu thêm đoạn script bên dưới buộc phải thêm đoạn này -->
+    <!-- <div
+      id="rasa-chat-widget"
+      data-websocket-url="http://localhost:5005/"
+    ></div> -->
+
+    <!-- Không cần thêm script này vì đây là chat box widget giao diện sẵn -->
+    <!-- <script
+      src="https://unpkg.com/@rasahq/rasa-chat"
+      type="application/javascript"
+    ></script> -->
+
+    <script>
+      !(function () {
+        let e = document.createElement("script"),
+          t = document.head || document.getElementsByTagName("head")[0];
+        (e.src =
+          "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"),
+          // Replace 1.x.x with the version that you want
+          (e.async = !0),
+          (e.onload = () => {
+            window.WebChat.default(
+              {
+                // initPayload: "/greet",
+                selector: "#webchat",
+                customData: { language: "en" },
+                // socketUrl: "http://localhost:5005",
+                socketUrl: "http://khtntuyensinh.info:5005",
+                interval: 1000, // 1000 ms between each message
+                socketPath: "/socket.io/",
+                // socketUrl: "{{payload.domain}}:5005",
+                // socketUrl: "http://45.32.29.231:5005",
+                title: "AI Chatbot",
+                hideWhenNotConnected: true,
+                inputTextFieldHint: "Vui lòng nhập yêu cầu của bạn...",
+                connectingText: "Waiting for server...",
+                fullScreenMode: true,
+                params: {
+                  images: {
+                    dims: {
+                      width: 300,
+                      height: 200,
+                    },
+                  },
+                  storage: "session",
+                },
+                subtitle: "Tư vấn tuyển sinh Đại học - HCMUS",
+                // add other props here
+              },
+              null
+            );
+          }),
+          t.insertBefore(e, t.firstChild);
+      })();
+    </script>
+  </body>
+</html>
