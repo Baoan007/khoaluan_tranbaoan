@@ -1,0 +1,49 @@
+# version: "3.1"
+
+# stories:
+#   - story: Hiển thị tất cả các ngành
+#     steps:
+#       - intent: greet
+#       - action: utter_greet
+#       - intent: search_all_nganh_hoc
+#       - action: action_search_all_nganh_hoc
+
+# - story: tim kiem 1 nganh (1)
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: search_nganh_hoc
+#       entities:
+#         - ten_nganh: "sinh học"
+#         - ten_nganh: "điện tử viễn thông"
+#         - ten_nganh: "khoa học vật liệu"
+#         - ten_nganh: "công nghệ sinh học chất lượng cao"
+#     - action: action_search_nganh_hoc
+
+# - story: tim kiem 1 nganh (2)
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: answer_user_name
+#       entities:
+#         - user_name: "An"
+#     - action: utter_greet_with_name
+#     - action:
+
+#     - intent: search_nganh_hoc
+#       entities:
+#         - ten_nganh: "sinh học"
+#     - action: action_search_nganh_hoc
+
+# - story: tim kiem 1 nganh (1)
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: search_nganh_hoc
+#       entities:
+#         - ten_nganh: "sinh học"
+#         - ten_nganh: "điện tử viễn thông"
+#         - ten_nganh: "khoa học vật liệu"
+#         - ten_nganh: "công nghệ sinh học chất lượng cao"
+#     - action: action_get_nganh_hoc
+

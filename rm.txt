@@ -1,0 +1,83 @@
+
+# Chạy flask
+python app.py
+
+# Chạy tất rasa api
+cd rasa&&rasa run actions
+
+# Chạy cors
+cd rasa&&rasa run --cors "*"
+hoặc debug
+cd rasa && rasa run -m models --enable-api --cors "*" --debug
+
+# Validate dữ liệu trước khi train
+rasa data validate
+# Update dữ liệu và tạo file model
+rasa train
+
+# Visual
+rasa interactive
+
+rasa shell --debug
+
+rasa train nlu
+
+
+# Chạy models and api
+rasa run actions&
+rasa run -m models --enable-api --cors "*" --port 5005
+
+
+# Các cứu pháp webhook
+rasa run -m models --endpoints endpoints.yml
+# Test status
+http://localhost:5005/webhooks/rest
+http://localhost:5005/webhooks/socketio
+# Test trên postmain
+curl -s localhost:5005/webhooks/rest/webhook -d '{ "sender": "Giorgio", "message": "hi" }'
+
+
+# Tất cả port để chạy
+
+- 5005 - entrypoint
+- 5055 - socket
+- 8000 - flask
+
+# Kill port
+
+lsof -i :[port_number]
+kill [process_id]
+
+lsof -i :5005
+lsof -i :5055
+lsof -i :8000
+
+
+# Xem nginx chạy với cổng nào.(Nó sẽ hiển thị các cổng port mà nginx đang mở)
+netstat -tlpn| grep nginx ; ss -tlpn| grep nginx
+
+# Kiểm tra tường lửa (Không cần kiểm tra vì không cài đặt gói này)
+sudo ufw status
+
+# Xem các dịch vụ để tìm các dịch vụ tào lao mà tắt nó
+systemctl list-units
+
+# Bỏ luôn firewall cho đời bớt khổ
+sudo service csf status
+csf -x
+https://www.hostwinds.com/tutorials/checking-the-csf-status-disable-enable-restart-it
+
+
+nohup rasa run actions&nohup rasa run -m models --enable-api --cors "*" &nohup python app.py
+
+
+
+# Các bước chạy được project này
+# 1. Config crednetials.yml
+# 2. Config endpoints.yml
+# 3. Config templates/index.html
+# 4. rasa data validate
+# 5. rasa train
+# 6. rasa run actions
+# 7. rasa run -m models --enable-api --cors "*" hoặc rasa interactive (Nếu chỉ run terminal)
+# 8. python app.py

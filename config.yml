@@ -1,0 +1,61 @@
+
+recipe: default.v1
+assistant_id: 20230526-233536-coped-suite
+
+language: vi
+
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: "char_wb"
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier # Mô hình DIET
+    epochs: 100
+    constrain_similarities: true # hạn chế điểm tương đồng
+  - name: EntitySynonymMapper
+
+  # Cấu hình yếu tố cá nhân ảnh hưởng đến quyết định chọn trường
+  - name: ResponseSelector
+    retrieval_intent: yeu_to_ca_nhan
+    scale_loss: false
+    epochs: 100
+
+  # Cấu hình yếu tố đặc điểm trường
+  - name: ResponseSelector
+    retrieval_intent: ddt
+    scale_loss: false
+    epochs: 100
+  # Cấu hình các câu hỏi tuyển sinh về thủ tục, thời gian...
+  - name: ResponseSelector
+    retrieval_intent: others
+    scale_loss: false
+    epochs: 100
+    # Cấu hình cho quy chế học vụ
+  - name: ResponseSelector
+    retrieval_intent: quy_che_hoc_vu
+    scale_loss: false
+    epochs: 100
+  - name: ResponseSelector
+    retrieval_intent: chatchit
+    scale_loss: false
+    epochs: 100
+  - name: ResponseSelector
+    retrieval_intent: out_of_scope
+    scale_loss: false
+    epochs: 100
+
+policies:
+  - name: MemoizationPolicy
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100
+  - name: RulePolicy
+
+socketio:
+  socket_path: /socket.io/
+  cors_allowed_origins:
+    - "http://khtntuyensinh.info"

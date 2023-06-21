@@ -1,0 +1,28 @@
+# version: "3.1"
+# stories:
+#   - story: ask_infor_truong
+#     steps:
+#       - intent: infor_truong
+#       - action: utter_infor_truong
+#   - story: deny infor_truong
+#     steps:
+#       - intent: infor_truong
+#       - action: utter_infor_truong
+#       - intent: deny
+#       - action: utter_goodbye
+
+#   - story: more infor_truong
+#     steps:
+#       - intent: greet
+#       - action: utter_greet
+#       - intent: infor_truong
+#       - action: utter_infor_truong
+#       - intent: infor_truong
+#       - action: utter_infor_truong
+
+#   - story: greet infor_truong
+#     steps:
+#       - intent: greet
+#       - action: utter_greet
+#       - intent: infor_truong
+#       - action: utter_infor_truong

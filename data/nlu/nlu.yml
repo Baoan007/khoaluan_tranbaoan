@@ -1,0 +1,200 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Xin chào
+      - xin chào bot
+      - chào chatbot
+      - chào bot
+      - chào bạn
+      - chào
+  ############################################
+  - intent: answer_user_name
+    examples: |
+      - tôi là [Binh](user_name)
+      - tôi là [Bình](user_name)
+      - tôi là [An](user_name)
+      - tôi là [Ân](user_name)
+      - tôi là [Ánh](user_name)
+      - tôi là [Anh](user_name)
+      - tôi là [Cường](user_name)
+      - tôi là [Cao](user_name)
+      - tôi là [Cẩn](user_name)
+      - tôi là [Chính](user_name)
+      - tôi là [Dũng](user_name)
+      - tôi là [Duy](user_name)
+      - tôi là [Đình](user_name)
+      - tôi là [Đạo](user_name)
+      - tôi là [Đức](user_name)
+      - tôi là [Dương](user_name)
+      - tôi là [Giao](user_name)
+      - tôi là [Giáp](user_name)
+      - tôi là [Hà](user_name)
+      - tôi là [Hoàng](user_name)
+      - tôi là [Hạnh](user_name)
+      - tôi là [Hiếu](user_name)
+      - tôi là [Hải](user_name)
+      - tôi là [Hồng](user_name)
+      - tôi là [Huy](user_name)
+      - tôi là [Hảo](user_name)
+      - tôi là [Hoa](user_name)
+      - tôi là [Hiệp](user_name)
+      - tôi là [Khánh](user_name)
+      - tôi là [Khang](user_name)
+      - tôi là [Loan](user_name)
+      - tôi là [Tuệ](user_name)
+      - tôi là [Tuấn](user_name)
+      - tôi là [Trị](user_name)
+      - tôi là [Trung](user_name)
+      - tôi là [Yến](user_name)
+      - tôi là [Oanh](user_name)
+      - tôi là [Thảo](user_name)
+      - tôi là [Thanh](user_name)
+      - tôi là [Thúy](user_name)
+      - tôi là [Thủy](user_name)
+      - tôi là [Thông](user_name)
+      - bạn có thể gọi tôi là [Ân](user_name)
+      - tên của tôi là [Nhi](user_name)
+      - mình tên là [Thảo](user_name)
+      - [Bảo](user_name) là tên của mình 
+      - bạn có thể gọi mình là [Giang](user_name)
+      - [Hoàng](user_name)
+      - [Vương](user_name)
+      - [Van](user_name)
+      - [Ngoc](user_name)
+      - [Trang](user_name)
+      - [Thuận](user_name)
+      - à nhầm tôi là [Tâm](user_name)
+      - à không, tôi là [Trinh](user_name)
+      - sai rồi, [Long](user_name) mới đúng
+      - [Phương Linh](user_name) mới đúng
+
+    # Thêm càng nhiều tên thì bot càng thông minh
+  ############################################
+  - intent: goodbye
+    examples: |
+      - Tạm biệt
+      - good bye
+      - chào tạm biệt
+
+  - intent: affirm
+    examples: |
+      - Đồng ý
+      - tôi đồng ý
+      - yes
+
+  - intent: deny
+    examples: |
+      - Không
+      - tôi không đồng ý
+      - không đồng ý
+      - no
+      - No
+
+  - intent: mood_great
+    examples: |
+      - Tuyệt vời
+      - quá tuyệt
+
+  - intent: mood_unhappy
+    examples: |
+      - Buồn quá
+      - tôi buồn
+
+  - intent: bot_challenge
+    examples: |
+      - bạn là ai?
+      - bạn có chức năng gì?
+      - bạn có những chức năng gì nào?
+      - bạn có thể giúp cho tôi gì?
+      - bạn biết tư vấn tuyển sinh không?
+  - intent: thanks
+    examples: |
+      - Cám ơn
+      - Thanks
+      - Cám ơn bạn
+  - intent: stop
+    examples: |
+      - Thoát
+      - shutdown
+      - Thoát nhé
+
+  - intent: quy_che_hoc_vu_main
+    examples: |
+      - Các quy chế học vụ và đào tạo của trường? 
+      - Các quy định đào tạo của trường?
+      - Quy chế đào tạo?
+  # -----------intents cho form----------------
+  - intent: dang_ky_form
+    examples: |
+      - tôi muốn để lại thông tin
+      - tôi muốn đăng ký form
+      - tôi muốn hỗ trợ tư vấn qua điện thoại
+  - intent: cancel_form
+    examples: |
+      - tôi muốn hủy form
+      - hủy thông tin
+      - tôi muốn sửa thông tin của mình
+
+  - intent: ask_xem_lai_form
+    examples: |
+      - bạn nhớ thông tin của tôi là gì không?
+      - thông tin của tôi là gì?
+  - intent: answer_phone
+    examples: |
+      - 0999422333
+      - số điện thoại thôi là [0333411226]{"entity": "phone"}
+  - intent: answer_address
+    examples: |
+      - địa chỉ nhà tôi là [37 duong so 3, phuong binh an, quan 2, tp ho chi minh]{"entity": "address"}
+  - intent: answer_email
+    examples: |
+      - số điện thoại thôi là [thao@gmail.com]{"entity": "email"}
+      - tranbaoan@gmail.com
+  # Cứu pháp slots[giá trị mặc định](biến slot)
+  # Cứu pháp 2  slots[{entities}](biến slot)
+  # -----------intents cho actions----------------
+
+  - intent: search_nganh_hoc
+    examples: |
+      - ngành [Nhóm ngành Toán học, Toán tin, Toán ứng dụng](ten_nganh)
+      - Ngành [Khoa học máy tính (Chương trình tiên tiến)](ten_nganh)
+      - Ngành [Khoa học Dữ liệu](ten_nganh)
+      - Ngành [Công nghệ thông tin (Chương trình Chất lượng cao)](ten_nganh)
+      - Ngành [Nhóm ngành máy tính và công nghệ thông tin( ngành công nghệ thông tin; ngành Kỹ thuật phần mềm; ngành Hệ thống thông tin; ngành Khoa học máy tính; ngành Trí tuệ nhân tạo)](ten_nganh)
+      - Ngành [Địa chất học](ten_nganh)
+      - Ngành [Hải dương học](ten_nganh)
+      - Ngành [Kỹ thuật Địa chất](ten_nganh)
+      - Ngành [Kỹ thuật Điện tử - Viễn thông](ten_nganh)
+      - Ngành [Kỹ thuật Điện tử - Viễn thông(CT chất lượng cao)](ten_nganh)
+      - Ngành [Hóa học](ten_nganh)
+      - Ngành [Hóa học (Chương trình Chất lượng cao)](ten_nganh)
+      - Ngành [Công nghê Kỹ thuật Hóa học(CT Chất lượng cao)](ten_nganh)
+      - Ngành [Khoa học Vật liệu](ten_nganh)
+      - Ngành [Công nghệ Vật liệu](ten_nganh)
+      - Ngành [Khoa học Môi trường](ten_nganh)
+      - Ngành [Khoa học Môi trường (Chương trình Chất lượng cao)](ten_nganh)
+      - Ngành [Công nghệ Kỹ thuật Môi trường](ten_nganh)
+      - Ngành [Quản lý Tài nguyên và Môi trường](ten_nganh)
+      - Ngành [Sinh học](ten_nganh)
+      - Ngành [Sinh học (Chương trình Chất lượng cao)](ten_nganh)
+      - Ngành [Công nghệ Sinh học](ten_nganh)
+      - Ngành [Công nghệ Sinh học (Chương trình Chất lượng cao)](ten_nganh)
+      - Ngành [Vật lý học](ten_nganh)
+      - Ngành [Kỹ thuật Hạt nhân](ten_nganh)
+      - Ngành [Vật lý Y khoa](ten_nganh)
+
+  # - synonym: sinh học
+  #   examples: |
+  #     - sh
+  #     - SH
+
+  - intent: search_all_nganh_hoc
+    examples: |
+      - có tất cả các ngành nào?
+      - có bao nhiêu ngành?
+      - trường có bao nhiêu ngành?
+      - các ngành đào tạo của trường?
+      - có những ngành học nào?
+      - trường có bao nhiêu ngành học?

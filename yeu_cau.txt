@@ -1,0 +1,17 @@
+- Lấy 1 dòng
+
+- Bot hỏi trường khtn có các ngành nào
+=> hiển thị tất cả các ngành
+- Người dùng: chọn 1 ngành sinh học
+
+sinh_học -> lưu slots = ten_ngành
+
+Mỗi câu chat lưu slot
+
+
+
+- Tôi muốn lấy chỉ tiêu ($chi tiêu) của ngành sinh học (ten_ngành)
+
+ts = Tuyen_sinh.query.filter_by(ten_nganh='sinh_hoc').first()
+print(ts.chi_tieu)
+

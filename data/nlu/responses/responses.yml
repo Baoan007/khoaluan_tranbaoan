@@ -1,0 +1,615 @@
+version: "3.1"
+
+responses:
+  # CÁC YẾU TỐ ẢNH HƯỞNG ĐẾN QUYẾT ĐỊNH CHỌN TRƯỜNG:
+  # 1. Yếu tố các nhân
+  utter_yeu_to_ca_nhan/hoi_canteen:
+    - text: |-
+        Mời xem đánh giá canteen trường KHTN tại đây. 🤩
+        https://www.foody.vn/ho-chi-minh/can-tin-dai-hoc-khoa-hoc-tu-nhien
+
+  utter_yeu_to_ca_nhan/hoi_view_truong:
+    - text: |-
+        Trường ĐH KHTN Tp. Hồ Chí Minh là điểm đến ưa thích để check-in.
+        Mời xem link: https://www.youtube.com/watch?v=kBAtC5YsCKw
+
+  utter_yeu_to_ca_nhan/hoi_hoc_thuc_hanh_nhieu_hay_khong:
+    - text: |-
+        Trường Đại học Khoa học Tự nhiên TP. Hồ Chí Minh là một trong những Trường có cơ sở vật chất phục vụ thực hành tốt ở TP. Hồ Chí Minh. Trong quá trình học tập, các em được học tập trên các phòng mô hình mô phỏng các nhà máy thật, các hệ thống thiết bị thu nhỏ, các xưởng thực tập với đầy đủ máy móc thiết bị giúp các em tăng cường kỹ năng nghề nghiệp, đảm bảo có tay nghề đáp ứng yêu cầu công việc sau này.
+  ##############NOTE#######################
+  # # 2. Yếu tố về đặc điểm trường
+  # #HỌC PHÍ
+  utter_ddt/hoc_phi_truong_cong_lap:
+    - text: Trường Đại học Khoa học Tự nhiên TP. Hồ Chí Minh là Trường Công lập nên mức học phí sẽ giống như các trường công lập khác trong cả nước.
+
+  #HỌC BỔNG
+  utter_ddt/co_hoi_hoc_bong:
+    - text: "Mời xem chi tiết thông tin về học bổng dành cho sinh viên đại học tại: https://www.hcmus.edu.vn/hbsv"
+  #CHẤT LƯỢNG SINH VIÊN ĐẦU VÀO
+  utter_ddt/ti_le_choi_nganh:
+    - text: |-
+        Mời xem tỉ lệ chọi các ngành của trường KHTN TP. Hồ Chí Minh tại link:
+        https://diemthi.tuyensinh247.com/ti-le-choi/dai-hoc-khoa-hoc-tu-nhien-dai-hoc-quoc-gia-tphcm-QST.html?y=2012
+  #MỨC ĐỘ NỔI TIẾNG CỦA TRƯỜNG
+  utter_ddt/su_menh_truong:
+    - text: "Trường Đại học Khoa học Tự nhiên TP. Hồ Chí Minh là trung tâm đào tạo đại học, sau đại học, cung cấp nguồn nhân lực, đội ngũ chuyên gia trình độ cao trong lĩnh vực khoa học cơ bản và khoa học công nghệ mũi nhọn, có năng lực sáng tạo, làm việc trong môi trường quốc tế."
+
+  utter_ddt/ky_hieu_tuyen_sinh:
+    - text: Ký hiệu – mã trường của QST
+  utter_ddt/phuong_thuc_tuyen_sinh:
+    - text: |-
+        HCMUS sẽ bao gồm các phương thức xét tuyển và tỷ lệ % như sau:
+          - Phương thức 1: Xét tuyển thẳng, ưu tiên xét tuyển theo quy chế tuyển sinh của Bộ GD&ĐT (1% - 4%).
+          - Phương thức 2a: Ưu tiên xét tuyển thẳng theo quy định của ĐHQG-HCM (1% - 5%)
+          - Phương thức 2b: Ưu tiên xét tuyển theo quy định của ĐHQG-HCM (10% - 20%)
+          - Phương thức 3: Xét tuyển dựa trên kết quả kỳ thi tốt nghiệp THPT năm 2023 (30% - 50%)
+          - Phương thức 4: Xét tuyển dựa trên kết quả kỳ thi đánh giá năng lực do ĐHQG-HCM tổ chức năm 2023 (45%- 50%)
+          - Phương thức 5: Xét tuyển dựa trên kết quả các kỳ thi quốc tế (dành cho thí sinh tốt nghiệp THPT theo chương trình nước ngoài) (1% - 2%)
+          - Phương thức 6: Xét tuyển dựa trên kết quả các chứng chỉ ngoại ngữ quốc tế kết hợp với kết quả học tập THPT (8%-15%)
+  utter_ddt/hoat_dong_ngoai_khoa_truong:
+    - text: |-
+        HCMUS thường xuyên tổ chức nhiều hoạt động ngoại khóa thể thao và văn nghệ, tình nguyện vì cộng đồng cũng được tổ chức thường xuyên nhằm mang đến cho các bạn sinh viên cơ hội được trải nghiệm, va chạm thực tế...
+         1. Hoạt động thể dục thể thao
+         Trường có những câu lập bộ như bóng đá bóng rổ, bóng chuyền, cầu lông, để sinh viên rèn luyện sức khỏe, giảm căng thẳng sau giờ học.
+         2. Chương trình văn nghệ
+         Trường có nhiều đêm hội, các chương trình văn nghệ như Sóng,...   
+         3. Hoạt động tình nguyện
+         Các hoạt động tình nguyện cho sinh viên như Xuân tình nguyện, Mùa hè xanh, Tiếp sức mùa thi…
+  #MỨC ĐỘ HẤP DẪN CỦA NGÀNH HỌC
+  # KHOA SINH HỌC
+  utter_ddt/nganh_sinh_hoc:
+    - text: |-
+        Mã ngành: 7420101
+        Chỉ tiêu: 220
+        Học Phí: 30.400.000 vnđ
+        Tổ hợp thi tuyển sinh: A02, B00, B08
+        Khoa: Sinh học và công nghệ sinh học
+  utter_ddt/nganh_sinh_hoc_clc:
+    - text: |-
+        Mã ngành: 7420101_CLC
+        Chỉ tiêu: 40
+        Học Phí: 46.000.000 vnđ
+        Tổ hợp thi tuyển sinh: A02, B00, B08
+        Khoa: Sinh học và công nghệ sinh học
+  utter_ddt/nganh_cong_nghe_sinh_hoc:
+    - text: |-
+        Mã ngành: 7420201
+        Chỉ tiêu: 200
+        Học Phí: 30.400.000 vnđ
+        Tổ hợp thi tuyển sinh: A02, B00, B08, D09
+        Khoa: Sinh học và công nghệ sinh học
+  utter_ddt/nganh_cong_nghe_sinh_hoc_clc:
+    - text: |-
+        Mã ngành: 7420201_CLC
+        Chỉ tiêu: 120
+        Học Phí: 46.000.000 vnđ
+        Tổ hợp thi tuyển sinh: A02, B00, B08, D09
+        Khoa: Sinh học và công nghệ sinh học
+    # Khoa VẬT LÝ
+  utter_ddt/nganh_vat_ly_hoc:
+    - text: |-
+        Mã ngành: 7440102
+        Chỉ tiêu: 200
+        Học Phí: 24.900.000 vnđ
+        Khoa: Vật lý - Vật lý Kỹ thuật
+  utter_ddt/nganh_ky_thuat_hat_nhan:
+    - text: |-
+        Mã ngành: 7520402
+        Chỉ tiêu: 50
+        Học Phí: 24.900.000 vnđ
+        Tổ hợp thi tuyển sinh: A02, B00, B08, D09
+        Khoa: Vật lý - Vật lý Kỹ thuật
+  utter_ddt/nganh_vat_ly_y_khoa:
+    - text: |-
+        Mã ngành: 7520403
+        Chỉ tiêu: 40
+        Học Phí: 30.400.000 vnđ
+        Tổ hợp thi tuyển sinh: A02, B00, B08, D09
+        Khoa: Vật lý - Vật lý Kỹ thuật
+  utter_ddt/nganh_hai_duong_hoc:
+    - text: |-
+        Mã ngành: 7440228
+        Chỉ tiêu: 50
+        Học Phí: 30.400.000 vnđ
+        Tổ hợp thi tuyển sinh: A00, A01, B00, D07
+        Khoa: Vật lý - Vật lý Kỹ thuật
+  # KHoa TOÁN TIN
+  utter_ddt/nhom_nganh_toan_hoc_toan_tin_toan_ung_dung:
+    - text: |-
+        Mã ngành: 7460101_NN
+        Chỉ tiêu: 210
+        Học Phí: 30.400.000 vnđ
+        Tổ hợp thi tuyển sinh: A00, A01, B00, D01
+        Khoa: Khoa Toán - Tin
+  utter_ddt/nganh_khoa_hoc_du_lieu:
+    - text: |-
+        Mã ngành: 7480109
+        Chỉ tiêu: 90
+        Học Phí: 30.400.000 vnđ
+        Tổ hợp thi tuyển sinh: A00, A01, B08, D07
+        Khoa: Khoa Toán - Tin
+  # KHOA MÔI TRƯỜNG
+  utter_ddt/nganh_khoa_hoc_moi_truong:
+    - text: |-
+        Mã ngành: 7440301
+        Chỉ tiêu: 140
+        Học Phí: 24.900.000 vnđ
+        Tổ hợp thi tuyển sinh: A00, B00, B08, D07
+        Khoa: Khoa Môi Trường
+  utter_ddt/nganh_khoa_hoc_moi_truong_clc:
+    - text: |-
+        Mã ngành: 7440301_CLC
+        Chỉ tiêu: 40
+        Học Phí: 40.000.000 vnđ
+        Tổ hợp thi tuyển sinh: A00, B00, B08, D07
+        Khoa: Khoa Môi Trường
+  utter_ddt/nganh_cong_nghe_ky_thuat_moi_truong:
+    - text: |-
+        Mã ngành: 7510406
+        Chỉ tiêu: 120
+        Học Phí: 24.900.000 vnđ
+        Tổ hợp thi tuyển sinh: A00, B00, B08, D07
+        Khoa: Khoa Môi Trường
+  # Khoa vật liệu
+  utter_ddt/nganh_khoa_hoc_vat_lieu:
+    - text: |-
+        Mã ngành: 7440122
+        Chỉ tiêu: 150
+        Học Phí: 30.400.000 vnđ
+        Tổ hợp thi tuyển sinh: A00, A01, B00, D07
+        Khoa: Khoa học và Công nghệ Vật liệu
+  utter_ddt/nganh_cong_nghe_vat_lieu:
+    - text: |-
+        Mã ngành: 7510402
+        Chỉ tiêu: 50
+        Học Phí: 30.400.000 vnđ
+        Tổ hợp thi tuyển sinh: A00, A01, B00, D07
+        Khoa: Khoa học và Công nghệ Vật liệu
+  # Khoa Hóa
+  utter_ddt/nganh_hoa_hoc:
+    - text: |-
+        Mã ngành: 7440112
+        Chỉ tiêu: 220
+        Học Phí: 30.400.000 vnđ
+        Tổ hợp thi tuyển sinh: A00, B00, D07 , D90
+        Khoa: Hóa học
+  utter_ddt/nganh_hoa_hoc_clc:
+    - text: |-
+        Mã ngành: 7440112_CLC
+        Chỉ tiêu: 220
+        Học Phí: 46.000.000 vnđ
+        Tổ hợp thi tuyển sinh: A00, B00, D07 , D90
+        Khoa: Hóa học
+  utter_ddt/nganh_cong_nghe_ky_thuat_hoa_hoc:
+    - text: |-
+        Mã ngành: 7510401_CLC
+        Chỉ tiêu: 120
+        Học Phí: 50.800.000 vnđ
+        Tổ hợp thi tuyển sinh: A00, B00, D07 , D90
+        Khoa: Hóa học
+  # Khoa ĐTVT
+  utter_ddt/nganh_ky_thuat_dtvt:
+    - text: |-
+        Mã ngành: 7520207
+        Chỉ tiêu: 160
+        Học Phí: 30.400.000 vnđ
+        Tổ hợp thi tuyển sinh: A00, A01, D07 , D90
+        Khoa: Kỹ thuật Điện tử - Viễn thông
+  utter_ddt/nganh_ky_thuat_dtvt_clc:
+    - text: |-
+        Mã ngành: 7520207_CLC
+        Chỉ tiêu: 80
+        Học Phí: 46.000.000 vnđ
+        Tổ hợp thi tuyển sinh: A00, A01, D07 , D90
+        Khoa:  Kỹ thuật Điện tử - Viễn thông
+  # Khoa Địa chất
+  utter_ddt/nganh_dia_chat_hoc:
+    - text: |-
+        Mã ngành: 7440201
+        Chỉ tiêu: 100
+        Học Phí: 24.900.000 vnđ
+        Tổ hợp thi tuyển sinh: A00, A01, B07, D07
+        Khoa: Địa chất
+  utter_ddt/nganh_ky_thuat_dia_chat:
+    - text: |-
+        Mã ngành: 7520501
+        Chỉ tiêu: 50
+        Học Phí: 24.900.000 vnđ
+        Tổ hợp thi tuyển sinh: A00, A01, B07, D07
+        Khoa: Địa chất
+
+  # KHOA CÔNG NGHỆ THÔNG TIN
+  utter_ddt/nhom_nganh_may_tinh_va_cntt:
+    - text: |-
+        Mã ngành: 7480201_NN
+        Chỉ tiêu: 420
+        Học Phí: 30.400.000 vnđ
+        Tổ hợp thi tuyển sinh: A00, A01, B08, D07
+        Khoa: Công nghệ thông tin
+  utter_ddt/nganh_may_tinh_va_cntt_clc:
+    - text: |-
+        Mã ngành: 7480201_CLC
+        Chỉ tiêu: 420
+        Học Phí: 39.900.000 vnđ
+        Tổ hợp thi tuyển sinh: A00, A01, B08, D07
+        Khoa: Công nghệ thông tin
+  #MỨC ĐỘ HẤP DẪN CỦA NGÀNH HỌC
+  utter_ddt/cac_nganh_dao_tao:
+    - text: |-
+        Các ngành tuyển sinh Trường Đại học Khoa học Tự nhiên năm 2023:
+        1. Ngành Sinh học (Mã ngành: 7420101)
+        2. Ngành Sinh học (Chương trình Chất lượng cao) (Mã ngành: 7420101_CLC)
+        3. Ngành Công nghệ Sinh học (Mã ngành: 7420201)
+        4. Ngành Công nghệ Sinh học (Chương trình Chất lượng cao) (Mã ngành: 7420201_CLC)
+        5. Nhóm ngành Vật lý học, Công nghệ Vật lí điện tử và tin học (Mã ngành: 7440102_NN)
+        6. Ngành Hoá học (Mã ngành: 7440112)
+        7. Ngành Hoá học (Chương trình Chất lượng cao) (Mã ngành: 7440112_CLC)
+        8. Ngành Khoa học Vật liệu (Mã ngành: 7440122)
+        9. Ngành Địa chất học (Mã ngành: 7440201)
+        10. Ngành Hải dương học (Mã ngành: 7440228)
+        11. Ngành Khoa học Môi trường (Mã ngành: 7440301)
+        12. Ngành Khoa học Môi trường (Chương trình Chất lượng cao) (Mã ngành: 7440301_CLC)
+        13. Nhóm Ngành Toán học, Toán tin, Toán ứng dụng (Mã ngành: 7460101_NN)
+        14. Ngành Khoa học máy tính (Chương trình Tiên tiến) (Mã ngành: 7480101_toan_tin)
+        15. Ngành Khoa học dữ liệu (Mã ngành: 7460108)
+        16. Công nghệ thông tin (Chương trình Chất lượng cao) (Mã ngành: 7480201_CLC)
+        17. Nhóm ngành máy tính và Công nghệ thông tin (Mã ngành: 7480201_NN)
+        18. Ngành Trí tuệ nhân tạo (Mã ngành: 7480107)
+        19. Công nghệ kỹ thuật Hoá học (Chương trình Chất lượng cao) (Mã ngành: 7510401_CLC)
+        20. Ngành Công nghệ Vật liệu (Mã ngành: 7510402)
+        21. Ngành Công nghệ Kỹ thuật Môi trường (Mã ngành: 7510406)
+        22. Ngành Kỹ thuật điện tử - viễn thông (Mã ngành: 7520207)
+        23. Ngành Kỹ thuật điện tử - viễn thông (Chương trình Chất lượng cao) (Mã ngành: 7520207_CLC)
+        24. Ngành Kỹ thuật hạt nhân (Mã ngành: 7520402)
+        25. Ngành Vật lý Y khoa (Mã ngành: 7520403)
+        26. Ngành Kỹ thuật địa chất (Mã ngành: 7520501)
+        27. Ngành Quản lý tài nguyên và môi trường (Mã ngành: 7850101)
+
+  #MỨC ĐỘ HẤP DẪN CỦA KHOA HỌC
+  utter_ddt/cac_khoa_dao_tao:
+    - text: |-
+        Trường hiện có 9 khoa:
+        - Khoa Công nghệ thông tin
+        - Khoa Toán
+        – Tin học
+        - Khoa Vật lý
+        – Vật lý Kỹ thuật
+        - Khoa Hóa học
+        - Khoa Sinh học & Công nghệ Sinh học
+        - Khoa Môi trường
+        - Khoa Khoa học và Công nghệ vật liệu
+        - Khoa Địa chất và Khoa Điện tử Viễn thông
+        Ngoài ra Trường còn có 17 trung tâm đào tạo, nghiên cứu khoa học và chuyển giao công nghệ thực hiện các dự án trọng điểm và nghiên cứu chuyên sâu, mũi nhọn.
+  # khoa công nghệ thông tin
+  utter_ddt/hoi_thanh_lap_khoa_cong_nghe_thong_tin:
+    - text: |-
+        Khoa Công nghệ Thông tin, Trường Đại học Khoa học Tự nhiên (thuộc ĐHQG-HCM) được thành lập vào tháng 2 năm 1995 dựa trên Bộ môn Tin học của Khoa Toán, Trường Đại học Tổng hợp TP.HCM. Trải qua hơn 28 năm hoạt động, Khoa đã phát triển vững chắc và là một trong những cơ sở giáo dục hàng đầu đào tạo lĩnh vực máy tính và công nghệ thông tin trình độ đại học tại Việt Nam.
+        Khoa CNTT gồm 6 bộ môn:
+        - Công nghệ phần mềm
+        - Hệ thống thông tin
+        - Khoa học máy tính
+        - Công nghệ tri thức
+        - Thị giác máy tính và điều khiển học Thông minh
+        - Mạng máy tính và viễn thông
+        Chi tiết xem link : https://www.fit.hcmus.edu.vn/vn/
+  utter_ddt/hoi_to_hop_mon_khoa_cntt:
+    - text: |-
+        Tổ hợp môn thi THPT quốc gia khoa công nghệ thông tin năm 2023 bao gồm: A00; A01; B00; D01
+  # khoa TOÁN TIN
+  utter_ddt/hoi_thanh_lap_khoa_toan_tin:
+    - text: |-
+        Cuối thập niên 1950 Trường Đại học Khoa học Sài Gòn đã đào tạo chuyên ngành Toán. Năm 1995 một bộ phận của Khoa được tách ra để thành lập Khoa Công nghệ thông tin, và cũng khoảng đó thì Khoa được đổi tên thành Khoa Toán - Tin học. Tháng 12/2019 Khoa đang có 60 viên chức, được tổ chức thành 8 bộ môn.
+        Chi tiết xem link : https://www.math.hcmus.edu.vn/
+
+  utter_ddt/hoi_to_hop_mon_khoa_toan_tin:
+    - text: |-
+        Tổ hợp môn thi THPT quốc gia ngành Toán - Tin học năm 2022 bao gồm: A00; A01; B00; D01
+  ## Common vật lý - vật lý kỹ thuật KHTN information
+  utter_ddt/hoi_thanh_lap_khoa_vat_ly:
+    - text: |-
+        Là một trong những Khoa ra đời từ những ngày Trường Cao Đẵng Khoa học được thành lập năm 1941. Khoa có hơn 70 cán bộ giảng dạy, trong đó có 44 cán bộ có trình độ Tiến sĩ (2 Giáo sư, 13 PGS), 20 cán bộ có trình độ Thạc sĩ
+        Khoa có 8 Bộ môn:
+        - Vật lý Chất rắn
+        - Vật lý Điện tử
+        - Vật lý Hạt nhân - Kỹ thuật Hạt nhân - Vật lý Y khoa
+        - Vật lý Lý thuyết
+        - Vật lý Tin học
+        - Vật lý Địa cầu
+        - Vật lý Ứng dụng
+        - Hải dương - Khí tượng - Thủy văn.
+
+        Chi tiết xem link: https://phys.hcmus.edu.vn/
+
+  utter_ddt/hoi_to_hop_mon_khoa_vat_ly:
+    - text: |-
+        Tổ hợp môn thi THPT quốc gia ngành Vật lý - Vật lý kỹ thuật năm 2022 bao gồm: A00; A01; D90; B00; D07
+  ## Common vật lý - vật lý kỹ thuật KHTN information
+  utter_ddt/hoi_thanh_lap_khoa_dia_chat:
+    - text: |-
+        Là một trong những Khoa ra đời từ những ngày Trường Cao Đẵng Khoa học được thành lập năm 1941. Khoa có hơn 70 cán bộ giảng dạy, trong đó có 44 cán bộ có trình độ Tiến sĩ (2 Giáo sư, 13 PGS), 20 cán bộ có trình độ Thạc sĩ
+        Khoa có 8 Bộ môn:
+        - Vật lý Chất rắn
+        - Vật lý Điện tử
+        - Vật lý Hạt nhân - Kỹ thuật Hạt nhân - Vật lý Y khoa
+        - Vật lý Lý thuyết
+        - Vật lý Tin học
+        - Vật lý Địa cầu
+        - Vật lý Ứng dụng
+        - Hải dương - Khí tượng - Thủy văn.
+
+        Chi tiết xem link: https://geology.hcmus.edu.vn/vi/
+
+  utter_ddt/hoi_to_hop_mon_khoa_dia_chat:
+    - text: |-
+        Tổ hợp môn thi THPT quốc gia khoa Địa chất năm 2022 bao gồm: A00; A01; B00; D07
+
+  ## Common Điện tử Viễn thông KHTN information
+  utter_ddt/hoi_thanh_lap_khoa_dtvt:
+    - text: |-
+        Tháng 6/2006, Khoa Điện tử – Viễn thông được thành lập.
+        Khoa gồm 3 bộ môn:
+        - Điện tử
+        - Máy tinh - Hệ thống nhúng
+        - Viễn thông - Mạng
+
+        Chi tiết xem link: http://www.fetel.hcmus.edu.vn/
+  utter_ddt/hoi_to_hop_mon_khoa_dtvt:
+    - text: |-
+        Tổ hợp môn thi THPT quốc gia khoa Điện tử Viễn thông năm 2022 bao gồm: A00; A01; D07; D90
+
+  ## Common Hóa học KHTN information
+  utter_ddt/hoi_thanh_lap_khoa_hoa_hoc:
+    - text: |-
+        Năm 1975, khoa Hóa học được thành lập với 3 bộ môn:
+        - Hóa hữu cơ
+        - Hóa Lý
+        - Hóa vô cơ và phân tích
+        Khoa Hóa học hiện có 6 bộ môn và 3 phòng thí nghiệm trực thuộc.
+
+        Chi tiết xem link: http://www.chemistry.hcmus.edu.vn/index.php/vi/
+  utter_ddt/hoi_to_hop_mon_khoa_hoa_hoc:
+    - text: |-
+        Tổ hợp môn thi THPT quốc gia khoa Hóa học: A00, B00, D07, D90, D24
+
+  ## Common KHoa Vật liệu information
+  utter_ddt/hoi_thanh_lap_khoa_vat_lieu:
+    - text: |-
+        Ngày 24/10/2008, khoa Khoa học và Công nghệ vật liệu được thành lập.
+        Khoa hiện có 03 bộ môn với 04 chuyên ngành đào tạo và 02 phòng thí nghiệm trực thuộc, gồm: bộ môn Vật liệu Nano & Màng mỏng, Vật liệu Polymer & Composite, Vật liệu Từ & Y sinh; PTN Cơ sở khoa học vật liệu và PTN Vật liệu đa chức năng.
+
+        Chi tiết xem link: http://www.mst.hcmus.edu.vn/
+
+  utter_ddt/hoi_to_hop_mon_khoa_vat_lieu:
+    - text: |-
+        Tổ hợp môn thi THPT quốc gia khoa Hóa học: A00, A01, B00, D07
+
+  ## Common KHoa Môi trường information
+  utter_ddt/hoi_thanh_lap_khoa_moi_truong:
+    - text: |-
+        Năm 2000, khoa Môi trường được thành lập.
+        Khoa hiện có 04 bộ môn gồm:
+        - Khoa học Môi trường
+        - Công nghệ Kỹ thuật Môi trường
+        - Quản lý Tài nguyên và Môi trường
+        - Khoa học môi trường
+
+        Chi tiết xem link: http://www.environment.hcmus.edu.vn/
+
+  utter_ddt/hoi_to_hop_mon_khoa_moi_truong:
+    - text: |-
+        Tổ hợp môn thi THPT quốc gia khoa Môi trường: A00, B00, B08, D07
+
+  ## Common KHoa sinh information
+  utter_ddt/hoi_thanh_lap_khoa_sinh:
+    - text: |-
+        Năm 1963, Bộ môn Sinh Hóa đã không ngừng đổi mới, phát triển.
+        Khoa Sinh học - Công nghệ Sinh học hiện có 08 bộ môn gồm:
+        Chi tiết xem link: http://fbb.hcmus.edu.vn/vn/trang-chu.html
+
+  utter_ddt/hoi_to_hop_mon_khoa_sinh:
+    - text: |-
+        Tổ hợp môn thi THPT quốc gia khoa Sinh học - Công nghệ Sinh học: A02, B00, B08, D90
+
+  ## Common CN quốc tế information
+  utter_ddt/hoi_chuong_trinh_cu_nhan_quoc_te:
+    - text: |-
+        Chương trình đào tạo liên kết Quốc tế ITEC thuộc trường Đại học Khoa học Tự nhiên, ĐHQG-HCM tư vấn, cung cấp thông tin cho các học sinh, sinh viên và phụ huynh về các thông tin chương trình liên kết quốc tế của trường và các đối tác ở nước ngoài như ĐH Công nghệ Auckland (AUT), New Zealand và ĐH Keuka, New York-Hoa Kỳ.
+        Chi tiết xem link: https://www.itec.hcmus.edu.vn/vn/index.php/gii-thiu.html
+
+  utter_ddt/hoi_to_hop_mon_chuong_trinh_cu_nhan_quoc_te:
+    - text: |-
+        Tổ hợp môn thi THPT quốc gia Chương trình đào tạo Cử nhân quốc tế: A00, A01, B08, D07
+
+  #VỊ TRÍ ĐỊA LÝ - CƠ SỞ VẬT CHẤT
+  ###Vị trí
+  utter_ddt/co_so_dao_tao:
+    - text: |-
+        Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Thành phố Hồ Chí Minh hiện có 2 cơ sở chính:
+          - Cơ sở 1: 227 Nguyễn Văn Cừ, Phường 4, Quận 5, Thành phố Hồ Chí Minh.
+          - Cơ sở 2: Khu phố 6, phường Linh Trung, quận Thủ Đức, TP.HCM.
+  utter_ddt/co_so_dao_tao_2:
+    - text: |-
+        - Cơ sở 2: Khu phố 6, phường Linh Trung, quận Thủ Đức, TP.HCM.
+  utter_ddt/co_so_dao_tao_1:
+    - text: |-
+        - Cơ sở 1: 227 Nguyễn Văn Cừ, Phường 4, Quận 5, Thành phố Hồ Chí Minh.
+  ###Cơ sở đào tạo
+  utter_ddt/co_so_vat_chat_the_thao:
+    - text: |-
+        Trong khuôn viên khu KTX của Trường có các sân chơi rộng rãi và sạch sẽ, sinh viên của Trường có thể tham gia các hoạt động thể thao tại sân. Đặc biệt, Trường còn có sân bóng đá, sân bóng chuyền, sân cầu long trong khuôn viên trường, các em HSSV có thể tham gia rèn luyện sức khỏe.
+  utter_ddt/thu_vien:
+    - text: |-
+        Thư viện trường tại địa chỉ: Tầng 9 và tầng 10 - tòa nhà I, số 227 Nguyễn Văn Cừ, Phường 4, Quận 5, Ho Chi Minh City, Vietnam.
+        Hoặc xem thư viện online tại link: https://glib.hcmus.edu.vn/
+  #CHÍNH SÁCH HỖ TRỢ SINH VIÊN
+  utter_ddt/chinh_sach_ho_tro:
+    - text: |-
+        Các chính sách hỗ trợ sinh viên đang học tại trường:
+          + Miễn giảm học phí
+          + Trợ cấp xã hội
+          + Sinh viên dân tộc thiểu số
+          + Sinh viên khuyết tật
+        Mời xem chi tiết tại link: https://www.hcmus.edu.vn/component/content/article/126-cong-tac-sinh-vien/thong-bao-mien-giam/4842-tb-v-v-thuc-hien-che-do-chinh-sach-cho-sinh-vien-hoc-ky-2-2022-2023?Itemid=437
+
+  #KÝ TÚC XÁ
+  utter_ddt/ky_tuc_xa:
+    - text: |-
+        Có chỗ ở Ký túc xác cho tất cả sinh viên theo học tại Trường.
+        Mời xem chi tiết tại link : https://www.hcmus.edu.vn/component/content/article/109-cong-tac-sinh-vien/thong-tin-danh-cho-sinh-vien/4006-thong-bao-va-huong-dan-dang-ky-o-ky-tuc-xa-dhqg-nam-hoc-2021-2022-cho-tan-sinh-vien?Itemid=437
+
+  # 3. Yếu tố cơ hội việc làm tương lai
+  utter_ddt/co_hoi_viec_lam:
+    - text: |-
+        Mục tiêu học đại học là để làm việc và một trường đại học có hoạt động kết nối doanh nghiệp hiệu quả, mang đến nhiều cơ hội nghề nghiệp cho sinh viên: 
+        - Điều này chắc chắn sẽ là lựa chọn cần ưu tiên đối với tất cả các bạn thí sinh. Theo thống kê gần nhất được công bố tại website Trường DLA, có 88,01% sinh viên ra trường có việc làm trong vòng 6 tháng, trong đó có 85,07% làm đúng chuyên môn trong các cơ quan nhà nước, doanh nghiệp, công ty cổ phần. Ngoài ra, việc liên kết cùng các doanh nghiệp trong việc mở rộng các lớp kỹ năng xin việc, phỏng vấn hay ngày hội việc làm cũng là một hoạt động nổi bật của Trường DLA... Điều này không chỉ có ý nghĩa với sinh viên năm cuối – vì giúp các bạn dễ dàng tiếp cận vị trí tuyển dụng phù hợp, tăng cơ hội có việc làm; mà còn quan trọng với cả sinh viên năm nhất, năm hai – bởi sẽ giúp các bạn có điều kiện tìm hiểu thị trường lao động thực tế, qua đó có thể định hướng, chuẩn bị tốt hơn cho bản thân.
+
+  # 4. Yếu tố nổ lực giao tiếp với học sinh THPT
+  utter_ddt/giao_tiep_tham_quan:
+    - text: |-
+        ampus Trường ĐH KHTN có nhiều cây xanh như công viên, nhiều khu vườn học tập ...
+        Mời xem giới thiệu về trường tại link: https://www.youtube.com/watch?v=TouMO5U4dK0
+  utter_ddt/hoi_co_to_chuc_tu_van_tuyen_sinh:
+    - text: |-
+        Trường tư vấn tuyển sinh online tại kênh Facebook: https://www.facebook.com/tvts.hcmus/?locale=vi_VN
+        Hoặc có thể để lại thông tin của bạn, tôi sẽ kết nối bạn để bộ phận tư vấn tuyển sinh của trường.
+
+  # 5. Yếu tố đặc trưng giới tính
+  utter_ddt/tong_chi_tieu_2023:
+    - text: |-
+        Trường Khoa học Tự nhiên Tp. Hồ Chí Minh tuyển sinh không phụ thuộc vào giới tính.
+        Năm 2023, trường Đại học Khoa học Tự nhiên, Đại học Quốc gia TP HCM xét tuyển bằng 6 phương thức, tổng chỉ tiêu hơn 3.500 sinh viên.
+
+  # 6. Các yếu tố khác
+  utter_ddt/hoi_giang_vien:
+    - text: Hiện tại trường Đại học Khoa học Tự nhiên có 11 Giáo sư, 59 Phó Giáo sư đảm nhận công tác giảng dạy và nghiên cứu cho hơn 14.000 sinh viên bậc đại học và hơn 1.500 học viên cao học, nghiên cứu sinh.
+  #############CÁC CÂU HỎI TƯ VẤN VỀ THỦ TỤC, HỒ SƠ NHẬP HỌC, THỜI GIAN,...#######################################
+
+  utter_others/dieu_kien_xet_tuyen:
+    - text: |-
+        Tất cả thí sinh đáp ứng các yêu cầu sau là đủ điều kiện xét tuyển vào học tại Trường.
+          + Trình độ Cao đẳng: Tốt nghiệp THPT hoặc tương đương trở lên.
+          + Trình độ Trung cấp: Tốt nghiệp THCS và tương đương trở lên.
+
+  utter_others/thoi_gian_xet_tuyen:
+    - text: |-
+        Thời gian đăng ký và nộp hồ sơ xét tuyển: Từ ngày 15/5/2023 đến ngày 15/6/2023.
+
+  utter_others/thoi_gian_nhap_hoc_2022:
+    - text: |-
+        Thời gian làm thủ tục nhập học: Trường tổ chức cho thí sinh trúng tuyển làm thủ tục nhập học trong ngày 14/10/2022 - sáng từ 8 giờ 00 đến 11 giờ 00; chiều từ 13 giờ 30 đến 16 giờ 00.
+
+  utter_others/thoi_gian_nhan_ket_qua_trung_tuyen:
+    - text: |-
+        Sau khi nhận được hồ sơ, Trường sẽ tiến hành kiểm tra hồ sơ, nếu hồ sơ đầy đủ và hợp lệ, Trường sẽ tiến hành gửi Giấy báo trúng tuyển ngay cho thí sinh và gọi các em nhập học.
+
+  utter_others/hoi_co_the_nho_nguoi_dang_ky_xet_tuyen_khong:
+    - text: |-
+        Em có thể nhờ người thân, bạn bè chuyển hồ sơ trực tiếp đến trường và nhận giấy báo nhập học dùm em nếu em không thể thực hiện được.
+  utter_others/hoi_ho_so_nhan_duoc_hay_khong:
+    - text: |-
+        Nếu em nộp hồ sơ tuyển sinh trực tiếp tại Trường em sẽ nhận được biên nhận xác nhận trường đã nhận hồ sơ của em. Nếu em nộp hồ sơ qua đường bưu điện thì sau khi nhà trường nhận được hồ sơ sẽ gọi điện xác nhận tình trạng hồ sơ và gửi giấy báo nhập học nếu hồ sơ hợp lệ. Nhà trường chỉ xác nhận trúng tuyển sau khi em có kết quả thi tốt nghiệp THPT.
+
+  utter_others/hinh_thuc_dang_ky_xet_tuyen:
+    - text: |-
+        Hiện trường có 2 hình thức đăng ký xét tuyển:
+        - Nộp trực tiếp: Thí sinh nộp trực tiếp hồ sơ và lệ phí tại Trường ĐH KHTN theo địa chỉ: số 227 Nguyễn Văn Cừ, P4, Q.5, TP.HCM – Phòng Đào tạo (trong giờ hành chính, từ thứ 2 đến thứ 6, buổi sáng từ 8giờ00 đến 11giờ00, buổi chiều từ 13giờ30 đến 16giờ30).
+        - Nộp qua đường bưu điện chuyển phát nhanh: Hồ sơ: Thí sinh nộp hồ sơ qua đường bưu điện chuyển phát nhanh theo địa chỉ: Trường ĐH KHTN, Phòng Đào tạo, số 227 Nguyễn Văn Cừ, P4, Q.5, TP.HCM. Trường chỉ nhận hồ sơ trong thời gian quy định căn cứ vào dấu xác nhận ngày gửi hồ sơ của Bưu điện. Trường sẽ hậu kiểm lại hồ sơ khi thí sinh làm thủ tục nhập học.
+
+  utter_others/hoi_ho_so_dang_ky_nhap_hoc:
+    - text: |-
+        HỒ SƠ NHẬP HỌC GỒM:
+        Hai ảnh thẻ 4x6
+        Bản chính Giấy báo nhập học
+        Bản sao trích lục Giấy khai sinh.
+        Bản chính Giấy chứng nhận tốt nghiệp tạm thời năm 2022
+        Bản photo học bạ THPT (TS mang theo bản chính để đối chiếu)
+        Lý lịch sinh viên (in trực tiếp từ trang Portal của Trường)
+        Bản photo Giấy chứng nhận đoạt giải (TS mang theo bản chính để đối chiếu)
+        Sổ Đoàn hoặc giấy giới thiệu chuyển sinh hoạt Đảng (nếu có)
+        https://tuyensinh.hcmus.edu.vn/thongtinnhaphoc
+
+  ########## QUY CHẾ HỌC VỤ
+
+  utter_quy_che_hoc_vu/hoi_dieu_kien_chuyen_truong:
+    - text: |-
+        Sinh viên được chuyển trường nếu có đủ điều kiện xem tại điều 13.
+  utter_quy_che_hoc_vu/hoi_thang_diem_danh_gia_hoc_phan:
+    - text: |-
+        Các loại thang điểm đánh giá học phần xem tại điều 16.
+  utter_quy_che_hoc_vu/hoi_cach_tinh_diem_trung_binh_xep_loai:
+    - text: |-
+        Sinh viên được chuyển trường nếu có đủ điều kiện xem tại điều 17.
+  utter_quy_che_hoc_vu/hoi_dieu_kien_hoan_thi:
+    - text: |-
+        Điều kiện hoãn thi và hướng dẫn nộp đơn hoãn thi tại điều 19.
+
+  utter_quy_che_hoc_vu/hoi_hoc_cung_luc_hai_chuong_trinh:
+    - text: |-
+        Sinh viên được chuyển trường nếu có đủ điều kiện xem tại điều 14.
+
+  # 7. Các câu hỏi ngoài phạm vi trả lời của chat bot
+  utter_out_of_scope/non_vietnam:
+    - text: "Tôi xin lỗi, tôi chỉ hiểu tiếng Việt."
+
+  utter_out_of_scope/other:
+    - text: "Tôi không hiểu giúp bạn với câu hỏi này, tôi xin lỗi."
+########NOTE
+  utter_chatchit/ask_builder:
+    - text: "Hai trong những sinh viên thông minh trường đại học KHTN! 🧠"
+
+  utter_chatchit/ask_how_built:
+    - text: "Tôi được xây dựng với rất nhiều tình yêu và sự kiên nhẫn."
+
+  utter_chatchit/ask_how_doing:
+    - text: "Tôi rất tuyệt! Cảm ơn vì đã hỏi thăm."
+
+  utter_chatchit/ask_how_old:
+    - text: "1 tuổi"
+
+  utter_chatchit/ask_is_bot:
+    - text: "Yep, tôi là bot!"
+
+  utter_chatchit/ask_is_human:
+    - text: "Tôi không phải người, tôi là bot! 🤖"
+    
+  utter_chatchit/ask_restaurant:
+    - text: "Tôi xin lỗi, tôi không thể giới thiệu cho bạn một nhà hàng vì tôi thường nấu ăn ở nhà."
+
+  utter_chatchit/ask_time:
+    - text: "Đó là khoảng thời gian tuyệt vời nhất trong năm!"
+ 
+  utter_chatchit/ask_languages_bot:
+    - text: "Tôi có thể đánh vần baguette bằng tiếng Pháp, nhưng tiếc là tiếng Anh là ngôn ngữ duy nhất tôi có thể trả lời bạn."
+
+  utter_chatchit/ask_weather:
+    - text: "Tôi không biết bạn sống ở đâu, nhưng ở thế giới của tôi, trời luôn nắng 🔆"
+
+  utter_chatchit/ask_what_is_my_name:
+    - text: "Chắc là do bố mẹ chọn cho con thôi."
+
+  utter_chatchit/ask_what_is_rasa:
+    - text: "Rasa Open Source là một khung AI đàm thoại để cung cấp các công cụ máy học cho
+    xây dựng các trợ lý theo ngữ cảnh. Bạn có thể đọc thêm về nó ở đây trong tài liệu hoặc trên
+    [trang web](https://rasa.com/)."
+    
+  utter_chatchit/ask_whats_possible:
+    - text: "Bạn có thể hỏi tôi về cách bắt đầu với Rasa, sự khác biệt giữa Rasa và Rasa X,
+      đăng ký nhận bản tin của chúng tôi hoặc đặt một cuộc gọi bán hàng."
+    
+  utter_chatchit/ask_where_from:
+    - text: "Tôi sinh ra ở Việt Nam, nhưng tôi coi mình là công dân của thế giới."
+
+  utter_chatchit/ask_who_am_i:
+    - text: "Tôi hy vọng bạn đang là chính mình."
+
+  utter_chatchit/ask_who_is_it:
+    - text: "Tôi là Sara, bot Rasa! Đồng thời tôi cũng là linh vật của Rasa 🐦"
+
+  # utter_chatchit/handle_insult:
+  #   - text: "Không đẹp lắm 😢"
+
+  # utter_chatchit/nicetometyou:
+  #   - text: "Tương tự như vậy!"
+
+  # utter_chatchit/telljoke:
+  #   - text: "Tại sao trứng không phải là trò đùa cho lắm? - Bởi vì chúng có thể bị nứt."
