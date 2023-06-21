@@ -1,0 +1,13 @@
+{
+    "scripts": {
+        "rasa validate": "source env/bin/activate&&rasa data validate",
+        "rasa train": "source env/bin/activate&&rasa train",
+        "rasa run actions": "source env/bin/activate&&rasa run actions --debug",
+        "rasa interactive": "source env/bin/activate&&rasa interactive",
+        "rasa shell": "source env/bin/activate&&rasa shell",
+        "rasa shell debug": "source env/bin/activate&&rasa shell --debug",
+        "python app.py": "source env/bin/activate&&python app.py",
+        "rasa run cors": "source env/bin/activate&&rasa run -m models --enable-api --cors '*' --debug",
+        "rasa background": "nohup rasa run actions&nohup rasa run -m models --enable-api --cors '*' &nohup python app.py"
+    }
+}
