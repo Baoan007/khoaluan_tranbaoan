@@ -1,6 +1,12 @@
 version: "3.1"
 
 nlu:
+  - intent: greet_start
+    examples: |
+      - Chạy rasa chatbot
+      - Mở rasa chatbot
+      - Khởi động lại rasa chatbot
+
   - intent: greet
     examples: |
       - Xin chào

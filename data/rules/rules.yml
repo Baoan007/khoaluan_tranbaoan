@@ -93,3 +93,8 @@ rules:
           - requested_slot: null
       - action: utter_remember
       - action: utter_slots_values
+
+  - rule: Luôn response bắt đầu chạy bot rasa
+    steps:
+      - intent: greet_start
+      - action: utter_start_work

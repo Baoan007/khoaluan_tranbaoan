@@ -45,6 +45,86 @@ def index():
     return render_template('index.html', payload=payload)
 
 
+@app.route('/dao-tao')
+@csrf.exempt
+def daotao():
+    payload = {
+        "domain": app_config.DOMAIN,
+        "domain_socket": app_config.DOMAIN_SOCKET
+    }
+    return render_template('daotao.html', payload=payload)
+
+
+@app.route('/chi-tieu')
+@csrf.exempt
+def chitieu():
+    payload = {
+        "domain": app_config.DOMAIN,
+        "domain_socket": app_config.DOMAIN_SOCKET
+    }
+    return render_template('chitieu.html', payload=payload)
+
+
+@app.route('/hoc-phi')
+@csrf.exempt
+def hocphi():
+    payload = {
+        "domain": app_config.DOMAIN,
+        "domain_socket": app_config.DOMAIN_SOCKET
+    }
+    return render_template('hocphi.html', payload=payload)
+
+
+@app.route('/huong-dan-nhap-hoc')
+@csrf.exempt
+def huongdannhaphoc():
+    payload = {
+        "domain": app_config.DOMAIN,
+        "domain_socket": app_config.DOMAIN_SOCKET
+    }
+    return render_template('huongdannhaphoc.html', payload=payload)
+
+
+@app.route('/nganh-dao-tao')
+@csrf.exempt
+def nganhdaotao():
+    payload = {
+        "domain": app_config.DOMAIN,
+        "domain_socket": app_config.DOMAIN_SOCKET
+    }
+    return render_template('nganhdaotao.html', payload=payload)
+
+
+@app.route('/phuong-thuc-tuyen-sinh')
+@csrf.exempt
+def phuongthuctuyensinh():
+    payload = {
+        "domain": app_config.DOMAIN,
+        "domain_socket": app_config.DOMAIN_SOCKET
+    }
+    return render_template('phuongthuctuyensinh.html', payload=payload)
+
+
+@app.route('/to-hop-tuyen-sinh')
+@csrf.exempt
+def tohoptuyensinh():
+    payload = {
+        "domain": app_config.DOMAIN,
+        "domain_socket": app_config.DOMAIN_SOCKET
+    }
+    return render_template('tohoptuyensinh.html', payload=payload)
+
+
+@app.route('/tuyen-sinh')
+@csrf.exempt
+def tuyensinh():
+    payload = {
+        "domain": app_config.DOMAIN,
+        "domain_socket": app_config.DOMAIN_SOCKET
+    }
+    return render_template('tuyensinh.html', payload=payload)
+
+
 @app.errorhandler(404)
 def page_not_found(error):
     return 'This route does not exist {}'.format(request.url), 404

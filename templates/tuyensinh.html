@@ -1,41 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <!-- Always include this line of code!!! -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    /> -->
-
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-    ></script>
-
-    <script defer src="js/script.js"></script>
-
-    <title>KHTN-Tuyển sinh Đại học</title>
-  </head>
-  <body>
+{% include 'header.html' %}
     <header class="header">
       <a
         class="main-nav-link nav-cta"
-        href="index.html#gioithieu"
-        onclick="window.open('index.html')"
+        href="/#gioithieu"
+        onclick="window.open('/')"
       >
         <i class="text-large">↩ Trang chủ</i></a
       >
@@ -55,8 +23,8 @@
             >
           </h3>
           <div class="hero-img-box meal">
-            <a href="" onclick="window.open('phuongthuctuyensinh.html')"
-              ><img class="meal-img" src="img/i/phuongthuctuyensinh.jpg" alt=""
+            <a href="/phuong-thuc-tuyen-sinh" onclick="window.open('/phuong-thuc-tuyen-sinh')"
+              ><img class="meal-img" src="{{ url_for('static', filename='img/i/phuongthuctuyensinh.jpg') }}" alt=""
             /></a>
           </div>
         </div>
@@ -66,8 +34,8 @@
             Tin <b style="color: var(--color-primary)"><i>Học phí</i></b>
           </h3>
           <div class="hero-img-box meal">
-            <a href="" onclick="window.open('hocphi.html')"
-              ><img class="meal-img" src="img/hoctap2.jpg" alt=""
+            <a href="/hoc-phi" onclick="window.open('/hoc-phi')"
+              ><img class="meal-img" src="{{ url_for('static', filename='img/hoctap2.jpg') }}" alt=""
             /></a>
           </div>
         </div>
@@ -77,8 +45,8 @@
             Tin <b style="color: var(--color-primary)">Hướng dẫn nhập học</b>
           </h3>
           <div class="hero-img-box meal">
-            <a href="" onclick="window.open('huongdannhaphoc.html')"
-              ><img class="meal-img" src="img/tuyensinh.png" alt=""
+            <a href="/huong-dan-nhap-hoc" onclick="window.open('/huong-dan-nhap-hoc')"
+              ><img class="meal-img" src="{{ url_for('static', filename='img/tuyensinh.png') }}" alt=""
             /></a>
           </div>
         </div>
@@ -93,8 +61,8 @@
           <div class="logo-col">
             <a
               class="main-nav-link nav-cta"
-              href="index.html#gioithieu"
-              onclick="window.open('index.html')"
+              href="/#gioithieu"
+              onclick="window.open('/')"
             >
               <i class="text-large">↩ Trang chủ</i></a
             >
@@ -137,9 +105,9 @@
               </p>
             </address>
           </div>
-          <dir>
-            <img class="meal" src="img/tunhien1.jpg" alt="" />
-          </dir>
+          <div>
+            <img class="meal" src="{{ url_for('static', filename='img/tunhien1.jpg') }}" alt="" />
+          </div>
         </div>
       </footer>
     </main>
@@ -160,37 +128,4 @@
     </style>
     <div id="webchat" />
 
-    <script>
-      !(function () {
-        let e = document.createElement("script"),
-          t = document.head || document.getElementsByTagName("head")[0];
-        (e.src =
-          "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
-          // Replace 1.x.x with the version that you want
-          (e.async = !0),
-          (e.onload = () => {
-            window.WebChat.default(
-              {
-                initPayload: "/greet",
-                customData: { language: "en" },
-                socketUrl: "http://localhost:5005",
-                title: "AI Chatbot",
-                params: {
-                  images: {
-                    dims: {
-                      width: 300,
-                      height: 200,
-                    },
-                  },
-                },
-                subtitle: "Tư vấn tuyển sinh Đại học - HCMUS",
-                // add other props here
-              },
-              null
-            );
-          }),
-          t.insertBefore(e, t.firstChild);
-      })();
-    </script>
-  </body>
-</html>
+{% include 'footer.html' %}

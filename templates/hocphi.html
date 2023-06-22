@@ -1,44 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <!-- Always include this line of code!!! -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    /> -->
-
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-    ></script>
-
-    <script defer src="js/script.js"></script>
-
-    <title>KHTN-Tuyển sinh Đại học</title>
-  </head>
-  <body>
+{% include 'header.html' %}
     <header class="header">
       <!-- <a href="#">
       <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
     </a> -->
       <a
         class="main-nav-link nav-cta"
-        href="index.html#gioithieu"
-        onclick="window.open('index.html')"
+        href="/#gioithieu"
+        onclick="window.open('/')"
       >
         <i class="text-large">↩ Trang chủ</i></a
       >
@@ -59,7 +27,7 @@
             </p>
           </div>
           <div class="hero-img-box meal">
-            <img class="meal-img" src="img/i/dsnganh.gif" alt="" />
+            <img class="meal-img" src="{{ url_for('static', filename='img/i/dsnganh.gif') }}" alt="" />
           </div>
         </div>
       </section>
@@ -267,8 +235,8 @@
         <div class="logo-col">
           <a
             class="main-nav-link nav-cta"
-            href="index.html#gioithieu"
-            onclick="window.open('index.html')"
+            href="/#gioithieu"
+            onclick="window.open('/')"
           >
             <i class="text-large">↩ Trang chủ</i></a
           >
@@ -310,9 +278,9 @@
             </p>
           </address>
         </div>
-        <dir>
-          <img class="meal" src="img/tunhien1.jpg" alt="" />
-        </dir>
+        <div>
+          <img class="meal" src="{{ url_for('static', filename='img/tunhien1.jpg') }}" alt="" />
+        </div>
       </div>
     </footer>
     <!-- rasa chatbot -->
@@ -332,37 +300,6 @@
     </style>
     <div id="webchat" />
 
-    <script>
-      !(function () {
-        let e = document.createElement("script"),
-          t = document.head || document.getElementsByTagName("head")[0];
-        (e.src =
-          "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
-          // Replace 1.x.x with the version that you want
-          (e.async = !0),
-          (e.onload = () => {
-            window.WebChat.default(
-              {
-                initPayload: "/greet",
-                customData: { language: "en" },
-                socketUrl: "http://localhost:5005",
-                title: "AI Chatbot",
-                params: {
-                  images: {
-                    dims: {
-                      width: 300,
-                      height: 200,
-                    },
-                  },
-                },
-                subtitle: "Tư vấn tuyển sinh Đại học - HCMUS",
-                // add other props here
-              },
-              null
-            );
-          }),
-          t.insertBefore(e, t.firstChild);
-      })();
-    </script>
-  </body>
-</html>
+    
+{% include
+'footer.html' %}

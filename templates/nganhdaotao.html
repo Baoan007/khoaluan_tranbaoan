@@ -1,44 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <!-- Always include this line of code!!! -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    /> -->
-
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-    ></script>
-
-    <script defer src="js/script.js"></script>
-
-    <title>KHTN-Tuyển sinh Đại học</title>
-  </head>
-  <body>
+{% include 'header.html' %}
     <header class="header">
       <!-- <a href="#">
       <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
     </a> -->
       <a
         class="main-nav-link nav-cta"
-        href="index.html"
-        onclick="window.open('index.html')"
+        href="/"
+        onclick="window.open('/')"
       >
         <i class="text-large">↩ Trang chủ</i></a
       >
@@ -51,9 +19,9 @@
     <main>
       <section class="grid grid--3-cols margin-top-mid container">
         <div class="home">
-          <img src="img/i/cnnt.gif" alt="House 1" class="home__img" />
+          <img src="{{ url_for('static', filename='img/i/cnnt.gif') }}" alt="House 1" class="home__img" />
           <svg class="home__like">
-            <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+            <use xlink:href="{{ url_for('static', filename='img/sprite.svg#icon-heart-full') }}"></use>
           </svg>
           <h5 class="home__name">Khoa Công nghệ thông tin</h5>
           <div class="home__location">
@@ -79,12 +47,12 @@
 
         <div class="home">
           <img
-            src="img/i/khoadientuvienthong.gif"
+            src="{{ url_for('static', filename='img/i/khoadientuvienthong.gif') }}"
             alt="Hoa hoc"
             class="home__img"
           />
           <svg class="home__like">
-            <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+            <use xlink:href="{{ url_for('static', filename='img/sprite.svg#icon-heart-full') }}"></use>
           </svg>
           <h5 class="home__name">Khoa Điện tử viễn thông</h5>
           <div class="home__location">
@@ -108,9 +76,9 @@
         </div>
 
         <div class="home">
-          <img src="img/i/hoahoc.gif" alt="House 3" class="home__img" />
+          <img src="{{ url_for('static', filename='img/i/hoahoc.gif') }}" alt="House 3" class="home__img" />
           <svg class="home__like">
-            <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+            <use xlink:href="{{ url_for('static', filename='img/sprite.svg#icon-heart-full') }}"></use>
           </svg>
           <h5 class="home__name">Khoa Hóa học</h5>
           <div class="home__location">
@@ -135,12 +103,12 @@
 
         <div class="home">
           <img
-            src="img/i/khoahocvacongnghevatlieu.gif"
+            src="{{ url_for('static', filename='img/i/khoahocvacongnghevatlieu.gif') }}"
             alt="House 4"
             class="home__img"
           />
           <svg class="home__like">
-            <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+            <use xlink:href="{{ url_for('static', filename='img/sprite.svg#icon-heart-full') }}"></use>
           </svg>
           <h5 class="home__name">Khoa Khoa học và Công nghệ Vật liệu</h5>
           <div class="home__location">
@@ -164,9 +132,9 @@
         </div>
 
         <div class="home">
-          <img src="img/i/vatly.gif" alt="House 5" class="home__img" />
+          <img src="{{ url_for('static', filename='img/i/vatly.gif') }}" alt="House 5" class="home__img" />
           <svg class="home__like">
-            <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+            <use xlink:href="{{ url_for('static', filename='img/sprite.svg#icon-heart-full') }}"></use>
           </svg>
           <h5 class="home__name">Khoa Vật lý và Vật lý kỹ thuật</h5>
           <div class="home__location">
@@ -192,7 +160,7 @@
         <div class="home">
           <img src="img/i/sinhhoc.gif" alt="House 6" class="home__img" />
           <svg class="home__like">
-            <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+            <use xlink:href="{{ url_for('static', filename='img/sprite.svg#icon-heart-full') }}"></use>
           </svg>
           <h5 class="home__name">Khoa Sinh học và Công nghệ Sinh học</h5>
           <div class="home__location">
@@ -218,7 +186,7 @@
         <div class="home">
           <img src="img/i/moitruong.gif" alt="House 6" class="home__img" />
           <svg class="home__like">
-            <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+            <use xlink:href="{{ url_for('static', filename='img/sprite.svg#icon-heart-full') }}"></use>
           </svg>
           <h5 class="home__name">Khoa Môi trường</h5>
           <div class="home__location">
@@ -244,7 +212,7 @@
         <div class="home">
           <img src="img/i/matruong.gif" alt="House 6" class="home__img" />
           <svg class="home__like">
-            <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+            <use xlink:href="{{ url_for('static', filename='img/sprite.svg#icon-heart-full') }}"></use>
           </svg>
           <h5 class="home__name">Khoa Địa chất</h5>
           <div class="home__location">
@@ -268,9 +236,9 @@
         </div>
 
         <div class="home">
-          <img src="img/i/khoatoantin.gif" alt="House 6" class="home__img" />
+          <img src="{{ url_for('static', filename='img/i/khoatoantin.gif') }}" alt="House 6" class="home__img" />
           <svg class="home__like">
-            <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+            <use xlink:href="{{ url_for('static', filename='img/sprite.svg#icon-heart-full') }}"></use>
           </svg>
           <h5 class="home__name">Khoa Toán - Tin</h5>
           <div class="home__location">
@@ -299,8 +267,8 @@
         <div class="logo-col">
           <a
             class="main-nav-link nav-cta"
-            href="index.html#gioithieu"
-            onclick="window.open('index.html')"
+            href="/#gioithieu"
+            onclick="window.open('/')"
           >
             <i class="text-large">↩ Trang chủ</i></a
           >
@@ -343,9 +311,9 @@
             </p>
           </address>
         </div>
-        <dir>
+        <div>
           <img class="meal" src="img/tunhien1.jpg" alt="" />
-        </dir>
+        </div>
       </div>
     </footer>
     <!-- rasa chatbot -->
@@ -365,37 +333,4 @@
     </style>
     <div id="webchat" />
 
-    <script>
-      !(function () {
-        let e = document.createElement("script"),
-          t = document.head || document.getElementsByTagName("head")[0];
-        (e.src =
-          "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
-          // Replace 1.x.x with the version that you want
-          (e.async = !0),
-          (e.onload = () => {
-            window.WebChat.default(
-              {
-                initPayload: "/greet",
-                customData: { language: "en" },
-                socketUrl: "http://localhost:5005",
-                title: "AI Chatbot",
-                params: {
-                  images: {
-                    dims: {
-                      width: 300,
-                      height: 200,
-                    },
-                  },
-                },
-                subtitle: "Tư vấn tuyển sinh Đại học - HCMUS",
-                // add other props here
-              },
-              null
-            );
-          }),
-          t.insertBefore(e, t.firstChild);
-      })();
-    </script>
-  </body>
-</html>
+{% include 'footer.html' %}

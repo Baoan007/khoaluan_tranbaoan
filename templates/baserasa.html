@@ -1,0 +1,41 @@
+ <script>
+!(function () {
+    let e = document.createElement("script"),
+        t = document.head || document.getElementsByTagName("head")[0];
+    (e.src =
+        "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"),
+        // Replace 1.x.x with the version that you want
+        (e.async = !0),
+        (e.onload = () => {
+            window.WebChat.default(
+                {
+                    initPayload: "/greet_start",
+                    selector: "#webchat",
+                    customData: { language: "en" },
+                    // socketUrl: "http://localhost:5005",
+                    socketUrl: '{{ payload.domain_socket }}',
+                    interval: 1000, // 1000 ms between each message
+                    socketPath: "/socket.io/",
+                    title: "AI Chatbot",
+                    hideWhenNotConnected: true,
+                    inputTextFieldHint: "Vui lòng nhập yêu cầu của bạn...",
+                    connectingText: "Waiting for server...",
+                    fullScreenMode: true,
+                    params: {
+                        images: {
+                            dims: {
+                                width: 300,
+                                height: 200
+                            }
+                        },
+                        storage: "session"
+                    },
+                    subtitle: "Tư vấn tuyển sinh Đại học - HCMUS"
+                    // add other props here
+                },
+                null
+            );
+        }),
+        t.insertBefore(e, t.firstChild);
+})();
+ </script>
