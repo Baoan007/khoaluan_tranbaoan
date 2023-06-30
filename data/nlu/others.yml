@@ -1,0 +1,60 @@
+version: "3.1"
+
+nlu:
+  #############CÁC CÂU HỎI TƯ VẤN VỀ THỦ TỤC, HỒ SƠ NHẬP HỌC, THỜI GIAN,...#######################################
+  - intent: others/dieu_kien_xet_tuyen
+    examples: |
+      - điều kiện xét tuyển?
+      - Thí sinh cần những điều kiện nào để xét tuyển vào trường?
+      - Những điều kiện xét tuyển của trường?
+
+  - intent: others/thoi_gian_xet_tuyen
+    examples: |
+      - thời gian đăng ký xét tuyển của trường
+      - thời gian đăng ký xét tuyển?
+      - khi nào thì đăng ký xét tuyển?
+
+  - intent: others/thoi_gian_nhap_hoc_2022
+    examples: |
+      - thời gian nhập học của trường năm 2022
+      - thời gian đăng ký nhập học năm 2022?
+      - khi nào thì đăng ký nhập học năm vừa rối?
+
+  - intent: others/thoi_gian_nhan_ket_qua_trung_tuyen
+    examples: |
+      - Sau khi gửi hồ sơ tuyển sinh, bao lâu thì em nhận được kết quả trúng tuyển?
+      - Khi nào trường thông báo kết quả tuyển sinh
+      - trường có kết quả trúng tuyển tuyển sinh khi nào?
+      - Thời gian có kết quả xét tuyển?
+      - làm sao em biết mình có trúng tuyển hay không?
+      - làm sao em biết kết quả trúng tuyển?
+
+  - intent: others/hoi_co_the_nho_nguoi_dang_ky_xet_tuyen_khong
+    examples: |
+      - Có thể nhờ người thân đăng ký xét tuyển được không?
+      - Em có thể nhờ người thân đăng ký xét tuyển giúp mình hay không ạ?
+      - Em có thể nhờ người khác đăng ký xét tuyển được không?
+      - Có cho phép người thân đăng ký xét tuyển giúp được không?
+      - Em ở xa có thể nhờ người thân, bạn bè đăng ký xét tuyển giùm được không?
+  - intent: others/hoi_ho_so_nhan_duoc_hay_khong
+    examples: |
+      - Khi em đăng ký xét tuyển thì làm sao em biết được hồ sơ của mình đã được nhận?
+      - Làm sao em biết hồ sơ mình đã được nhận?
+
+  - intent: others/hinh_thuc_dang_ky_xet_tuyen
+    examples: |
+      - Em muốn đăng ký xét tuyển vào trường mình online trước khi biết kết quả thi THPT có được không?
+      - đăng ký xét tuyển online có được không?
+      - Trường có xét tuyển online không?
+      - Có những hình thức đăng ký xét tuyển nào?
+      - Hình thức đăng ký xét tuyển?
+      - Có bao nhiêu hình thức đăng ký xét tuyển?
+
+  - intent: others/hoi_ho_so_dang_ky_nhap_hoc
+    examples: |
+      - Hồ sơ đăng ký nhập học tại trường gồm những gì?
+      - Hồ sơ nhập học?
+      - Những giấy tờ cần khi đăng ký nhập học?
+      - Những giấy tờ nào khi đi đăng ký nhập học?
+      - Các giấy tờ khi đăng ký nhập học?
+      - các giấy tờ để nhập học?

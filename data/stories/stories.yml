@@ -1,0 +1,27 @@
+version: "3.1"
+stories:
+  - story: chào - vui 
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: chào - không vui - cần giúp đỡ
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: chào - không vui - từ chối giúp đỡ
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+

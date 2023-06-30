@@ -1,0 +1,76 @@
+version: "3.1"
+rules:
+  ###CÁC YẾU TỐ QUYẾT ĐỊNH VIỆC CHỌN TRƯỜNG##########
+  - rule: Luôn response khi có câu hỏi về các yếu tố về cá nhân
+    steps:
+      - intent: yeu_to_ca_nhan
+      - action: utter_yeu_to_ca_nhan
+
+  - rule: Luôn response khi có câu hỏi về các yếu tố về đặc điểm trường, yếu tố cơ hội việc làm, yếu tố nổ lực giao tiếp với học sinh THPT, yếu tố về đặc điểm giới tính, và các yếu tố khác
+    steps:
+      - intent: ddt
+      - action: utter_ddt
+
+  - rule: response mỗi khi có câu hỏi về các câu hỏi tuyển sinh về thủ tục, thời gian ...
+    steps:
+      - intent: others
+      - action: utter_others
+      #QUY CHẾ HỌC VỤ
+  - rule: response các câu hỏi về Quy chế Học vụ
+    steps:
+      - intent: quy_che_hoc_vu
+      - action: utter_quy_che_hoc_vu
+      - action: utter_quy_che_hoc_vu_main
+  # Các câu hỏi chatchit
+  - rule: response các câu hỏi về chat chit
+    steps:
+      - intent: chatchit
+      - action: utter_chatchit
+  # Các câu hỏi out of scope
+  - rule: response các câu hỏi về out of scope
+    steps:
+      - intent: out_of_scope
+      - action: utter_out_of_scope
+      - action: utter_ask_anything_else
+  ##########
+  - rule: luôn say tạm biệt
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+  #NOTE
+  - rule: Luôn chào mỗi khi người dùng xin chào 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Luôn chào mỗi khi người dùng xin chào 2
+    steps:
+      - intent: answer_user_name
+      - action: utter_greet_with_name
+      - action: utter_did_that_help
+
+  - rule: luôn trả lời tôi là bot
+    steps:
+      - intent: bot_challenge
+      - action: utter_iambot
+  #----------------------FORM-----------------
+  - rule: Activate form
+    steps:
+      - intent: dang_ky_form
+      - action: infor_user_form
+      - active_loop: infor_user_form
+
+  - rule: Submit form # TH: form được điền đầy đủ - > tự động ngừng active form
+    condition:
+      - active_loop: infor_user_form
+    steps:
+      - action: infor_user_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: utter_remember
+
+  - rule: Ask my form
+    steps:
+      - intent: ask_xem_lai_form
+      - action: utter_slots_values

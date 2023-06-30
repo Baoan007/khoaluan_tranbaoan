@@ -1,0 +1,609 @@
+version: "3.1"
+
+nlu:
+  #NOTE ĐẶC ĐIỂM TRƯỜNG KHTN TP. Hồ Chí Minh
+  ########## Học phí
+  - intent: ddt/hoc_phi_truong_cong_lap
+    examples: |
+      - Trường Đại học khoa học tự nhiên TP. Hồ Chí Minh là Trường Công lập hay Dân lập?
+      - Học phí trường khoa học tự nhiên như thế nào?
+      - Học phí của trường?
+  #HỌC BỔNG
+  - intent: ddt/co_hoi_hoc_bong
+    examples: |
+      - Cơ hội học bổng?
+      - Các chương trình học bổng của trường?
+  #CHẤT LƯỢNG SINH VIÊN ĐẦU VÀO
+  - intent: ddt/diem_chuan
+    examples: |
+      - Điểm chuẩn đầu vào?
+      - điểm chuẩn ngành công nghệ thông tin?
+      - điểm chuẩn ngành toán học?
+      - điểm chuẩn ngành điện tử viễn thông?
+      - điểm chuẩn ngành hóa học?
+      - điểm chuẩn ngành toán ứng dụng?
+      - điểm chuẩn ngành công nghệ môi trường?
+      - điểm chuẩn ngành vật lý hạt nhân?
+      - điểm chuẩn ngành công nghệ môi trường?
+      - điểm chuẩn ngành sinh học?
+      - điểm chuẩn của trường?
+      - điểm chuẩn của các ngành học?
+  - intent: ddt/ti_le_choi_nganh
+    examples: |
+      - Tìm tỉ lệ chọi các ngành?
+      - Tỉ lệ chọi của ngành kỹ thuật điện tử - viễn thông?
+  #MỨC ĐỘ NỔI TIẾNG CỦA TRƯỜNG
+  - intent: ddt/su_menh_truong
+    examples: |
+      - Trường khtn?
+      - Sứ mệnh của trường khoa học tự nhiên?
+      - giới thiệu trường khoa học tự nhiên?
+  - intent: ddt/ky_hieu_tuyen_sinh
+    examples: |
+      - Ký hiệu của trường của Đại học Khoa học Tự nhiên là gì?
+      - Mã tuyển sinh của trường là gì?
+      - ký hiệu của trường?
+      - Mã trường?
+  - intent: ddt/phuong_thuc_tuyen_sinh
+    examples: |
+      - Phương thức tuyển sinh của trường khtn?
+      - Các phương thức tuyển sinh đại học?
+  - intent: ddt/hoat_dong_ngoai_khoa_truong
+    examples: |
+      - Khi theo học tại Trường Học sinh, sinh viên có được tham gia nhiều hoạt động ngoại khóa không ạ?
+      - Các hoạt động ngoại khóa của trường?
+  #MỨC ĐỘ HẤP DẪN CỦA NGÀNH HỌC
+  - intent: ddt/cac_nganh_dao_tao
+    examples: |
+      - Các ngành đào tạo của trường?
+      - Danh sách các ngành đào tạo?
+      - Trường có những ngành đào tạo nào?
+      - các ngành đào tạo?
+      - Có những ngành nào?
+      - Tên các ngành đào tạo?
+      - thông tin các ngành đào tạo?
+  # # KHOA SINH HỌC
+  - intent: ddt/nganh_sinh_hoc
+    examples: |
+      - Chỉ tiêu ngành sinh học?
+      - Thông tin ngành sinh học?
+      - ngành sinh học?
+      - Mã ngành ngành sinh học?
+      - Học phí ngành sinh học?
+      - Tổ hợp môn thi tuyển sinh ngành sinh học?
+      - Học phí ngành sinh học
+  - intent: ddt/nganh_sinh_hoc_clc
+    examples: |
+      - Thông tin ngành sinh học chất lượng cao?
+      - ngành sinh học chất lượng cao?
+      - ngành sinh học clc?
+      - Mã ngành ngành sinh học chất lượng cao?
+      - Học phí ngành sinh học chất lượng cao?
+      - Tổ hợp môn thi tuyển sinh ngành sinh học chất lượng cao?
+      - Học phí ngành sinh học chất lượng cao
+  - intent: ddt/nganh_cong_nghe_sinh_hoc
+    examples: |
+      - Thông tin ngành công nghệ sinh học?
+      - ngành công nghệ sinh học?
+      - Mã ngành ngành công nghệ sinh học?
+      - Học phí ngành công nghệ sinh học?
+      - Tổ hợp môn thi tuyển sinh ngành công nghệ sinh học?
+      - Học phí ngành công nghệ sinh học
+  - intent: ddt/nganh_cong_nghe_sinh_hoc_clc
+    examples: |
+      - Thông tin ngành công nghệ sinh học chất lượng cao?
+      - ngành công nghệ sinh học chất lượng cao?
+      - ngành công nghệ sinh học clc?
+      - Mã ngành ngành công nghệ sinh học chất lượng cao?
+      - Học phí ngành công nghệ sinh học chất lượng cao?
+      - Tổ hợp môn thi tuyển sinh ngành công nghệ sinh học chất lượng cao?
+      - Học phí ngành công nghệ sinh học chất lượng cao
+
+  # các ngành Khoa VẬT LÝ
+  - intent: ddt/nganh_vat_ly_hoc
+    examples: |
+      - Thông tin ngành vật lý học?
+      - ngành vật lý học?
+      - Thông tin nhóm ngành vật lý học?
+      - Thông tin ngành công nghệ vật lý điện tử và tin học?
+      - Mã ngành ngành vật lý học?
+      - Học phí ngành vật lý học?
+      - Tổ hợp môn thi tuyển sinh ngành vật lý học?
+      - Học phí ngành vật lý học?
+  - intent: ddt/nganh_ky_thuat_hat_nhan
+    examples: |
+      - Thông tin ngành Kỹ thuật hạt nhân?
+      - ngành Kỹ thuật hạt nhân?
+      - Mã ngành ngành kỹ thuật hạt nhân?
+      - Học phí ngành kỹ thuật hạt nhân?
+      - Tổ hợp môn thi tuyển sinh ngành kỹ thuật hạt nhân?
+      - Học phí ngành kỹ thuật hạt nhân?
+  - intent: ddt/nganh_vat_ly_y_khoa
+    examples: |
+      - Thông tin ngành Vật lý y khoa?
+      - ngành Vật lý y khoa?
+      - Mã ngành ngành vật lý y khoa?
+      - Học phí ngành vật lý y khoa?
+      - Tổ hợp môn thi tuyển sinh ngành vật lý y khoa?
+      - Học phí ngành vật lý y khoa?
+  - intent: ddt/nganh_hai_duong_hoc
+    examples: |
+      - Thông tin ngành Hải dương học?
+      - ngành Hải dương học?
+      - Mã ngành ngành hải dương học?
+      - Học phí ngành hải dương học?
+      - Tổ hợp môn thi tuyển sinh ngành hải dương học?
+      - Học phí ngành hải dương học?
+    # KHoa TOÁN TIN
+
+  # các ngành KHOA MÔI TRƯỜNG
+  - intent: ddt/nganh_khoa_hoc_moi_truong
+    examples: |
+      - Thông tin ngành khoa học môi trường?
+      - ngành khoa học môi trường?
+      - ngành môi trường?
+      - Mã ngành ngành khoa học môi trường?
+      - Học phí ngành khoa học môi trường?
+      - Tổ hợp môn thi tuyển sinh ngành khoa học môi trường?
+      - Học phí ngành khoa học môi trường?
+  - intent: ddt/nganh_khoa_hoc_moi_truong_clc
+    examples: |
+      - Thông tin ngành khoa học môi trường chất lượng cao?
+      - ngành khoa học môi trường chất lượng cao?
+      - ngành khoa học môi trường chất lượng cao clc?
+      - Mã ngành ngành khoa học môi trường chất lượng cao?
+      - Học phí ngành khoa học môi trường chất lượng cao?
+      - Tổ hợp môn thi tuyển sinh ngành khoa học môi trường chất lượng cao?
+      - Học phí ngành khoa học môi trường chất lượng cao?
+
+  - intent: ddt/nganh_cong_nghe_ky_thuat_moi_truong
+    examples: |
+      - Thông tin ngành công nghệ kỹ thuật môi trường?
+      - ngành công nghệ kỹ thuật môi trường?
+      - Mã ngành ngành công nghệ kỹ thuật môi trường?
+      - Học phí ngành công nghệ kỹ thuật môi trường?
+      - Tổ hợp môn thi tuyển sinh ngành công nghệ kỹ thuật môi trường?
+      - Học phí ngành công nghệ kỹ thuật môi trường?
+  # Khoa vật liệu
+  - intent: ddt/nganh_khoa_hoc_vat_lieu
+    examples: |
+      - Thông tin ngành khoa học vật liệu?
+      - ngành khoa học vật liệu?
+      - Mã ngành ngành khoa học vật liệu?
+      - Học phí ngành khoa học vật liệu?
+      - Tổ hợp môn thi tuyển sinh ngành khoa học vật liệu?
+      - Học phí ngành khoa học vật liệu?
+  - intent: ddt/nganh_cong_nghe_vat_lieu
+    examples: |
+      - Thông tin ngành công nghệ vật liệu?
+      - ngành công nghệ vật liệu?
+      - Mã ngành ngành công nghệ vật liệu?
+      - Học phí ngành công nghệ vật liệu?
+      - Tổ hợp môn thi tuyển sinh ngành công nghệ vật liệu?
+      - Học phí ngành công nghệ vật liệu?
+  # các ngành Khoa hóa học
+  - intent: ddt/nganh_hoa_hoc
+    examples: |
+      - Thông tin ngành hóa học?
+      - ngành hóa học?
+      - Mã ngành ngành hóa học?
+      - Học phí ngành hóa học?
+      - Tổ hợp môn thi tuyển sinh ngành hóa học?
+      - Học phí ngành hóa học?
+  - intent: ddt/nganh_hoa_hoc_clc
+    examples: |
+      - Thông tin ngành hóa học chất lượng cao?
+      - ngành hóa học chất lượng cao?
+      - ngành hóa học clc?
+      - Mã ngành ngành học học chất lượng cao?
+      - Học phí ngành học học chất lượng cao?
+      - Tổ hợp môn thi tuyển sinh ngành học học chất lượng cao?
+      - Học phí ngành học học chất lượng cao?
+  - intent: ddt/nganh_cong_nghe_ky_thuat_hoa_hoc
+    examples: |
+      - Thông tin ngành công nghệ kỹ thuật hóa học?
+      - ngành công nghệ kỹ thuật hóa học?
+      - ngành công nghệ kỹ thuật hóa học clc?
+      - ngành công nghệ kỹ thuật hóa học chất lượng cao?
+      - Mã ngành ngành công nghệ kỹ thuật hóa học chất lượng cao?
+      - Học phí ngành công nghệ kỹ thuật hóa học chất lượng cao?
+      - Tổ hợp môn thi tuyển sinh ngành công nghệ kỹ thuật hóa học chất lượng cao?
+      - Học phí ngành công nghệ kỹ thuật hóa học chất lượng cao?
+  # Khoa ĐT- VT
+  - intent: ddt/nganh_ky_thuat_dtvt
+    examples: |
+      - Thông tin ngành kỹ thuật điện tử viễn thông?
+      - ngành kỹ thuật điện tử viễn thông?
+      - Thông tin ngành kỹ thuật đtvt?
+      - ngành kỹ thuật đtvt?
+      - ngành đtvt
+      - Mã ngành ngành điện tử viễn thông
+      - Học phí ngành điện tử viễn thông
+      - Tổ hợp môn thi tuyển sinh ngành điện tử viễn thông
+      - Học phí ngành điện tử viễn thông
+  - intent: ddt/nganh_ky_thuat_dtvt_clc
+    examples: |
+      - Thông tin ngành kỹ thuật điện tử viễn thông chất lượng cao?
+      - ngành kỹ thuật điện tử viễn thông chất lượng cao?
+      - Thông tin ngành kỹ thuật đtvt clc?
+      - ngành kỹ thuật đtvt clc?
+      - ngành đtvt chất lượng cao?
+      - Mã ngành ngành Điện tử viễn thông chất lượng cao?
+      - Học phí ngành Điện tử viễn thông chất lượng cao?
+      - Tổ hợp môn thi tuyển sinh ngành Điện tử viễn thông chất lượng cao?
+      - Học phí ngành Điện tử viễn thông chất lượng cao?
+  # các ngành KHOA Địa chất
+  - intent: ddt/nganh_dia_chat_hoc
+    examples: |
+      - Thông tin ngành địa chất học?
+      - ngành địa chất học?
+      - Mã ngành ngành địa chất học?
+      - Học phí ngành địa chất học?
+      - Tổ hợp môn thi tuyển sinh ngành địa chất học?
+      - Học phí ngành địa chất học?
+  - intent: ddt/nganh_ky_thuat_dia_chat
+    examples: |
+      - Thông tin ngành kỹ thuật địa chất?
+      - ngành kỹ thuật địa chất?
+      - Mã ngành ngành Kỹ thuật địa chất ?
+      - Học phí ngành Kỹ thuật địa chất ?
+      - Tổ hợp môn thi tuyển sinh ngành Kỹ thuật địa chất ?
+      - Học phí ngành Kỹ thuật địa chất ?
+
+  # Các ngành KHOA CÔNG NGHỆ THÔNG TIN
+  - intent: ddt/nhom_nganh_may_tinh_va_cntt
+    examples: |
+      - Thông tin ngành máy tinh và công nghệ thông tin?
+      - ngành máy tinh và công nghệ thông tin?
+      - Thông tin ngành công nghệ thông tin?
+      - ngành công nghệ thông tin?
+      - Mã ngành ngành công nghệ thông tin?
+      - Học phí ngành công nghệ thông tin?
+      - Tổ hợp môn thi tuyển sinh ngành công nghệ thông tin?
+      - Học phí ngành công nghệ thông tin?
+      - Mã ngành ngành máy tính?
+      - Học phí ngành máy tính?
+      - Tổ hợp môn thi tuyển sinh ngành máy tính?
+      - Học phí ngành máy tính?
+  - intent: ddt/nganh_may_tinh_va_cntt_clc
+    examples: |
+      - Thông tin ngành máy tinh và công nghệ thông tin chất lượng cao?
+      - ngành máy tinh và công nghệ thông tin chất lượng cao?
+      - Thông tin ngành công nghệ thông tin chất lượng cao?
+      - ngành công nghệ thông tin clc?
+      - ngành máy tinh chất lượng cao?
+      - Mã ngành ngành công nghệ thông tin chất lượng cao?
+      - Học phí ngành công nghệ thông tin chất lượng cao?
+      - Tổ hợp môn thi tuyển sinh ngành công nghệ thông tin chất lượng cao?
+      - Học phí ngành công nghệ thông tin chất lượng cao?
+      - Mã ngành ngành máy tính chất lượng cao?
+      - Học phí ngành máy tính chất lượng cao?
+      - Tổ hợp môn thi tuyển sinh ngành máy tính chất lượng cao?
+      - Học phí ngành máy tính chất lượng cao?
+  #MỨC ĐỘ HẤP DẪN CỦA KHOA
+  - intent: ddt/cac_khoa_dao_tao
+    examples: |
+      - Các khoa đào tạo của trường?
+      - Danh sách các khoa đào tạo?
+      - Trường có những khoa đào tạo nào?
+      - các khoa đào tạo?
+      - Có những khoa nào?
+      - Tên các khoa đào tạo?
+      - thông tin các khoa đào tạo?
+    #Khoa công nghệ thông tin
+  - intent: ddt/hoi_thanh_lap_khoa_cong_nghe_thong_tin
+    examples: |
+      - Khoa công nghệ thông tin được thành lập như thế nào
+      - Khoa cntt được thành lập như thế nào?
+      - thành lập khoa cntt?
+      - khoa công nghệ thông tin thành lập?
+      - khoa công nghệ thông tin?
+      - khoa cntt?
+      - CNTT?
+      - công nghệ thông tin?
+      - máy tính?
+      - lập trình?
+  - intent: ddt/hoi_to_hop_mon_khoa_cntt
+    examples: |
+      - khoa cntt thi những tổ hợp môn nào
+      - khoa công nghệ thông tin có những tổ hợp môn thi nào?
+      - tổ hợp môn thi của khoa công nghệ thông tin?
+      - khoa cntt thi những môn nào?
+  #khoa TOÁN TIN
+  - intent: ddt/hoi_thanh_lap_khoa_toan_tin
+    examples: |
+      - Khoa Toán tin được thành lập như thế nào
+      - Khoa Toán được thành lập như thế nào?
+      - thành lập khoa Toán Tin?
+      - khoa Toán - tin thành lập?
+      - khoa Toán?
+      - khoa Toán - Tin?
+      - Toán tin?
+  - intent: ddt/hoi_to_hop_mon_khoa_toan_tin
+    examples: |
+      - khoa Toán Tin thi những tổ hợp môn nào
+      - khoa Toán tin có những tổ hợp môn thi nào?
+      - tổ hợp môn thi của Khoa Toán?
+      - khoa toán tin thi những môn nào?
+  - intent: ddt/nhom_nganh_toan_hoc_toan_tin_toan_ung_dung
+    examples: |
+      - Thông tin ngành toán học?
+      - ngành toán học?
+      - Thông tin ngành toán tin?
+      - ngành toán tin?
+      - Thông tin ngành toán ứng dụng?
+      - ngành toán ứng dụng?
+      - Mã ngành ngành toán học
+      - Học phí ngành toán học
+      - Tổ hợp môn thi tuyển sinh ngành toán học
+      - Học phí ngành toán học
+      - Mã ngành ngành toán ứng dụng?
+      - Học phí ngành toán ứng dụng?
+      - Tổ hợp môn thi tuyển sinh ngành toán ứng dụng?
+      - Học phí ngành toán ứng dụng?
+      - Mã ngành ngành Toán tin?
+      - Học phí ngành Toán tin?
+      - Tổ hợp môn thi tuyển sinh ngành Toán tin?
+      - Học phí ngành Toán tin?
+  - intent: ddt/nganh_khoa_hoc_du_lieu
+    examples: |
+      - Thông tin ngành khoa học dữ liệu?
+      - ngành khoa học dữ liệu?
+      - Mã ngành ngành khoa học dữ liệu
+      - Học phí ngành khoa học dữ liệu
+      - Tổ hợp môn thi tuyển sinh ngành khoa học dữ liệu
+      - Học phí ngành khoa học dữ liệu
+  ## Common ngành vật lý information
+  - intent: ddt/hoi_thanh_lap_khoa_vat_ly
+    examples: |
+      - Khoa Vật lý Vật lý kỹ thuật vật lý được thành lập như thế nào
+      - Khoa Vật lý được thành lập như thế nào?
+      - thành lập khoa Kỹ thuật vật lý?
+      - khoa Vật lý - Kỹ thuật vật lý thành lập?
+      - khoa Vật lý?
+      - khoa Kỹ thuật vật lý?
+      - Vật lý?
+
+  - intent: ddt/hoi_to_hop_mon_khoa_vat_ly
+    examples: |
+      - khoa Vật lý Kỹ thuật vật lý thi những tổ hợp môn nào
+      - tổ hợp môn gì thi khoa Vật lý là gì?
+      - tổ hợp môn thi của khoa Kỹ thuật vật lý?
+      - khoa vật lý thi những môn nào?
+  # Common ngành Địa chất information
+  - intent: ddt/hoi_thanh_lap_khoa_dia_chat
+    examples: |
+      - Khoa Địa chất được thành lập như thế nào
+      - Khoa Kỹ thuật Địa chất được thành lập như thế nào?
+      - thành lập khoa Kỹ thuật địa chất?
+      - khoa Địa chất thành lập?
+      - khoa Địa chất?
+      - khoa Kỹ thuật địa chất?
+      - Địa chất?
+  - intent: ddt/hoi_to_hop_mon_khoa_dia_chat
+    examples: |
+      - khoa Địa chất Kỹ thuật Địa chất thi những tổ hợp môn nào
+      - tổ hợp môn gì thi khoa Địa chất là gì?
+      - tổ hợp môn thi của khoa Kỹ thuật địa chất?
+      - khoa địa chất thi gì?
+      - khoa địa chất thi những môn nào?
+
+  ## Common Điện tử Viễn thông KHTN information
+  - intent: ddt/hoi_thanh_lap_khoa_dtvt
+    examples: |
+      - Khoa Điện tử - viễn thông được thành lập như thế nào
+      - Khoa Điện tử viễn thông được thành lập như thế nào?
+      - thành lập khoa Kỹ thuật điện tử viễn thông?
+      - khoa ĐTVT thành lập?
+      - khoa điện tử?
+      - khoa viễn thông?
+      - khoa vt?
+      - ĐTVT?
+
+  - intent: ddt/hoi_to_hop_mon_khoa_dtvt
+    examples: |
+      - khoa Điện tử - viễn thông thi những tổ hợp môn nào
+      - tổ hợp môn gì thi khoa Điện tử viễn thông là gì?
+      - tổ hợp môn thi của khoa Kỹ thuật Điện tử viễn thông?
+      - tổ hợp môn thi của khoa đtvt?
+      - tổ hợp môn thi khoa DTVT?
+      - tổ hợp môn thi khoa ĐT-VT?
+      - tổ hợp môn thi khoa Kỹ thuật ĐT-VT?
+      - khoa đtvt thi những môn nào?
+
+  ## Common Khoa Hóa Học KHTN information
+  - intent: ddt/hoi_thanh_lap_khoa_hoa_hoc
+    examples: |
+      - Khoa Hóa học được thành lập như thế nào
+      - Khoa Công nghệ Hóa học được thành lập như thế nào?
+      - thành lập khoa Hóa học?
+      - khoa Hóa học thành lập?
+      - khoa Hóa học?
+      - khoa Hóa chất?
+      - Hóa học?
+      - Khoa hóa?
+
+  - intent: ddt/hoi_to_hop_mon_khoa_hoa_hoc
+    examples: |
+      - khoa Hóa học thi những tổ hợp môn nào
+      - tổ hợp môn gì thi khoa Hóa học là gì?
+      - tổ hợp môn thi của khoa Hóa?
+      - khoa hóa thi những môn nào?
+
+  ## Common Khoa học và công nghệ vật liệu KHTN information
+  - intent: ddt/hoi_thanh_lap_khoa_vat_lieu
+    examples: |
+      - Khoa Vật liệu được thành lập như thế nào
+      - Khoa Kỹ thuật Vật liệu được thành lập như thế nào?
+      - thành lập khoa Vật liệu?
+      - khoa Vật liệu thành lập?
+      - khoa Vật liệu?
+      - khoa Kỹ thuật vật liệu Vật liệu?
+      - Vật liệu?
+
+  - intent: ddt/hoi_to_hop_mon_khoa_vat_lieu
+    examples: |
+      - khoa Vật liệu thi những tổ hợp môn nào
+      - tổ hợp môn gì thi khoa Vật liệu là gì?
+      - tổ hợp môn thi của khoa kỹ thuật Vật liệu?
+      - khoa vật liệu thi những môn nào?
+
+  ## Common Khoa Môi trường information
+  - intent: ddt/hoi_thanh_lap_khoa_moi_truong
+    examples: |
+      - Khoa Môi trường được thành lập như thế nào
+      - Khoa công nghệ Môi trường được thành lập như thế nào?
+      - thành lập khoa Kỹ thuật Môi trường?
+      - khoa môi trường thành lập?
+      - khoa công nghệ môi trường?
+      - khoa Kỹ thuật Môi trường?
+      - môi trường?
+      - khoa môi trường?
+      - khoa cnmt?
+  - intent: ddt/hoi_to_hop_mon_khoa_moi_truong
+    examples: |
+      - khoa Môi trường thi những tổ hợp môn nào
+      - tổ hợp môn gì thi khoa Công nghệ môi trường là gì?
+      - tổ hợp môn thi của khoa Kỹ thuật môi trường?
+      - khoa môi trường thi những môn nào?
+
+  ## Common Khoa Sinh information
+  - intent: ddt/hoi_thanh_lap_khoa_sinh
+    examples: |
+      - Khoa Sinh học và công nghệ sinh học được thành lập như thế nào
+      - Khoa công nghệ sinh học được thành lập như thế nào?
+      - thành lập khoa Kỹ thuật Sinh học và công nghệ sinh học?
+      - khoa Sinh học và công nghệ sinh học thành lập?
+      - khoa Sinh học và công nghệ sinh học?
+      - khoa Kỹ thuật sinh học?
+      - Sinh học và công nghệ sinh học?
+      - khoa Sinh học và công nghệ sinh học?
+      - khoa sinh?
+
+  - intent: ddt/hoi_to_hop_mon_khoa_sinh
+    examples: |
+      - khoa Sinh học và công nghệ sinh học thi những tổ hợp môn nào
+      - tổ hợp môn gì thi khoa Sinh học và công nghệ sinh học là gì?
+      - tổ hợp môn thi của khoa Sinh học và công nghệ sinh học?
+      - khoa sinh học thi những môn nào?
+  ## Common Cử nhân quốc tế information
+  - intent: ddt/hoi_chuong_trinh_cu_nhan_quoc_te
+    examples: |
+      - Chương trình đào tạo cử nhân quốc tế?
+      - Đào tạo CNQT?
+      - Cử nhân quốc tế?
+      - đào tạo liên kết nước ngoài?
+      - Đào tạo quốc tế?
+      - Liên kết đào tạo quốc tế
+
+  - intent: ddt/hoi_to_hop_mon_chuong_trinh_cu_nhan_quoc_te
+    examples: |
+      - Chương trình đào tạo quốc tế thi những tổ hợp môn nào
+      - tổ hợp môn gì thi Chương trình đào tạo quốc tế là gì?
+      - tổ hợp môn thi của Chương trình đào tạo quốc tế?
+      - tổ hợp môn thi CTDDTQT?
+      - tổ hợp môn thi cử nhân liên kết nước ngoài?
+      - chương trình quốc tế thi những môn nào?
+
+  # các ngành: vl tin học, y khoa, vật lý hạt nhân, chất rắn, ứng dụng, điện tử, địa cầu, hải tượng khí tượng thủy văn
+  #VỊ TRÍ ĐỊA LÝ - CƠ SỞ VẬT CHẤT
+  ####Vị trí
+  - intent: ddt/co_so_vat_chat
+    examples: |
+      - Cơ sở vật chất của trường?
+      - cơ sở vật chất?
+  - intent: ddt/co_so_dao_tao
+    examples: |
+      - trường khtn có những cơ sở đào tạo nào?
+      - cơ sở đào tạo?
+      - các cơ sở đào tạo?
+      - chi nhánh đào tạo?
+      - Các cơ sở của trường ở đâu?
+      - trường có bao nhiêu cơ sở?
+      - trường ở đâu?
+      - trường khtn ở đâu
+      - trường khoa học tự nhiên có bao nhiêu cơ sở?
+  - intent: ddt/co_so_dao_tao_2
+    examples: |
+      - thông tin cơ sở Linh Trung?
+      - Cơ sở linh trung ở đâu?
+      - địa chỉ cơ sở Linh Trung?
+      - địa chỉ của cơ sở 2?
+      - thông tin cơ sở 2
+      - cơ sở 2
+      - cơ sở đào tạo 2?
+  - intent: ddt/co_so_dao_tao_1
+    examples: |
+      - thông tin cơ sở Nguyễn Văn Cừ?
+      - Cơ sở Nguyễn Văn Cừ ở đâu?
+      - địa chỉ cơ sở Nguyễn Văn Cừ?
+      - địa chỉ của cơ sở 1?
+      - thông tin cơ sở 1
+      - cơ sở 1
+      - cơ sở đào tạo 1?
+
+  ###Cơ sở đào tạo
+  - intent: ddt/co_so_vat_chat_the_thao
+    examples: |
+      - Em muốn hỏi trường mình có các sân chơi thể thao nào không?
+      - trường có sân thể thao không?
+      - trường có sân bóng đá không?
+      - trường có cơ sở vật chất thể dục như thế nào?
+
+  - intent: ddt/thu_vien
+    examples: |
+      - Thư viện?
+      - Thư viện trường như thế nào?
+      - Thư viện trường ở đâu?
+      - Trường có bao nhiêu thư viện?
+      - Trường có thư viện online không?
+      - Trường có thư viện không?
+      - đăng ký thư viện?
+  #CHÍNH SÁCH HỖ TRỢ SINH VIÊN
+  - intent: ddt/chinh_sach_ho_tro
+    examples: |
+      - Chính sách hỗ trợ sinh viên?
+      - Trường có các chính sách hỗ trợ nào?
+      - Các chính sách của trường là gì?
+
+  #KÝ TÚC XÁ
+  - intent: ddt/ky_tuc_xa
+    examples: |
+      - Trường có ký túc xá không?
+      - Ký túc xá của trường như thế nào?
+      - Ký túc xá ở đâu?
+      - thông tin về ký túc xá?
+      - ký túc xá?
+
+  # 3. Yếu tố cơ hội việc làm tương lai
+  - intent: ddt/co_hoi_viec_lam
+    examples: |
+      - Cơ hội việc làm tương lai của sinh viên?
+      - Tỉ lệ việc làm của sinh viên như thế nào?
+      - Tỉ lệ việc làm?
+      - Cơ hội việc làm?
+
+  # 4. Yếu tố nổ lực giao tiếp với học sinh THPT
+  - intent: ddt/giao_tiep_tham_quan
+    examples: |
+      - Có được tham quan trường không?
+      - Có thể tham quan trường trực tiếp không?
+  - intent: ddt/hoi_co_to_chuc_tu_van_tuyen_sinh
+    examples: |
+      - Trường có tổ chức tư vấn tuyển sinh không?
+      - trường có tổ chức tư vấn tuyển sinh online không?
+      - trường có tư vấn online không?
+
+  # 5. Yếu tố đặc trưng giới tính
+  - intent: ddt/tong_chi_tieu_2023
+    examples: |
+      - Giới tính nữ có học được không?
+      - Tỉ lệ giới tính của sinh viên?
+
+  # 6. Các yếu tố khác - others
+  # Đội ngủ giảng viên
+  - intent: ddt/hoi_giang_vien
+    examples: |
+      - Thầy cô như thế nào?
+      - Đội ngủ giảng viên của trường?
+      - chất lượng giảng viên?

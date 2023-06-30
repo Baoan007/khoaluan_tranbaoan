@@ -1,0 +1,36 @@
+version: "3.1"
+
+nlu:
+  ########## QUY CHẾ HỌC VỤ
+
+  - intent: quy_che_hoc_vu/hoi_dieu_kien_chuyen_truong
+    examples: |
+      - Điều kiện sinh viên chuyển trường?
+      - Có được chuyển trường khi theo học hay không?
+      - Có được chuyển trường không?
+
+  - intent: quy_che_hoc_vu/hoi_thang_diem_danh_gia_hoc_phan
+    examples: |
+      - Điểm qua môn là bao nhiêu?
+      - Thang điểm đánh giá học phần?
+      - Bao nhiêu điểm thi qua môn học
+  - intent: quy_che_hoc_vu/hoi_cach_tinh_diem_trung_binh_xep_loai
+    examples: |
+      - Cách tính điểm trung bình và xếp loại?
+      - điểm trung bình?
+      - xếp loại?
+      - điểm trung bình được tính như thế nào?
+      - Cách xếp loại thang điểm?
+
+  - intent: quy_che_hoc_vu/hoi_dieu_kien_hoan_thi
+    examples: |
+      - Sinh viên có được hoản thi hay không?
+      - Có được hoản thi hay không?
+      - Điểu kiện để hoản thi môn học là gì?
+      - Khi nào thi được hoản thi?
+
+  - intent: quy_che_hoc_vu/hoi_hoc_cung_luc_hai_chuong_trinh
+    examples: |
+      - Học cùng lúc hai chương trình được không?
+      - Điều kiện để học cùng lúc 2 chương trình?
+      - Có cho phép học cùng lúc 2 chương trình không?

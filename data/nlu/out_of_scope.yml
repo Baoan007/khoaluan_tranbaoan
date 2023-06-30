@@ -1,0 +1,161 @@
+version: "3.1"
+nlu:
+  - intent: out_of_scope/non_vietnam
+    examples: |
+      - Wie fange ich mit Rasa an?
+      - hilf mir beim start
+      - tschüssikowski
+      - ¿Qué pasa?
+      - ça va ?
+      - como te llamas
+      - wer bist Du?
+      - como inicio en rasa
+      - come stai?
+      - como estas
+      - de donde eres
+      - de que lugar eres?
+      - epdi iruka
+      - eres humana
+      - kalhmera sara ti kaneis
+      - kannst du auch deutsch?
+      - kannst du dies auch auf deutsch?
+      - oui je besoine de l'aide
+      - que puedes hacer?
+      - tu parles francais?
+      - tudo bom
+      - tu pagal
+      - kannst du mir helfen
+      - tu kaisi he
+      - こにちは
+      - 日本語分かる？
+      - 你好
+      - I'm speaking a non-english language.
+      - 呵呵
+      - 我该如何使用
+      - 你懂中文吗？
+      - 您好
+      - 你叫什么名字
+      - 你是谁
+      - 中文
+      - kya hindi me bat kar sakate ho
+      - Dumme sara
+      - αστεία λές
+      - rasa codigo abierto
+      - 卧槽
+  - intent: out_of_scope/other
+    examples: |
+      - gọi tôi là cha
+      - chúng ta tiếp tục nói chuyện được không?
+      - bạn có thể đặt bữa tối không
+      - làm thế nào để có được studio rasa
+      - làm thế nào để đi đến new york?
+      - tôi đói
+      - Tôi đói, tôi phải làm gì?
+      - tôi không phải là nhà phát triển nhưng cần điều này cho doanh nghiệp
+      - tôi qq
+      - tôi không thể xử lý yêu cầu _của bạn_
+      - tôi không quan tâm bạn thế nào
+      - Tôi hy vọng bạn sẽ tốt hơn
+      - tôi ngay lập tức cần trợ giúp triển khai bot thú vị nhất mà bạn có thể tưởng tượng
+      - Tôi đang tìm kiếm việc làm
+      - tôi đã bảo bạn rồi mà
+      - tôi muốn tiệc tùng
+      - tôi muốn một cây kem không nhỏ giọt
+      - tôi muốn cà phê
+      - tôi muốn thực phẩm
+      - tôi muốn flycam tốt
+      - tôi muốn nhiều hơn của bạn trong cuộc sống của tôi!
+      - tôi muốn pizza
+      - tôi muốn pizza!!
+      - tôi muốn đặt một khách sạn
+      - tôi muốn mua một chiếc roomba cho cháu trai của tôi
+      - tôi muốn ăn
+      - tôi muốn tìm bạn mới
+      - tôi muốn tìm hiểu những gì bạn có thể xây dựng với rasa
+      - tôi muốn bay
+      - tôi muốn ăn trưa
+      - tôi muốn biết tình hình hiện tại ở pakistan
+      - tôi muốn đặt một chiếc bánh pizza
+      - tôi muốn thấy khách hàng hài lòng của bạn
+      - tôi sẽ thuần hóa một con chuột cho bạn
+      - [John Lewis](tên) còn kết hôn với bạn không
+      - đó có phải là một vùng đất hoang đầy những bộ phận robot bị hỏng không?
+      - nó có cho phép không
+      - rasa có phải là studio không?
+      - rasa có tốt không
+      - đó có phải là việc của bạn không
+      - không phải bản tin chỉ là thư rác sao?
+      - thật đáng tiếc
+      - tôi đói
+      - giấy phép
+      - ljljl
+      - bữa trưa
+      - bữa trưa??
+      - học máy
+      - gửi cho tôi các bước
+      - linh vật nghĩa là gì?
+      - hơn
+      - núi
+      - tên tôi k
+      - không đợi quay lại tôi muốn một cây kem nhỏ giọt nhưng một hình nón bắt được nó để bạn có thể uống kem sau
+      - mời tôi ăn trưa
+      - trời ơi, không phải nữa!
+      - oh chờ đã, tôi đã cho bạn địa chỉ email công việc của tôi, tôi có thể thay đổi nó không?
+      - được rồi
+      - bạn đang xây dựng hệ thống dựa trên nlp nào?
+      - chỉ thế thôi?
+      - đặt hàng tốt
+      - đặt bánh Pizza
+      - cá nhân hay công việc?
+      - pizza
+      - làm ơn giúp tôi với kem đang nhỏ giọt
+      - vui lòng hjave trưaj
+      - làm ơn nhanh lên, tôi có thời hạn trong hai tuần nữa để giao bot cho công ty rất lớn
+      - vui lòng chơi nhạc
+      - chủ đề rasa
+      - Thực ra? bạn rất cảm động?
+      - làm cho khỏe lại
+      - khu vực không có. hồ sơ
+      - nhớ tên tôi
+      - tìm kiếm trên wikipedia
+      - thằng khốn nạn
+      - cho tôi xem hình con gà
+      - bot ngớ ngẩn
+      - hát cho tôi một bài hát
+      - Vì vậy, bây giờ tôi đang giúp đào tạo bạn?
+      - thứ gì khác
+      - ai đó gọi cảnh sát tôi nghĩ bot đã chết
+      - xin lỗi, tôi không thể viết lại
+      - sudo làm cho tôi một chiếc bánh sandwich
+      - cho tôi biết về bản thân của bạn
+      - cho tôi biết thêm về hành động tốt nhất tiếp theo
+      - điều đó không giống như một trò đùa
+      - liên kết đó không hoạt động!
+      - người tốt hơn bạn
+      - lừa bạn
+      - tắt bếp của tôi
+      - ừm
+      - đợi một chút tôi vẫn đang đọc
+      - còn lúa mì thì sao
+      - trợ lý AI theo ngữ cảnh là gì và chúng khác với chatbot như thế nào?
+      - Bây giờ bạn đang làm gì?
+      - công dụng của bạn cho các trường đại học là gì
+      - bạn đã ăn gì vào bữa trưa?
+      - oyu nghĩ gì về siri?
+      - bạn nghĩ gì về siri?
+      - bạn nghĩ gì về [Stanley Ramirez](tên)?
+      - bạn nghĩ gì về alexa
+      - tâm hồn bạn cảm thấy thế nào bạn của tôi
+      - đang làm gì
+      - gì nữa?
+      - bạn thích những phim nào
+      - tôi phải làm gì sau cd starter-pack-rasa-stack?
+      - diễn ngôn là gì
+      - sfasd
+      - asdkjasdhjkasd
+      - j  bhbhj
+      - eshdtjfjfyk
+      - drhdtjfjfyj
+      - sudo reboot
+      - asdfgasd
+      - asdfgasdas

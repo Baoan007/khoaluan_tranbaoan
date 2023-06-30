@@ -1,0 +1,31 @@
+version: "3.1"
+
+nlu:
+  - intent: yeu_to_ca_nhan/hoi_canteen
+    examples: |
+      - Trường có nơi ăn uống không?
+      - Review canteen của trường?
+      - Canteen của trường?
+      - Canteen
+  - intent: yeu_to_ca_nhan/hoi_view_truong
+    examples: |
+      - Trường có view như thế nào?
+      - Trường khtn có đẹp không?
+      - Trường có view?
+      - View của trường?
+  - intent: yeu_to_ca_nhan/hoi_hoc_thuc_hanh_nhieu_hay_khong
+    examples: |
+      - Trong quá trình học tập, em có được thực hành nhiều không hay chỉ học lý thuyết?
+      - Học thực hành hay lý thuyết nhiều hơn?
+      - Chương trình học có nặng không?
+      - Học thực hành có khó không?
+  - intent: yeu_to_ca_nhan/hoi_chuong_trinh_dao_tao
+    examples: |
+      - Chương trình đào tạo của trường?
+      - Chương trình đào tạo
+      - Chương trình đào tạo ngành sinh học
+      - Chương trình đào tạo ngành điện tử viễn thông
+      - Chương trình đào tạo ngành vật lý
+      - Chương trình đào tạo ngành công nghệ thông tin
+      - Chương trình đào tạo ngành Công nghệ môi trường?
+      - Chương trình đào tạo ngành công nghệ vật liệu
