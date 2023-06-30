@@ -1,67 +1,211 @@
 version: "3.1"
 
 intents:
-  # thêm intents cho user nhập
-  - greet_hello
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thanks
+  - stop
+  - answer_user_name:
+      use_entities:
+        - user_name
+
+  # CÁC YẾU TỐ ẢNH HƯỞNG ĐẾN QUYẾT ĐỊNH CHỌN TRƯỜNG:
+  # 1. Yếu tố các nhân
+  - yeu_to_ca_nhan:
+      use_entities: []
+
+  # 2. Yếu tố về đặc điểm trường
+  - ddt:
+      use_entities: []
+  #HỌC PHÍ
+
+  #HỌC BỔNG
+  #CHẤT LƯỢNG SINH VIÊN ĐẦU VÀO
+  #MỨC ĐỘ NỔI TIẾNG CỦA TRƯỜNG
+  #MỨC ĐỘ HẤP DẪN CỦA NGÀNH HỌC
   - search_nganh_hoc:
       use_entities:
         - ten_nganh
-  - search_nganh_hoc_chi_tieu:
+
+  - search_all_nganh_hoc
+  #MỨC ĐỘ HẤP DẪN CỦA KHOA
+  #VỊ TRÍ ĐỊA LÝ - CƠ SỞ VẬT CHẤT
+  #CHÍNH SÁCH HỖ TRỢ SINH VIÊN
+  #KÝ TÚC XÁ
+  # 3. Yếu tố cơ hội việc làm tương lai
+  # 4. Yếu tố nổ lực giao tiếp với học sinh THPT
+  # 5. Yếu tố đặc trưng giới tính
+  # 6. Các yếu tố khác - others
+  - others
+  # 7. Các câu hỏi ngoài phạm vi trả lời của chat bot
+
+  - chatchit
+  - out_of_scope
+  # QUY CHẾ HỌC VỤ
+  - quy_che_hoc_vu:
+      use_entities: []
+  - quy_che_hoc_vu_main
+  - trigger_response_selector:
+      use_entities: false
+  # -----------intents cho form----------------
+  - dang_ky_form
+  - cancel_form
+  - ask_xem_lai_form
+  - answer_phone:
       use_entities:
-        - ten_nganh
-  # Lấy tất cả ngành học hiện có
-  - get_nganh_hoc
-  - mood_great_2
-  - search_nganh_hoc_ma_nganh
-  - user_input_ma_nganh
+        - phone
+  - answer_address:
+      use_entities:
+        - address
+  - answer_email:
+      use_entities:
+        - email
+
+  # -----------intents cho actions----------------
 
 actions:
   - action_get_nganh_hoc
+  - action_get_chitieu_nganh
+  # - action_default_fallback
   - action_search_nganh_hoc
-  - action_search_nganh_hoc_chi_tieu
-  - action_search_nganh_hoc_ma_nganh
+  - action_search_all_nganh_hoc
+  - action_trigger_response_selector
+  - action_reset_slot
 
 responses:
-  utter_goodbye:
-    - text: "Tạm biệt"
+  utter_greet:
+    - text: "Xin chào! Bạn vui lòng cho mình biết tên để tiện xưng hô?"
+  utter_greet_with_name:
+    - text: "Chào {user_name}"
+  utter_did_that_help:
+    - text: "Tôi có thể giúp gì cho bạn?"
 
-  # Custom mẫu trả lời của bot -> sau đó nó sẽ được gọi trong file story [action]
-  utter_greet_hello:
-    - text: "Chào! tôi có thể giúp gì cho bạn"
-  # Xử lí fall back khi nhập sai thay vì không phản hồi thì sẽ phản hồi
-  utter_fallback:
-    - text: "Xin lỗi, tôi không hiểu ý bạn lắm. Bạn có thể nói rõ hơn được không?"
-    - text: "Tôi xin lỗi, tôi không thể xử lý yêu cầu của bạn. Bạn có thể cung cấp thông tin khác được không?"
-  
-  utter_goodbye_2:
-    - text: "Cảm ơn bạn! Hãy cho tôi biết nếu bạn có thêm câu hỏi."
-  
-  utter_hoi_ma_nganh:
-    - text: "Bạn vui lòng nhập mã ngành cần tìm"
+  utter_happy:
+    - text: "Tôi thật sự rất vui vì có thể hỗ trợ được cho {user_name}!"
+  utter_goodbye:
+    - text: "Chào bạn ! Hãy liên hệ tôi khi bạn cần thêm thông tin nhé!"
+  utter_iambot:
+    - text: "Tôi là AI chatbot - Hỗ trợ tư vấn tuyển sinh"
+  utter_no_help:
+    - text: "Nếu bạn có câu hỏi hay thắc mắc gì liên quan đến vấn đề tuyển sinh trường Đại học Khoa học Tự nhiên hãy cho tôi biết."
+  # utter cho các câu hỏi ngoại lệ
+  utter_default:
+    - text: Xin lỗi nhưng tôi không hiểu tin nhắn của bạn, bạn có thể viết lại được không?
+
+  # -----------utters tiếp tục hoặc kết thúc----------------
+  utter_ask_continue:
+    - text: "Bạn có muốn tiếp tục không?"
+  utter_ask_rephrase:
+    - text: Bạn có thể viết lại câu hỏi được không?
+  utter_start_work:
+    - text: "Xin chào, tôi là AI chatbot - Hỗ trợ tư vấn tuyển sinh Đại học trường KHTN TP. Hồ Chí Minh."
+  utter_ask_stop:
+    - text: "Bạn có muốn kết thúc không?"
+  utter_ask_anything_else:
+    - text: "Bạn còn muốn mình hỗ trợ thêm thông tin khác nữa không?"
+  utter_quy_che_hoc_vu_main:
+    - text: |-
+        Quy chế học vụ và đào tạo bậc Đại học trường KHTN TP. Hồ Chí minh.
+        Mời xem chi tiết tại link: https://www.hcmus.edu.vn/attachments/category/117/qc_hctc_2009_dhkhtn.pdf
+
+  # -----------utters tiếp tục hoặc kết thúc----------------
+  utter_ask_name:
+    - text: "Tên bạn là gì?"
+  utter_remember:
+    - text: "Thông tin của bạn đã được lưu trữ."
+  utter_slots_values:
+    - text: "Thông tin của bạn là:  \nTên:{user_name}\nSố điện thoại: {phone}\nĐịa chỉ: {address}\nemail: {email}"
+  utter_ask_phone:
+    - text: Số điện thoại?
+  utter_ask_address:
+    - text: Tỉnh/thành bạn đang sinh sống?
+  utter_ask_email:
+    - text: Email của bạn là gì?
+
+  #--------------Test thử --------------------
 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+# slots:
+#   ten_nganh:
+#     - type: unfeaturized
 
 # Dùng để Lưu session thôi chứ không có làm gì_____ Bằng [SlotSet('nganh', nganh)]
 entities:
   - ten_nganh
-  - ma_nganh
-
+  - user_name
+  - phone
+  - address
+  - email
+  - ten_khoa
+  - retrieval_intent
 slots:
+  ten_khoa:
+    type: text
+    mappings: # Bắt buộc phải có mapping
+      - type: from_entity
+        entity: ten_khoa
+        influence_conversation: true
+
   ten_nganh:
     type: text
     mappings: # Bắt buộc phải có mapping
       - type: from_entity
         entity: ten_nganh
-        # this slot will not influence the predictions
-        # of the dialogue policies
-        influence_conversation: false
-  ma_nganh:
+        influence_conversation: true
+
+  user_name:
     type: text
     mappings: # Bắt buộc phải có mapping
       - type: from_entity
-        entity: ma_nganh
+        entity: user_name
+        influence_conversation: false
+
+  # Slots dùng cho form------------------
+  phone:
+    type: text
+    mappings: # Bắt buộc phải có mapping
+      - type: from_entity
+        entity: phone
         # this slot will not influence the predictions
         # of the dialogue policies
         influence_conversation: false
+        conditions:
+          - active_loop: infor_user_form
+  address:
+    type: text
+    mappings: # Bắt buộc phải có mapping
+      - type: from_entity
+        entity: address
+        influence_conversation: false
+        conditions:
+          - active_loop: infor_user_form
+  email:
+    type: text
+    mappings: # Bắt buộc phải có mapping
+      - type: from_entity
+        entity: email
+        influence_conversation: false
+        conditions:
+          - active_loop: infor_user_form
+
+  retrieval_intent:
+    type: text
+    mappings: # Bắt buộc phải có mapping
+      - type: from_entity
+        entity: retrieval_intent
+        influence_conversation: false
+
+forms:
+  infor_user_form:
+    required_slots:
+      - user_name
+      - phone
+      - address
+      - email

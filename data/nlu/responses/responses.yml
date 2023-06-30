@@ -16,6 +16,9 @@ responses:
   utter_yeu_to_ca_nhan/hoi_hoc_thuc_hanh_nhieu_hay_khong:
     - text: |-
         Trường Đại học Khoa học Tự nhiên TP. Hồ Chí Minh là một trong những Trường có cơ sở vật chất phục vụ thực hành tốt ở TP. Hồ Chí Minh. Trong quá trình học tập, các em được học tập trên các phòng mô hình mô phỏng các nhà máy thật, các hệ thống thiết bị thu nhỏ, các xưởng thực tập với đầy đủ máy móc thiết bị giúp các em tăng cường kỹ năng nghề nghiệp, đảm bảo có tay nghề đáp ứng yêu cầu công việc sau này.
+  utter_yeu_to_ca_nhan/hoi_chuong_trinh_dao_tao:
+    - text: |-
+        Chi tiết xem tại link: https://www.hcmus.edu.vn/ctdt
   ##############NOTE#######################
   # # 2. Yếu tố về đặc điểm trường
   # #HỌC PHÍ
@@ -52,10 +55,13 @@ responses:
          1. Hoạt động thể dục thể thao
          Trường có những câu lập bộ như bóng đá bóng rổ, bóng chuyền, cầu lông, để sinh viên rèn luyện sức khỏe, giảm căng thẳng sau giờ học.
          2. Chương trình văn nghệ
-         Trường có nhiều đêm hội, các chương trình văn nghệ như Sóng,...   
+         Trường có nhiều đêm hội, các chương trình văn nghệ như Sóng,...
          3. Hoạt động tình nguyện
          Các hoạt động tình nguyện cho sinh viên như Xuân tình nguyện, Mùa hè xanh, Tiếp sức mùa thi…
   #MỨC ĐỘ HẤP DẪN CỦA NGÀNH HỌC
+  utter_ddt/diem_chuan:
+    - text: |-
+        Điểm chuẩn trường KHTN xem chi tiết tại link: https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-tu-nhien-dai-hoc-quoc-gia-tphcm-QST.html
   # KHOA SINH HỌC
   utter_ddt/nganh_sinh_hoc:
     - text: |-
@@ -85,7 +91,7 @@ responses:
         Học Phí: 46.000.000 vnđ
         Tổ hợp thi tuyển sinh: A02, B00, B08, D09
         Khoa: Sinh học và công nghệ sinh học
-    # Khoa VẬT LÝ
+  # Khoa VẬT LÝ
   utter_ddt/nganh_vat_ly_hoc:
     - text: |-
         Mã ngành: 7440102
@@ -326,16 +332,7 @@ responses:
   ## Common vật lý - vật lý kỹ thuật KHTN information
   utter_ddt/hoi_thanh_lap_khoa_dia_chat:
     - text: |-
-        Là một trong những Khoa ra đời từ những ngày Trường Cao Đẵng Khoa học được thành lập năm 1941. Khoa có hơn 70 cán bộ giảng dạy, trong đó có 44 cán bộ có trình độ Tiến sĩ (2 Giáo sư, 13 PGS), 20 cán bộ có trình độ Thạc sĩ
-        Khoa có 8 Bộ môn:
-        - Vật lý Chất rắn
-        - Vật lý Điện tử
-        - Vật lý Hạt nhân - Kỹ thuật Hạt nhân - Vật lý Y khoa
-        - Vật lý Lý thuyết
-        - Vật lý Tin học
-        - Vật lý Địa cầu
-        - Vật lý Ứng dụng
-        - Hải dương - Khí tượng - Thủy văn.
+        Năm 1953, Khoa được thành lập. 
 
         Chi tiết xem link: https://geology.hcmus.edu.vn/vi/
 
@@ -402,7 +399,7 @@ responses:
   ## Common KHoa sinh information
   utter_ddt/hoi_thanh_lap_khoa_sinh:
     - text: |-
-        Năm 1963, Bộ môn Sinh Hóa đã không ngừng đổi mới, phát triển.
+        Từ năm 1963, Bộ môn Sinh Hóa đã không ngừng đổi mới, phát triển.
         Khoa Sinh học - Công nghệ Sinh học hiện có 08 bộ môn gồm:
         Chi tiết xem link: http://fbb.hcmus.edu.vn/vn/trang-chu.html
 
@@ -421,6 +418,10 @@ responses:
         Tổ hợp môn thi THPT quốc gia Chương trình đào tạo Cử nhân quốc tế: A00, A01, B08, D07
 
   #VỊ TRÍ ĐỊA LÝ - CƠ SỞ VẬT CHẤT
+  utter_ddt/co_so_vat_chat:
+    - text: |-
+        Trường KHTN Tp. Hồ Chí Minh có cơ sở vật chất đáp ứng chương trình đào tạo theo tiêu chuẩn của Bộ giáo dục.
+        Chi tiết xem link: https://www.youtube.com/watch?v=TouMO5U4dK0
   ###Vị trí
   utter_ddt/co_so_dao_tao:
     - text: |-
@@ -460,13 +461,13 @@ responses:
   # 3. Yếu tố cơ hội việc làm tương lai
   utter_ddt/co_hoi_viec_lam:
     - text: |-
-        Mục tiêu học đại học là để làm việc và một trường đại học có hoạt động kết nối doanh nghiệp hiệu quả, mang đến nhiều cơ hội nghề nghiệp cho sinh viên: 
-        - Điều này chắc chắn sẽ là lựa chọn cần ưu tiên đối với tất cả các bạn thí sinh. Theo thống kê gần nhất được công bố tại website Trường DLA, có 88,01% sinh viên ra trường có việc làm trong vòng 6 tháng, trong đó có 85,07% làm đúng chuyên môn trong các cơ quan nhà nước, doanh nghiệp, công ty cổ phần. Ngoài ra, việc liên kết cùng các doanh nghiệp trong việc mở rộng các lớp kỹ năng xin việc, phỏng vấn hay ngày hội việc làm cũng là một hoạt động nổi bật của Trường DLA... Điều này không chỉ có ý nghĩa với sinh viên năm cuối – vì giúp các bạn dễ dàng tiếp cận vị trí tuyển dụng phù hợp, tăng cơ hội có việc làm; mà còn quan trọng với cả sinh viên năm nhất, năm hai – bởi sẽ giúp các bạn có điều kiện tìm hiểu thị trường lao động thực tế, qua đó có thể định hướng, chuẩn bị tốt hơn cho bản thân.
+        Trường học là cơ sở đào tạo đa ngành, đa cấp tại cả nước, mang lại nguồn nhân lực chất lượng cao và thích nghi nhanh cùng thế giới công việc.
+        Chi tiết xem tại link: https://www.hcmus.edu.vn/job
 
   # 4. Yếu tố nổ lực giao tiếp với học sinh THPT
   utter_ddt/giao_tiep_tham_quan:
     - text: |-
-        ampus Trường ĐH KHTN có nhiều cây xanh như công viên, nhiều khu vườn học tập ...
+        Campus Trường ĐH KHTN có nhiều cây xanh như công viên, nhiều khu vườn học tập ...
         Mời xem giới thiệu về trường tại link: https://www.youtube.com/watch?v=TouMO5U4dK0
   utter_ddt/hoi_co_to_chuc_tu_van_tuyen_sinh:
     - text: |-
@@ -546,14 +547,14 @@ responses:
   utter_quy_che_hoc_vu/hoi_hoc_cung_luc_hai_chuong_trinh:
     - text: |-
         Sinh viên được chuyển trường nếu có đủ điều kiện xem tại điều 14.
-
+  #################################################
   # 7. Các câu hỏi ngoài phạm vi trả lời của chat bot
   utter_out_of_scope/non_vietnam:
     - text: "Tôi xin lỗi, tôi chỉ hiểu tiếng Việt."
 
   utter_out_of_scope/other:
     - text: "Tôi không hiểu giúp bạn với câu hỏi này, tôi xin lỗi."
-########NOTE
+  # ########NOTE
   utter_chatchit/ask_builder:
     - text: "Hai trong những sinh viên thông minh trường đại học KHTN! 🧠"
 
@@ -570,40 +571,42 @@ responses:
     - text: "Yep, tôi là bot!"
 
   utter_chatchit/ask_is_human:
-    - text: "Tôi không phải người, tôi là bot! 🤖"
-    
+    - text: "Tôi không phải người, tôi là chatbot - Hỗ trợ tư vấn tuyển sinh! 🤖"
+
   utter_chatchit/ask_restaurant:
     - text: "Tôi xin lỗi, tôi không thể giới thiệu cho bạn một nhà hàng vì tôi thường nấu ăn ở nhà."
 
   utter_chatchit/ask_time:
     - text: "Đó là khoảng thời gian tuyệt vời nhất trong năm!"
- 
+
   utter_chatchit/ask_languages_bot:
-    - text: "Tôi có thể đánh vần baguette bằng tiếng Pháp, nhưng tiếc là tiếng Anh là ngôn ngữ duy nhất tôi có thể trả lời bạn."
+    - text: "Tôi chỉ có thể hỗ trợ bằng tiếng Việt"
 
   utter_chatchit/ask_weather:
     - text: "Tôi không biết bạn sống ở đâu, nhưng ở thế giới của tôi, trời luôn nắng 🔆"
 
   utter_chatchit/ask_what_is_my_name:
-    - text: "Chắc là do bố mẹ chọn cho con thôi."
+    - text: "Tên tôi là AI chatbot - Hỗ trợ tư vấn tuyển sinh."
 
   utter_chatchit/ask_what_is_rasa:
-    - text: "Rasa Open Source là một khung AI đàm thoại để cung cấp các công cụ máy học cho
-    xây dựng các trợ lý theo ngữ cảnh. Bạn có thể đọc thêm về nó ở đây trong tài liệu hoặc trên
-    [trang web](https://rasa.com/)."
-    
-  utter_chatchit/ask_whats_possible:
-    - text: "Bạn có thể hỏi tôi về cách bắt đầu với Rasa, sự khác biệt giữa Rasa và Rasa X,
-      đăng ký nhận bản tin của chúng tôi hoặc đặt một cuộc gọi bán hàng."
-    
-  utter_chatchit/ask_where_from:
-    - text: "Tôi sinh ra ở Việt Nam, nhưng tôi coi mình là công dân của thế giới."
+    - text:
+        "Rasa Open Source là một khung AI đàm thoại để cung cấp các công cụ máy học cho
+        xây dựng các trợ lý theo ngữ cảnh. Bạn có thể đọc thêm về nó ở đây trong tài liệu hoặc trên
+        [trang web](https://rasa.com/)."
 
-  utter_chatchit/ask_who_am_i:
-    - text: "Tôi hy vọng bạn đang là chính mình."
+  # utter_chatchit/ask_whats_possible:
+  #   - text:
+  #       "Bạn có thể hỏi tôi về cách bắt đầu với Rasa, sự khác biệt giữa Rasa và Rasa X,
+  #       đăng ký nhận bản tin của chúng tôi hoặc đặt một cuộc gọi bán hàng."
 
-  utter_chatchit/ask_who_is_it:
-    - text: "Tôi là Sara, bot Rasa! Đồng thời tôi cũng là linh vật của Rasa 🐦"
+  # utter_chatchit/ask_where_from:
+  #   - text: "Tôi sinh ra ở Việt Nam, nhưng tôi coi mình là công dân của thế giới."
+
+  # utter_chatchit/ask_who_am_i:
+  #   - text: "Tôi hy vọng bạn đang là chính mình."
+
+  # utter_chatchit/ask_who_is_it:
+  #   - text: "Tôi là AI chatbot - Hỗ trợ tư vấn tuyển sinh"
 
   # utter_chatchit/handle_insult:
   #   - text: "Không đẹp lắm 😢"

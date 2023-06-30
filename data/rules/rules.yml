@@ -1,21 +1,12 @@
 version: "3.1"
-
-# Test thử giữ action, và thêm rule chạy 2 lần -> hỏi ngành
-# test với action mới, ..........
-
 rules:
-  # - rule: response hỏi ngành học đúng
-  #   steps:
-  #     - intent: chatchit
-  #     - action: utter_chatchit
-
   ###CÁC YẾU TỐ QUYẾT ĐỊNH VIỆC CHỌN TRƯỜNG##########
   - rule: Luôn response khi có câu hỏi về các yếu tố về cá nhân
     steps:
       - intent: yeu_to_ca_nhan
       - action: utter_yeu_to_ca_nhan
 
-  - rule: Luôn response khi có câu hỏi về các yếu tố về đặc điểm trường
+  - rule: Luôn response khi có câu hỏi về các yếu tố về đặc điểm trường, yếu tố cơ hội việc làm, yếu tố nổ lực giao tiếp với học sinh THPT, yếu tố về đặc điểm giới tính, và các yếu tố khác
     steps:
       - intent: ddt
       - action: utter_ddt
@@ -36,7 +27,7 @@ rules:
       - intent: chatchit
       - action: utter_chatchit
   # Các câu hỏi out of scope
-  - rule: response các câu hỏi về chat chit
+  - rule: response các câu hỏi về out of scope
     steps:
       - intent: out_of_scope
       - action: utter_out_of_scope
@@ -46,7 +37,7 @@ rules:
     steps:
       - intent: goodbye
       - action: utter_goodbye
-
+  #NOTE
   - rule: Luôn chào mỗi khi người dùng xin chào 1
     steps:
       - intent: greet
@@ -62,24 +53,10 @@ rules:
     steps:
       - intent: bot_challenge
       - action: utter_iambot
-
-  # actions custom
-  - rule: luôn trả lời khi hỏi bot tìm all ngành
-    steps:
-      - intent: search_all_nganh_hoc
-      - action: action_search_all_nganh_hoc
-
-  - rule: luôn trả lời khi hỏi bot tìm thông tin 1 ngành bất kỳ
-    steps:
-      - intent: search_nganh_hoc
-      - action: action_search_nganh_hoc
-
   #----------------------FORM-----------------
-
   - rule: Activate form
     steps:
       - intent: dang_ky_form
-      - action: utter_dang_ky_form
       - action: infor_user_form
       - active_loop: infor_user_form
 
@@ -92,9 +69,8 @@ rules:
       - slot_was_set:
           - requested_slot: null
       - action: utter_remember
-      - action: utter_slots_values
 
-  - rule: Luôn response bắt đầu chạy bot rasa
+  - rule: Ask my form
     steps:
-      - intent: greet_start
-      - action: utter_start_work
+      - intent: ask_xem_lai_form
+      - action: utter_slots_values

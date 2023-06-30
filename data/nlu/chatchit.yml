@@ -6,90 +6,76 @@ nlu:
       - Ai bịa đặt anh?
       - ông chủ của bạn là ai nói cho tôi biết
       - ai là người có ý tưởng xây dựng bạn?
-
   - intent: chatchit/ask_how_built
     examples: |
       - Bạn được tạo ra bằng phương tiện gì?
       - Bạn được trang điểm bằng phương pháp nào?
-
   - intent: chatchit/ask_how_doing
     examples: |
       - Ahoy anh bạn khỏe không?
       - Bạn ổn chứ?
       - Anh thấy khỏe không?
-
   - intent: chatchit/ask_how_old
     examples: |
       - Bạn có bạn cùng tuổi với mình không, nếu có thì họ bao nhiêu tuổi?
       - Anh sống được bao lâu rồi?
       - Anh ở đây bao lâu rồi?
-
+      - Bạn bao nhiêu tuổi?
   - intent: chatchit/ask_is_bot
     examples: |
       - Bạn có phải robot không?
       - Bạn có phải robot không
-
   - intent: chatchit/ask_is_human
     examples: |
       - này bạn có phải con người không
-      - bạn có phải con người không
-      - bạn có phải là con người không
       - bạn có phải con người không?
-
   - intent: chatchit/ask_languages_bot
     examples: |
       - Bạn có biết nhiều hơn một ngôn ngữ không?
-      - BẠN LÀ [SPANISH](language)
-      - chúng ta không thể trò chuyện bằng [tiếng Pháp](language)?
-      - chúng ta có thể trò chuyện bằng [tiếng Pháp](language) không?
-      - Bạn có nói [tiếng Ý](language) không?
-
+      - BẠN LÀ SPANISH
+      - chúng ta không thể trò chuyện bằng tiếng Pháp?
+      - chúng ta có thể trò chuyện bằng tiếng Pháp không?
+      - Bạn có nói tiếng Ý không?
   - intent: chatchit/ask_restaurant
     examples: |
       - Có nhà hàng nào ngon gần đây không?
       - Anh tìm nhà hàng cho em được không?
-
   - intent: chatchit/ask_time
     examples: |
       - Anh có thể cho tôi thời gian được không?
-      - Anh có thể cho tôi biết thời gian được không?
-
+      - Bây giờ là mấy giờ?
   - intent: chatchit/ask_weather
     examples: |
       - Có bất kỳ thay đổi khí tượng nào mà tôi cần phải biết không?
-      - Có phải chúng ta đang ở trong một thiêu đốt?
+      - thời tiết hôm nay?
 
   - intent: chatchit/ask_what_is_my_name
     examples: |
-      - Bạn có thể cho tôi biết tên của tôi?
-      - Anh có thể cho tôi biết tôi được gọi là gì không?
-      - Tôi có tên không?
-      - Tôi có tên không? Nó là gì?
-      - Bạn có biết tên tôi không?
-      - Anh có biết tôi tên gì không?
+      - bạn có thể cho tôi biết tên của bạn không?
+      - bạn tên là gì
 
   - intent: chatchit/ask_what_is_rasa
     examples: |
       - Bạn có thể tóm tắt cho tôi về rasa
       - Bạn có thể cho tôi biết thêm về rasa?
 
-  - intent: chatchit/ask_whats_possible
-    examples: |
-      - Bạn có thể giải thích cho tôi trong một câu những gì bạn đang làm?
-      - Bạn có thể giúp tôi được không?
+  # - intent: chatchit/ask_whats_possible
+  #   examples: |
+  #     - Bạn có thể giải thích cho tôi trong một câu những gì bạn đang làm?
+  #     - Bạn có thể giúp tôi được không?
 
-  - intent: chatchit/ask_where_from
-    examples: |
-      - Anh là người quanh đây à?
-      - Xung quanh bạn đến từ đâu?
+  # - intent: chatchit/ask_where_from
+  #   examples: |
+  #     - Anh là người quanh đây à?
+  #     - Xung quanh bạn đến từ đâu?
 
-  - intent: chatchit/ask_who_am_i
-    examples: |
-      - Anh có thể cho tôi biết tôi là ai không?
-      - Anh có thể cho tôi biết tôi là ai không?
+  # - intent: chatchit/ask_who_am_i
+  #   examples: |
+  #     - Anh có thể cho tôi biết tôi là ai không?
+  #     - Anh có thể cho tôi biết tôi là ai không?
 
-  - intent: chatchit/ask_who_is_it
-    examples: |
-      - bạn là ai
-      - mày là cái quái gì?
-      - bạn là ai?
+  # - intent: chatchit/ask_who_is_it
+  #   examples: |
+  #     - bạn là ai
+  #     - mày là cái quái gì?
+  #     - bạn là ai?

@@ -14,11 +14,24 @@ nlu:
       - Cơ hội học bổng?
       - Các chương trình học bổng của trường?
   #CHẤT LƯỢNG SINH VIÊN ĐẦU VÀO
+  - intent: ddt/diem_chuan
+    examples: |
+      - Điểm chuẩn đầu vào?
+      - điểm chuẩn ngành công nghệ thông tin?
+      - điểm chuẩn ngành toán học?
+      - điểm chuẩn ngành điện tử viễn thông?
+      - điểm chuẩn ngành hóa học?
+      - điểm chuẩn ngành toán ứng dụng?
+      - điểm chuẩn ngành công nghệ môi trường?
+      - điểm chuẩn ngành vật lý hạt nhân?
+      - điểm chuẩn ngành công nghệ môi trường?
+      - điểm chuẩn ngành sinh học?
+      - điểm chuẩn của trường?
+      - điểm chuẩn của các ngành học?
   - intent: ddt/ti_le_choi_nganh
     examples: |
       - Tìm tỉ lệ chọi các ngành?
       - Tỉ lệ chọi của ngành kỹ thuật điện tử - viễn thông?
-  #NOTE: VIết thêm những câu với all ngành, all khoa
   #MỨC ĐỘ NỔI TIẾNG CỦA TRƯỜNG
   - intent: ddt/su_menh_truong
     examples: |
@@ -29,6 +42,8 @@ nlu:
     examples: |
       - Ký hiệu của trường của Đại học Khoa học Tự nhiên là gì?
       - Mã tuyển sinh của trường là gì?
+      - ký hiệu của trường?
+      - Mã trường?
   - intent: ddt/phuong_thuc_tuyen_sinh
     examples: |
       - Phương thức tuyển sinh của trường khtn?
@@ -37,9 +52,8 @@ nlu:
     examples: |
       - Khi theo học tại Trường Học sinh, sinh viên có được tham gia nhiều hoạt động ngoại khóa không ạ?
       - Các hoạt động ngoại khóa của trường?
-
   #MỨC ĐỘ HẤP DẪN CỦA NGÀNH HỌC
-  - intent: dtt/cac_nganh_dao_tao
+  - intent: ddt/cac_nganh_dao_tao
     examples: |
       - Các ngành đào tạo của trường?
       - Danh sách các ngành đào tạo?
@@ -48,8 +62,8 @@ nlu:
       - Có những ngành nào?
       - Tên các ngành đào tạo?
       - thông tin các ngành đào tạo?
-  # KHOA SINH HỌC
-  - intent: dtt/nganh_sinh_hoc
+  # # KHOA SINH HỌC
+  - intent: ddt/nganh_sinh_hoc
     examples: |
       - Chỉ tiêu ngành sinh học?
       - Thông tin ngành sinh học?
@@ -58,7 +72,7 @@ nlu:
       - Học phí ngành sinh học?
       - Tổ hợp môn thi tuyển sinh ngành sinh học?
       - Học phí ngành sinh học
-  - intent: dtt/nganh_sinh_hoc_clc
+  - intent: ddt/nganh_sinh_hoc_clc
     examples: |
       - Thông tin ngành sinh học chất lượng cao?
       - ngành sinh học chất lượng cao?
@@ -67,7 +81,7 @@ nlu:
       - Học phí ngành sinh học chất lượng cao?
       - Tổ hợp môn thi tuyển sinh ngành sinh học chất lượng cao?
       - Học phí ngành sinh học chất lượng cao
-  - intent: dtt/nganh_cong_nghe_sinh_hoc
+  - intent: ddt/nganh_cong_nghe_sinh_hoc
     examples: |
       - Thông tin ngành công nghệ sinh học?
       - ngành công nghệ sinh học?
@@ -75,7 +89,7 @@ nlu:
       - Học phí ngành công nghệ sinh học?
       - Tổ hợp môn thi tuyển sinh ngành công nghệ sinh học?
       - Học phí ngành công nghệ sinh học
-  - intent: dtt/nganh_cong_nghe_sinh_hoc_clc
+  - intent: ddt/nganh_cong_nghe_sinh_hoc_clc
     examples: |
       - Thông tin ngành công nghệ sinh học chất lượng cao?
       - ngành công nghệ sinh học chất lượng cao?
@@ -85,7 +99,7 @@ nlu:
       - Tổ hợp môn thi tuyển sinh ngành công nghệ sinh học chất lượng cao?
       - Học phí ngành công nghệ sinh học chất lượng cao
 
-  # Khoa VẬT LÝ
+  # các ngành Khoa VẬT LÝ
   - intent: ddt/nganh_vat_ly_hoc
     examples: |
       - Thông tin ngành vật lý học?
@@ -121,40 +135,13 @@ nlu:
       - Tổ hợp môn thi tuyển sinh ngành hải dương học?
       - Học phí ngành hải dương học?
     # KHoa TOÁN TIN
-  - intent: ddt/nhom_nganh_toan_hoc_toan_tin_toan_ung_dung
-    examples: |
-      - Thông tin ngành toán học?
-      - ngành toán học?
-      - Thông tin ngành toán tin?
-      - ngành toán tin?
-      - Thông tin ngành toán ứng dụng?
-      - ngành toán ứng dụng?
-      - Mã ngành ngành toán học
-      - Học phí ngành toán học
-      - Tổ hợp môn thi tuyển sinh ngành toán học
-      - Học phí ngành toán học
-      - Mã ngành ngành toán ứng dụng?
-      - Học phí ngành toán ứng dụng?
-      - Tổ hợp môn thi tuyển sinh ngành toán ứng dụng?
-      - Học phí ngành toán ứng dụng?
-      - Mã ngành ngành Toán tin?
-      - Học phí ngành Toán tin?
-      - Tổ hợp môn thi tuyển sinh ngành Toán tin?
-      - Học phí ngành Toán tin?
 
-  - intent: ddt/nganh_khoa_hoc_du_lieu
-    examples: |
-      - Thông tin ngành khoa học dữ liệu?
-      - ngành khoa học dữ liệu?
-      - Mã ngành ngành khoa học dữ liệu
-      - Học phí ngành khoa học dữ liệu
-      - Tổ hợp môn thi tuyển sinh ngành khoa học dữ liệu
-      - Học phí ngành khoa học dữ liệu
-  # KHOA MÔI TRƯỜNG
+  # các ngành KHOA MÔI TRƯỜNG
   - intent: ddt/nganh_khoa_hoc_moi_truong
     examples: |
       - Thông tin ngành khoa học môi trường?
       - ngành khoa học môi trường?
+      - ngành môi trường?
       - Mã ngành ngành khoa học môi trường?
       - Học phí ngành khoa học môi trường?
       - Tổ hợp môn thi tuyển sinh ngành khoa học môi trường?
@@ -194,6 +181,7 @@ nlu:
       - Học phí ngành công nghệ vật liệu?
       - Tổ hợp môn thi tuyển sinh ngành công nghệ vật liệu?
       - Học phí ngành công nghệ vật liệu?
+  # các ngành Khoa hóa học
   - intent: ddt/nganh_hoa_hoc
     examples: |
       - Thông tin ngành hóa học?
@@ -244,7 +232,7 @@ nlu:
       - Học phí ngành Điện tử viễn thông chất lượng cao?
       - Tổ hợp môn thi tuyển sinh ngành Điện tử viễn thông chất lượng cao?
       - Học phí ngành Điện tử viễn thông chất lượng cao?
-  # KHOA Địa chất
+  # các ngành KHOA Địa chất
   - intent: ddt/nganh_dia_chat_hoc
     examples: |
       - Thông tin ngành địa chất học?
@@ -262,7 +250,7 @@ nlu:
       - Tổ hợp môn thi tuyển sinh ngành Kỹ thuật địa chất ?
       - Học phí ngành Kỹ thuật địa chất ?
 
-  # KHOA CÔNG NGHỆ THÔNG TIN
+  # Các ngành KHOA CÔNG NGHỆ THÔNG TIN
   - intent: ddt/nhom_nganh_may_tinh_va_cntt
     examples: |
       - Thông tin ngành máy tinh và công nghệ thông tin?
@@ -337,7 +325,34 @@ nlu:
       - khoa Toán tin có những tổ hợp môn thi nào?
       - tổ hợp môn thi của Khoa Toán?
       - khoa toán tin thi những môn nào?
-
+  - intent: ddt/nhom_nganh_toan_hoc_toan_tin_toan_ung_dung
+    examples: |
+      - Thông tin ngành toán học?
+      - ngành toán học?
+      - Thông tin ngành toán tin?
+      - ngành toán tin?
+      - Thông tin ngành toán ứng dụng?
+      - ngành toán ứng dụng?
+      - Mã ngành ngành toán học
+      - Học phí ngành toán học
+      - Tổ hợp môn thi tuyển sinh ngành toán học
+      - Học phí ngành toán học
+      - Mã ngành ngành toán ứng dụng?
+      - Học phí ngành toán ứng dụng?
+      - Tổ hợp môn thi tuyển sinh ngành toán ứng dụng?
+      - Học phí ngành toán ứng dụng?
+      - Mã ngành ngành Toán tin?
+      - Học phí ngành Toán tin?
+      - Tổ hợp môn thi tuyển sinh ngành Toán tin?
+      - Học phí ngành Toán tin?
+  - intent: ddt/nganh_khoa_hoc_du_lieu
+    examples: |
+      - Thông tin ngành khoa học dữ liệu?
+      - ngành khoa học dữ liệu?
+      - Mã ngành ngành khoa học dữ liệu
+      - Học phí ngành khoa học dữ liệu
+      - Tổ hợp môn thi tuyển sinh ngành khoa học dữ liệu
+      - Học phí ngành khoa học dữ liệu
   ## Common ngành vật lý information
   - intent: ddt/hoi_thanh_lap_khoa_vat_ly
     examples: |
@@ -493,9 +508,16 @@ nlu:
   # các ngành: vl tin học, y khoa, vật lý hạt nhân, chất rắn, ứng dụng, điện tử, địa cầu, hải tượng khí tượng thủy văn
   #VỊ TRÍ ĐỊA LÝ - CƠ SỞ VẬT CHẤT
   ####Vị trí
+  - intent: ddt/co_so_vat_chat
+    examples: |
+      - Cơ sở vật chất của trường?
+      - cơ sở vật chất?
   - intent: ddt/co_so_dao_tao
     examples: |
       - trường khtn có những cơ sở đào tạo nào?
+      - cơ sở đào tạo?
+      - các cơ sở đào tạo?
+      - chi nhánh đào tạo?
       - Các cơ sở của trường ở đâu?
       - trường có bao nhiêu cơ sở?
       - trường ở đâu?
@@ -508,7 +530,8 @@ nlu:
       - địa chỉ cơ sở Linh Trung?
       - địa chỉ của cơ sở 2?
       - thông tin cơ sở 2
-
+      - cơ sở 2
+      - cơ sở đào tạo 2?
   - intent: ddt/co_so_dao_tao_1
     examples: |
       - thông tin cơ sở Nguyễn Văn Cừ?
@@ -516,6 +539,8 @@ nlu:
       - địa chỉ cơ sở Nguyễn Văn Cừ?
       - địa chỉ của cơ sở 1?
       - thông tin cơ sở 1
+      - cơ sở 1
+      - cơ sở đào tạo 1?
 
   ###Cơ sở đào tạo
   - intent: ddt/co_so_vat_chat_the_thao
@@ -553,7 +578,7 @@ nlu:
   # 3. Yếu tố cơ hội việc làm tương lai
   - intent: ddt/co_hoi_viec_lam
     examples: |
-      - Cơ hội việc làm tương lại của sinh viên?
+      - Cơ hội việc làm tương lai của sinh viên?
       - Tỉ lệ việc làm của sinh viên như thế nào?
       - Tỉ lệ việc làm?
       - Cơ hội việc làm?

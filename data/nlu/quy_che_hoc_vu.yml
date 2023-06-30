@@ -31,6 +31,6 @@ nlu:
 
   - intent: quy_che_hoc_vu/hoi_hoc_cung_luc_hai_chuong_trinh
     examples: |
-      - Học cùng lúc hai chương trình được không? 
+      - Học cùng lúc hai chương trình được không?
       - Điều kiện để học cùng lúc 2 chương trình?
       - Có cho phép học cùng lúc 2 chương trình không?

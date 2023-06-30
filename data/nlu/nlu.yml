@@ -1,12 +1,6 @@
 version: "3.1"
 
 nlu:
-  - intent: greet_start
-    examples: |
-      - Chạy rasa chatbot
-      - Mở rasa chatbot
-      - Khởi động lại rasa chatbot
-
   - intent: greet
     examples: |
       - Xin chào
@@ -18,6 +12,22 @@ nlu:
   ############################################
   - intent: answer_user_name
     examples: |
+      - toi la [An](user_name)
+      - toi la [Trinh](user_name)
+      - toi la [Ngoc](user_name)
+      - toi la [Tien](user_name)
+      - toi la [Van](user_name)
+      - toi la [Hung](user_name)
+      - toi la [Duc](user_name)
+      - toi la [Dung](user_name)
+      - toi la [Khang](user_name)
+      - toi la [Hoang](user_name)
+      - toi la [Linh](user_name)
+      - toi la [Tuan](user_name)
+      - toi la [Hai](user_name)
+      - toi la [Vuong](user_name)
+      - toi la [Truong](user_name)
+      - toi la [Minh](user_name)
       - tôi là [Binh](user_name)
       - tôi là [Bình](user_name)
       - tôi là [An](user_name)
@@ -149,58 +159,123 @@ nlu:
       - thông tin của tôi là gì?
   - intent: answer_phone
     examples: |
-      - 0999422333
-      - số điện thoại thôi là [0333411226]{"entity": "phone"}
+      - [0999422333]{"entity": "phone"}
+      - [0333411226]{"entity": "phone"}
+      - [0886521910]{"entity": "phone"}
+      - [0980120260]{"entity": "phone"}
+      - [0368125011]{"entity": "phone"}
+      - [0975452668]{"entity": "phone"}
+      - [0999422333]{"entity": "phone"}
+      - [0686544002]{"entity": "phone"}
+      - [0987566120]{"entity": "phone"}
+      - [0896250005]{"entity": "phone"}
+      - [0688411228]{"entity": "phone"}
+      - [0965456123]{"entity": "phone"}
+      - [3566744001]{"entity": "phone"}
+      - [0984621351]{"entity": "phone"}
+      - [0987605540]{"entity": "phone"}
+      - Số điện thoại của tôi [0986220501]{"entity": "phone"}
+      - Số điện thoại của tôi [0999422333]{"entity": "phone"}
+      - Số điện thoại của tôi [0333411226]{"entity": "phone"}
+      - Số điện thoại của tôi [0886521910]{"entity": "phone"}
+      - Số điện thoại của tôi [0980120260]{"entity": "phone"}
+      - Số điện thoại của tôi [0368125011]{"entity": "phone"}
+      - Số điện thoại của tôi [0975452668]{"entity": "phone"}
+      - Số điện thoại của tôi [0999422333]{"entity": "phone"}
+      - Số điện thoại của tôi [0686544002]{"entity": "phone"}
+      - Số điện thoại của tôi [0987566120]{"entity": "phone"}
+      - Số điện thoại của tôi [0896250005]{"entity": "phone"}
+      - Số điện thoại của tôi [0688411228]{"entity": "phone"}
+      - Số điện thoại của tôi [0965456123]{"entity": "phone"}
+      - Số điện thoại của tôi [3566744001]{"entity": "phone"}
+      - Số điện thoại của tôi [0984621351]{"entity": "phone"}
+      - Số điện thoại của tôi [0987605540]{"entity": "phone"}
+      - Số điện thoại của tôi [0986220501]{"entity": "phone"}
+
   - intent: answer_address
     examples: |
+      - [19 điện biên phủ, quận binh thạnh]{"entity": "address"}
+      - [15 Nguyễn văn cừ, phường 2, quận 5, Tp. Hồ Chí Minh]{"entity": "address"}
+      - [39 Xô viết nghệ tỉnh, phường 9, quận Phú Nhuận, TP. Hồ Chí Minh]{"entity": "address"}
+      - [Quảng trị]{"entity": "address"}
+      - [Huế]{"entity": "address"}
+      - [Quảng Nam]{"entity": "address"}
+      - [Quãng Ngãi]{"entity": "address"}
+      - [Bình Định]{"entity": "address"}
+      - [Phú Yên]{"entity": "address"}
+      - [Ninh Thuận]{"entity": "address"}
+      - [Bình Thuận]{"entity": "address"}
+      - [Tây Ninh]{"entity": "address"}
+      - [Vũng tàu]{"entity": "address"}
+      - [Bến Tre]{"entity": "address"}
+      - [Bình Phước]{"entity": "address"}
+      - [Tp. Hồ Chí Minh]{"entity": "address"}
+      - [An Giang]{"entity": "address"}
+      - [Kiên Giang]{"entity": "address"}
+      - [Vĩnh Long]{"entity": "address"}
+      - [Biên Hóa]{"entity": "address"}
+      - [Hà Nội]{"entity": "address"}
+      - [Đồng Nai]{"entity": "address"}
+      - [Bình Phước]{"entity": "address"}
       - địa chỉ nhà tôi là [37 duong so 3, phuong binh an, quan 2, tp ho chi minh]{"entity": "address"}
   - intent: answer_email
     examples: |
-      - số điện thoại thôi là [thao@gmail.com]{"entity": "email"}
-      - tranbaoan@gmail.com
+      - email là [thao@gmail.com]{"entity": "email"}
+      - [tranbaoan@gmail.com]{"entity": "email"}
+      - [nguyenthihoa@gmail.com]{"entity": "email"}
+      - [tranminhtam@gmail.com]{"entity": "email"}
+      - [phanvophuongthao@gmail.com]{"entity": "email"}
+      - [lehieu@gmail.com]{"entity": "email"}
+      - [hoangphuongmai@gmail.com]{"entity": "email"}
+      - [nguyenthithao@gmail.com]{"entity": "email"}
+      - [leminhquan@gmail.com]{"entity": "email"}
+      - [trananhvien@gmail.com]{"entity": "email"}
+      - [phamquangtruong@gmail.com]{"entity": "email"}
+      - [leanhlong@gmail.com]{"entity": "email"}
+
   # Cứu pháp slots[giá trị mặc định](biến slot)
   # Cứu pháp 2  slots[{entities}](biến slot)
   # -----------intents cho actions----------------
 
-  - intent: search_nganh_hoc
-    examples: |
-      - ngành [Nhóm ngành Toán học, Toán tin, Toán ứng dụng](ten_nganh)
-      - Ngành [Khoa học máy tính (Chương trình tiên tiến)](ten_nganh)
-      - Ngành [Khoa học Dữ liệu](ten_nganh)
-      - Ngành [Công nghệ thông tin (Chương trình Chất lượng cao)](ten_nganh)
-      - Ngành [Nhóm ngành máy tính và công nghệ thông tin( ngành công nghệ thông tin; ngành Kỹ thuật phần mềm; ngành Hệ thống thông tin; ngành Khoa học máy tính; ngành Trí tuệ nhân tạo)](ten_nganh)
-      - Ngành [Địa chất học](ten_nganh)
-      - Ngành [Hải dương học](ten_nganh)
-      - Ngành [Kỹ thuật Địa chất](ten_nganh)
-      - Ngành [Kỹ thuật Điện tử - Viễn thông](ten_nganh)
-      - Ngành [Kỹ thuật Điện tử - Viễn thông(CT chất lượng cao)](ten_nganh)
-      - Ngành [Hóa học](ten_nganh)
-      - Ngành [Hóa học (Chương trình Chất lượng cao)](ten_nganh)
-      - Ngành [Công nghê Kỹ thuật Hóa học(CT Chất lượng cao)](ten_nganh)
-      - Ngành [Khoa học Vật liệu](ten_nganh)
-      - Ngành [Công nghệ Vật liệu](ten_nganh)
-      - Ngành [Khoa học Môi trường](ten_nganh)
-      - Ngành [Khoa học Môi trường (Chương trình Chất lượng cao)](ten_nganh)
-      - Ngành [Công nghệ Kỹ thuật Môi trường](ten_nganh)
-      - Ngành [Quản lý Tài nguyên và Môi trường](ten_nganh)
-      - Ngành [Sinh học](ten_nganh)
-      - Ngành [Sinh học (Chương trình Chất lượng cao)](ten_nganh)
-      - Ngành [Công nghệ Sinh học](ten_nganh)
-      - Ngành [Công nghệ Sinh học (Chương trình Chất lượng cao)](ten_nganh)
-      - Ngành [Vật lý học](ten_nganh)
-      - Ngành [Kỹ thuật Hạt nhân](ten_nganh)
-      - Ngành [Vật lý Y khoa](ten_nganh)
-
-  # - synonym: sinh học
+  # - intent: search_nganh_hoc
   #   examples: |
-  #     - sh
-  #     - SH
+  #     - ngành [Nhóm ngành Toán học, Toán tin, Toán ứng dụng](ten_nganh)
+  #     - Ngành [Khoa học máy tính (Chương trình tiên tiến)](ten_nganh)
+  #     - Ngành [Khoa học Dữ liệu](ten_nganh)
+  #     - Ngành [Công nghệ thông tin (Chương trình Chất lượng cao)](ten_nganh)
+  #     - Ngành [Nhóm ngành máy tính và công nghệ thông tin( ngành công nghệ thông tin; ngành Kỹ thuật phần mềm; ngành Hệ thống thông tin; ngành Khoa học máy tính; ngành Trí tuệ nhân tạo)](ten_nganh)
+  #     - Ngành [Địa chất học](ten_nganh)
+  #     - Ngành [Hải dương học](ten_nganh)
+  #     - Ngành [Kỹ thuật Địa chất](ten_nganh)
+  #     - Ngành [Kỹ thuật Điện tử - Viễn thông](ten_nganh)
+  #     - Ngành [Kỹ thuật Điện tử - Viễn thông(CT chất lượng cao)](ten_nganh)
+  #     - Ngành [Hóa học](ten_nganh)
+  #     - Ngành [Hóa học (Chương trình Chất lượng cao)](ten_nganh)
+  #     - Ngành [Công nghê Kỹ thuật Hóa học(CT Chất lượng cao)](ten_nganh)
+  #     - Ngành [Khoa học Vật liệu](ten_nganh)
+  #     - Ngành [Công nghệ Vật liệu](ten_nganh)
+  #     - Ngành [Khoa học Môi trường](ten_nganh)
+  #     - Ngành [Khoa học Môi trường (Chương trình Chất lượng cao)](ten_nganh)
+  #     - Ngành [Công nghệ Kỹ thuật Môi trường](ten_nganh)
+  #     - Ngành [Quản lý Tài nguyên và Môi trường](ten_nganh)
+  #     - Ngành [Sinh học](ten_nganh)
+  #     - Ngành [Sinh học (Chương trình Chất lượng cao)](ten_nganh)
+  #     - Ngành [Công nghệ Sinh học](ten_nganh)
+  #     - Ngành [Công nghệ Sinh học (Chương trình Chất lượng cao)](ten_nganh)
+  #     - Ngành [Vật lý học](ten_nganh)
+  #     - Ngành [Kỹ thuật Hạt nhân](ten_nganh)
+  #     - Ngành [Vật lý Y khoa](ten_nganh)
 
-  - intent: search_all_nganh_hoc
-    examples: |
-      - có tất cả các ngành nào?
-      - có bao nhiêu ngành?
-      - trường có bao nhiêu ngành?
-      - các ngành đào tạo của trường?
-      - có những ngành học nào?
-      - trường có bao nhiêu ngành học?
+  # # - synonym: sinh học
+  # #   examples: |
+  # #     - sh
+  # #     - SH
+
+  # - intent: search_all_nganh_hoc
+  #   examples: |
+  #     - có tất cả các ngành nào?
+  #     - có bao nhiêu ngành?
+  #     - trường có bao nhiêu ngành?
+  #     - các ngành đào tạo của trường?
+  #     - có những ngành học nào?
+  #     - trường có bao nhiêu ngành học?

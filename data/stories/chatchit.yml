@@ -1,28 +1,28 @@
-# version: "3.1"
-# stories:
-#   - story: chatchit
-#     steps:
-#       - intent: chatchit
-#       - action: utter_chatchit
-#   - story: deny chatchit
-#     steps:
-#       - intent: chatchit
-#       - action: utter_chatchit
-#       - intent: deny
-#       - action: utter_no_help
+version: "3.1"
+stories:
+  - story: chatchit
+    steps:
+      - intent: chatchit
+      - action: utter_chatchit
+  - story: deny chatchit
+    steps:
+      - intent: chatchit
+      - action: utter_chatchit
+      - intent: deny
+      - action: utter_no_help
 
-#   - story: more chatchit
-#     steps:
-#       - intent: greet
-#       - action: utter_greet
-#       - intent: chatchit
-#       - action: utter_chatchit
-#       - intent: chatchit
-#       - action: utter_chatchit
+  - story: more chatchit
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: chatchit
+      - action: utter_chatchit
+      - intent: chatchit
+      - action: utter_chatchit
 
-#   - story: greet chatchit
-#     steps:
-#       - intent: greet
-#       - action: utter_greet
-#       - intent: chatchit
-#       - action: utter_chatchit
+  - story: greet chatchit
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: chatchit
+      - action: utter_chatchit

@@ -42,14 +42,11 @@ nlu:
       - αστεία λές
       - rasa codigo abierto
       - 卧槽
-
   - intent: out_of_scope/other
     examples: |
-      - 4 + 2 = ?
       - gọi tôi là cha
       - chúng ta tiếp tục nói chuyện được không?
       - bạn có thể đặt bữa tối không
-
       - làm thế nào để có được studio rasa
       - làm thế nào để đi đến new york?
       - tôi đói
