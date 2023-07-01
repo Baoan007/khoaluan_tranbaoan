@@ -102,8 +102,8 @@ responses:
     - text: "Bạn có muốn tiếp tục không?"
   utter_ask_rephrase:
     - text: Bạn có thể viết lại câu hỏi được không?
-  utter_start_work:
-    - text: "Xin chào, tôi là AI chatbot - Hỗ trợ tư vấn tuyển sinh Đại học trường KHTN TP. Hồ Chí Minh."
+  # utter_start_work:
+  #   - text: "Xin chào, tôi là AI chatbot - Hỗ trợ tư vấn tuyển sinh Đại học trường KHTN TP. Hồ Chí Minh."
   utter_ask_stop:
     - text: "Bạn có muốn kết thúc không?"
   utter_ask_anything_else:

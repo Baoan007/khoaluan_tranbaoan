@@ -1,0 +1,34 @@
+[
+  {
+    "text": "địa chỉ của cơ sở 1?",
+    "intent_response_key_target": "ddt/co_so_dao_tao_1",
+    "intent_response_key_prediction": {
+      "name": "ddt/co_so_dao_tao_2",
+      "confidence": 0.5755823850631714
+    }
+  },
+  {
+    "text": "thông tin cơ sở 1",
+    "intent_response_key_target": "ddt/co_so_dao_tao_1",
+    "intent_response_key_prediction": {
+      "name": "ddt/co_so_dao_tao_2",
+      "confidence": 0.8447239398956299
+    }
+  },
+  {
+    "text": "cơ sở 1",
+    "intent_response_key_target": "ddt/co_so_dao_tao_1",
+    "intent_response_key_prediction": {
+      "name": "ddt/co_so_dao_tao_2",
+      "confidence": 0.7975878715515137
+    }
+  },
+  {
+    "text": "cơ sở đào tạo 1?",
+    "intent_response_key_target": "ddt/co_so_dao_tao_1",
+    "intent_response_key_prediction": {
+      "name": "ddt/co_so_dao_tao_2",
+      "confidence": 0.5703907012939453
+    }
+  }
+]
