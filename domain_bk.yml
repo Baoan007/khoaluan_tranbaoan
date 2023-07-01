@@ -112,7 +112,9 @@ responses:
     - text: |-
         Quy chế học vụ và đào tạo bậc Đại học trường KHTN TP. Hồ Chí minh.
         Mời xem chi tiết tại link: https://www.hcmus.edu.vn/attachments/category/117/qc_hctc_2009_dhkhtn.pdf
-
+  utter_start_work:
+    - text: |-
+        Xin chào! Tôi là AI Chatbot - Hỗ trợ tư vấn tuyển sinh bậc đại học trường ĐH KHTN TP. Hồ Chí Minh. Rất vui được gặp bạn!
   # -----------utters tiếp tục hoặc kết thúc----------------
   utter_ask_name:
     - text: "Tên bạn là gì?"

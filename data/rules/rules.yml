@@ -1,6 +1,11 @@
 version: "3.1"
 rules:
   ###CÁC YẾU TỐ QUYẾT ĐỊNH VIỆC CHỌN TRƯỜNG##########
+  - rule: luôn response mỗi khi bắt đầu bot rasa
+    steps:
+      - intent: greet_start
+      - action: utter_start_work
+
   - rule: Luôn response khi có câu hỏi về các yếu tố về cá nhân
     steps:
       - intent: yeu_to_ca_nhan
