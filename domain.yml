@@ -42,7 +42,9 @@ intents:
   # 4. Yếu tố nổ lực giao tiếp với học sinh THPT
   # 5. Yếu tố đặc trưng giới tính
   # 6. Các yếu tố khác - others
+  - others
   # 7. Các câu hỏi ngoài phạm vi trả lời của chat bot
+
   - chatchit
   - out_of_scope
   # QUY CHẾ HỌC VỤ
@@ -126,7 +128,7 @@ responses:
     - text: Email?
   utter_start_work:
     - text: Xin chào, tôi là bot AL tư vấn tuyển sinh đại học trường khtn tp. Hồ chí minh
-  
+
   #--------------Test thử --------------------
 
 session_config:
